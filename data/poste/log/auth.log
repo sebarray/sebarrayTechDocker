@@ -1,0 +1,379 @@
+2026-07-26T00:01:01.568867-03:00 mail CRON[221445]: pam_unix(cron:session): session closed for user root
+2026-07-26T00:09:01.575146-03:00 mail CRON[222020]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T00:09:02.154401-03:00 mail CRON[222020]: pam_unix(cron:session): session closed for user root
+2026-07-26T00:39:01.165651-03:00 mail CRON[224169]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T00:39:01.709059-03:00 mail CRON[224169]: pam_unix(cron:session): session closed for user root
+2026-07-26T01:09:01.720343-03:00 mail CRON[226322]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T01:09:02.296558-03:00 mail CRON[226322]: pam_unix(cron:session): session closed for user root
+2026-07-26T01:39:01.307690-03:00 mail CRON[228431]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T01:39:01.852625-03:00 mail CRON[228431]: pam_unix(cron:session): session closed for user root
+2026-07-26T02:09:01.861988-03:00 mail CRON[230577]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T02:09:02.390671-03:00 mail CRON[230577]: pam_unix(cron:session): session closed for user root
+2026-07-26T02:39:01.401805-03:00 mail CRON[232723]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T02:39:01.950666-03:00 mail CRON[232723]: pam_unix(cron:session): session closed for user root
+2026-07-26T03:09:01.960393-03:00 mail CRON[234837]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T03:09:02.543814-03:00 mail CRON[234837]: pam_unix(cron:session): session closed for user root
+2026-07-26T03:10:01.547177-03:00 mail CRON[234950]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T03:10:01.547181-03:00 mail CRON[234951]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T03:10:01.552601-03:00 mail CRON[234950]: pam_unix(cron:session): session closed for user root
+2026-07-26T03:30:01.560791-03:00 mail CRON[236353]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T03:30:01.568601-03:00 mail CRON[236353]: pam_unix(cron:session): session closed for user root
+2026-07-26T03:39:01.575183-03:00 mail CRON[236988]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T03:39:02.146320-03:00 mail CRON[236988]: pam_unix(cron:session): session closed for user root
+2026-07-26T04:09:01.157200-03:00 mail CRON[239144]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T04:09:01.704712-03:00 mail CRON[239144]: pam_unix(cron:session): session closed for user root
+2026-07-26T04:34:58.951386-03:00 mail CRON[234951]: pam_unix(cron:session): session closed for user root
+2026-07-26T04:39:01.956467-03:00 mail CRON[241259]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T04:39:02.491237-03:00 mail CRON[241259]: pam_unix(cron:session): session closed for user root
+2026-07-26T05:09:01.502573-03:00 mail CRON[243401]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T05:09:02.045210-03:00 mail CRON[243401]: pam_unix(cron:session): session closed for user root
+2026-07-26T05:30:01.053393-03:00 mail CRON[244913]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T05:30:01.348569-03:00 mail CRON[244913]: pam_unix(cron:session): session closed for user root
+2026-07-26T05:39:01.354596-03:00 mail CRON[245551]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T05:39:01.893755-03:00 mail CRON[245551]: pam_unix(cron:session): session closed for user root
+2026-07-26T06:09:01.905165-03:00 mail CRON[247653]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T06:09:02.468253-03:00 mail CRON[247653]: pam_unix(cron:session): session closed for user root
+2026-07-26T06:10:01.472103-03:00 mail CRON[247766]: pam_unix(cron:session): session opened for user mail(uid=8) by (uid=0)
+2026-07-26T06:10:01.894608-03:00 mail CRON[247766]: pam_unix(cron:session): session closed for user mail
+2026-07-26T06:11:01.897855-03:00 mail CRON[247847]: pam_unix(cron:session): session opened for user mail(uid=8) by (uid=0)
+2026-07-26T06:11:02.258728-03:00 mail CRON[247847]: pam_unix(cron:session): session closed for user mail
+2026-07-26T06:12:01.261862-03:00 mail CRON[247932]: pam_unix(cron:session): session opened for user mail(uid=8) by (uid=0)
+2026-07-26T06:12:01.961580-03:00 mail CRON[247932]: pam_unix(cron:session): session closed for user mail
+2026-07-26T06:25:01.970469-03:00 mail CRON[248872]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T06:25:01.970472-03:00 mail CRON[248873]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T06:25:02.267979-03:00 mail CRON[248873]: pam_unix(cron:session): session closed for user root
+2026-07-26T06:25:02.354855-03:00 mail CRON[248872]: pam_unix(cron:session): session closed for user root
+2026-07-26T06:26:01.357741-03:00 mail CRON[248959]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T06:26:01.468545-03:00 mail CRON[248959]: pam_unix(cron:session): session closed for user root
+2026-07-26T06:27:01.471239-03:00 mail CRON[249036]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T06:27:01.546226-03:00 mail CRON[249036]: pam_unix(cron:session): session closed for user root
+2026-07-26T06:28:01.549240-03:00 mail CRON[249114]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T06:28:02.306677-03:00 mail CRON[249114]: pam_unix(cron:session): session closed for user root
+2026-07-26T06:29:01.309760-03:00 mail CRON[249194]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T06:29:01.826189-03:00 mail CRON[249194]: pam_unix(cron:session): session closed for user root
+2026-07-26T06:30:01.829565-03:00 mail CRON[249272]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T06:30:02.109597-03:00 mail CRON[249272]: pam_unix(cron:session): session closed for user root
+2026-07-26T06:31:01.112261-03:00 mail CRON[249353]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T06:31:01.116216-03:00 mail CRON[249353]: pam_unix(cron:session): session closed for user root
+2026-07-26T06:32:01.118829-03:00 mail CRON[249426]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T06:32:01.125811-03:00 mail CRON[249426]: pam_unix(cron:session): session closed for user root
+2026-07-26T06:39:01.130421-03:00 mail CRON[249920]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T06:39:01.468057-03:00 mail CRON[249920]: pam_unix(cron:session): session closed for user root
+2026-07-26T07:09:01.479888-03:00 mail CRON[252070]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T07:09:02.028261-03:00 mail CRON[252070]: pam_unix(cron:session): session closed for user root
+2026-07-26T07:39:01.038803-03:00 mail CRON[254211]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T07:39:01.571776-03:00 mail CRON[254211]: pam_unix(cron:session): session closed for user root
+2026-07-26T08:09:01.587498-03:00 mail CRON[256320]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T08:09:02.183133-03:00 mail CRON[256320]: pam_unix(cron:session): session closed for user root
+2026-07-26T08:39:01.195175-03:00 mail CRON[258467]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T08:39:01.729487-03:00 mail CRON[258467]: pam_unix(cron:session): session closed for user root
+2026-07-26T09:09:01.742064-03:00 mail CRON[260610]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T09:09:02.291819-03:00 mail CRON[260610]: pam_unix(cron:session): session closed for user root
+2026-07-26T09:39:01.303717-03:00 mail CRON[262711]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T09:39:01.852814-03:00 mail CRON[262711]: pam_unix(cron:session): session closed for user root
+2026-07-26T10:09:01.865409-03:00 mail CRON[264853]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T10:09:02.411955-03:00 mail CRON[264853]: pam_unix(cron:session): session closed for user root
+2026-07-26T10:39:01.424603-03:00 mail CRON[266995]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T10:39:01.966821-03:00 mail CRON[266995]: pam_unix(cron:session): session closed for user root
+2026-07-26T11:09:01.978677-03:00 mail CRON[269103]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T11:09:02.557583-03:00 mail CRON[269103]: pam_unix(cron:session): session closed for user root
+2026-07-26T11:39:01.571665-03:00 mail CRON[271246]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T11:39:02.130372-03:00 mail CRON[271246]: pam_unix(cron:session): session closed for user root
+2026-07-26T12:09:01.143673-03:00 mail CRON[273384]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T12:09:01.707090-03:00 mail CRON[273384]: pam_unix(cron:session): session closed for user root
+2026-07-26T12:39:01.718373-03:00 mail CRON[275527]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T12:39:02.271384-03:00 mail CRON[275527]: pam_unix(cron:session): session closed for user root
+2026-07-26T13:09:01.285236-03:00 mail CRON[277632]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T13:09:01.849052-03:00 mail CRON[277632]: pam_unix(cron:session): session closed for user root
+2026-07-26T13:39:01.862104-03:00 mail CRON[279780]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T13:39:02.403126-03:00 mail CRON[279780]: pam_unix(cron:session): session closed for user root
+2026-07-26T14:09:01.414460-03:00 mail CRON[281934]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T14:09:01.950566-03:00 mail CRON[281934]: pam_unix(cron:session): session closed for user root
+2026-07-26T14:39:01.962163-03:00 mail CRON[284080]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T14:39:02.498782-03:00 mail CRON[284080]: pam_unix(cron:session): session closed for user root
+2026-07-26T15:09:01.512568-03:00 mail CRON[286187]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T15:09:02.065784-03:00 mail CRON[286187]: pam_unix(cron:session): session closed for user root
+2026-07-26T15:39:01.075761-03:00 mail CRON[288332]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T15:39:01.637131-03:00 mail CRON[288332]: pam_unix(cron:session): session closed for user root
+2026-07-26T16:09:01.649795-03:00 mail CRON[290472]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T16:09:02.188212-03:00 mail CRON[290472]: pam_unix(cron:session): session closed for user root
+2026-07-26T16:39:01.202172-03:00 mail CRON[292571]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T16:39:01.742562-03:00 mail CRON[292571]: pam_unix(cron:session): session closed for user root
+2026-07-26T17:09:01.753589-03:00 mail CRON[294713]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T17:09:02.332285-03:00 mail CRON[294713]: pam_unix(cron:session): session closed for user root
+2026-07-26T17:39:01.342792-03:00 mail CRON[296859]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T17:39:01.895832-03:00 mail CRON[296859]: pam_unix(cron:session): session closed for user root
+2026-07-26T18:09:01.906159-03:00 mail CRON[299004]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T18:09:02.454752-03:00 mail CRON[299004]: pam_unix(cron:session): session closed for user root
+2026-07-26T18:39:01.467095-03:00 mail CRON[301107]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T18:39:02.021587-03:00 mail CRON[301107]: pam_unix(cron:session): session closed for user root
+2026-07-26T19:09:01.031234-03:00 mail CRON[303248]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T19:09:01.580561-03:00 mail CRON[303248]: pam_unix(cron:session): session closed for user root
+2026-07-26T19:39:01.591718-03:00 mail CRON[305389]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T19:39:02.119629-03:00 mail CRON[305389]: pam_unix(cron:session): session closed for user root
+2026-07-26T20:09:01.130696-03:00 mail CRON[307494]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T20:09:01.653998-03:00 mail CRON[307494]: pam_unix(cron:session): session closed for user root
+2026-07-26T20:39:01.664086-03:00 mail CRON[309630]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T20:39:02.211694-03:00 mail CRON[309630]: pam_unix(cron:session): session closed for user root
+2026-07-26T21:09:01.222857-03:00 mail CRON[311773]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T21:09:01.798123-03:00 mail CRON[311773]: pam_unix(cron:session): session closed for user root
+2026-07-26T21:39:01.810682-03:00 mail CRON[313927]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T21:39:02.367469-03:00 mail CRON[313927]: pam_unix(cron:session): session closed for user root
+2026-07-26T22:09:01.379493-03:00 mail CRON[316032]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T22:09:01.923949-03:00 mail CRON[316032]: pam_unix(cron:session): session closed for user root
+2026-07-26T22:39:01.936102-03:00 mail CRON[318186]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T22:39:02.496161-03:00 mail CRON[318186]: pam_unix(cron:session): session closed for user root
+2026-07-26T23:09:01.509971-03:00 mail CRON[320326]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T23:09:02.065488-03:00 mail CRON[320326]: pam_unix(cron:session): session closed for user root
+2026-07-26T23:39:01.078520-03:00 mail CRON[322476]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-26T23:39:01.643031-03:00 mail CRON[322476]: pam_unix(cron:session): session closed for user root
+2026-07-27T00:01:01.653555-03:00 mail CRON[324022]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T00:01:01.690965-03:00 mail CRON[324022]: pam_unix(cron:session): session closed for user root
+2026-07-27T00:09:01.698112-03:00 mail CRON[324595]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T00:09:02.250233-03:00 mail CRON[324595]: pam_unix(cron:session): session closed for user root
+2026-07-27T00:39:01.261855-03:00 mail CRON[326745]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T00:39:01.827778-03:00 mail CRON[326745]: pam_unix(cron:session): session closed for user root
+2026-07-27T01:09:01.838766-03:00 mail CRON[328893]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T01:09:02.373070-03:00 mail CRON[328893]: pam_unix(cron:session): session closed for user root
+2026-07-27T01:39:01.384031-03:00 mail CRON[331044]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T01:39:01.933008-03:00 mail CRON[331044]: pam_unix(cron:session): session closed for user root
+2026-07-27T02:09:01.944322-03:00 mail CRON[333208]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T02:09:02.515049-03:00 mail CRON[333208]: pam_unix(cron:session): session closed for user root
+2026-07-27T02:39:01.525551-03:00 mail CRON[335360]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T02:39:02.058388-03:00 mail CRON[335360]: pam_unix(cron:session): session closed for user root
+2026-07-27T03:09:01.071050-03:00 mail CRON[337526]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T03:09:01.639794-03:00 mail CRON[337526]: pam_unix(cron:session): session closed for user root
+2026-07-27T03:10:01.642822-03:00 mail CRON[337640]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T03:10:01.642878-03:00 mail CRON[337639]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T03:10:01.648843-03:00 mail CRON[337639]: pam_unix(cron:session): session closed for user root
+2026-07-27T03:39:01.659754-03:00 mail CRON[339648]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T03:39:02.217668-03:00 mail CRON[339648]: pam_unix(cron:session): session closed for user root
+2026-07-27T04:09:01.229085-03:00 mail CRON[341804]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T04:09:01.785766-03:00 mail CRON[341804]: pam_unix(cron:session): session closed for user root
+2026-07-27T04:39:01.797119-03:00 mail CRON[343950]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T04:39:02.336248-03:00 mail CRON[343950]: pam_unix(cron:session): session closed for user root
+2026-07-27T05:09:01.351268-03:00 mail CRON[346056]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T05:09:01.736869-03:00 mail CRON[346056]: pam_unix(cron:session): session closed for user root
+2026-07-27T05:30:01.748517-03:00 mail CRON[347569]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T05:30:02.493680-03:00 mail CRON[347569]: pam_unix(cron:session): session closed for user root
+2026-07-27T05:39:01.499793-03:00 mail CRON[348587]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T05:39:01.868681-03:00 mail CRON[348587]: pam_unix(cron:session): session closed for user root
+2026-07-27T06:09:01.881425-03:00 mail CRON[350731]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T06:09:02.433672-03:00 mail CRON[350731]: pam_unix(cron:session): session closed for user root
+2026-07-27T06:10:01.437449-03:00 mail CRON[350843]: pam_unix(cron:session): session opened for user mail(uid=8) by (uid=0)
+2026-07-27T06:10:01.874908-03:00 mail CRON[350843]: pam_unix(cron:session): session closed for user mail
+2026-07-27T06:11:01.877922-03:00 mail CRON[350924]: pam_unix(cron:session): session opened for user mail(uid=8) by (uid=0)
+2026-07-27T06:11:02.285010-03:00 mail CRON[350924]: pam_unix(cron:session): session closed for user mail
+2026-07-27T06:12:01.289981-03:00 mail CRON[351008]: pam_unix(cron:session): session opened for user mail(uid=8) by (uid=0)
+2026-07-27T06:12:01.998808-03:00 mail CRON[351008]: pam_unix(cron:session): session closed for user mail
+2026-07-27T06:25:01.007692-03:00 mail CRON[351932]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T06:25:01.007695-03:00 mail CRON[351933]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T06:25:01.292509-03:00 mail CRON[351933]: pam_unix(cron:session): session closed for user root
+2026-07-27T06:25:01.419173-03:00 mail CRON[351932]: pam_unix(cron:session): session closed for user root
+2026-07-27T06:26:01.422945-03:00 mail CRON[352019]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T06:26:01.745382-03:00 mail CRON[352019]: pam_unix(cron:session): session closed for user root
+2026-07-27T06:27:01.749414-03:00 mail CRON[352109]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T06:27:02.055680-03:00 mail CRON[352109]: pam_unix(cron:session): session closed for user root
+2026-07-27T06:28:01.060741-03:00 mail CRON[352187]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T06:28:01.453288-03:00 mail CRON[352187]: pam_unix(cron:session): session closed for user root
+2026-07-27T06:29:01.457311-03:00 mail CRON[352267]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T06:29:02.195153-03:00 mail CRON[352267]: pam_unix(cron:session): session closed for user root
+2026-07-27T06:30:01.199033-03:00 mail CRON[352346]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T06:30:01.525708-03:00 mail CRON[352346]: pam_unix(cron:session): session closed for user root
+2026-07-27T06:31:01.529895-03:00 mail CRON[352427]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T06:31:01.535441-03:00 mail CRON[352427]: pam_unix(cron:session): session closed for user root
+2026-07-27T06:32:01.539148-03:00 mail CRON[352500]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T06:32:01.547689-03:00 mail CRON[352500]: pam_unix(cron:session): session closed for user root
+2026-07-27T06:39:01.554728-03:00 mail CRON[352995]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T06:39:02.093080-03:00 mail CRON[352995]: pam_unix(cron:session): session closed for user root
+2026-07-27T07:06:45.024017-03:00 mail CRON[337640]: pam_unix(cron:session): session closed for user root
+2026-07-27T07:09:01.030516-03:00 mail CRON[355103]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T07:09:01.607634-03:00 mail CRON[355103]: pam_unix(cron:session): session closed for user root
+2026-07-27T07:39:01.620290-03:00 mail CRON[357252]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T07:39:02.191407-03:00 mail CRON[357252]: pam_unix(cron:session): session closed for user root
+2026-07-27T08:09:01.203480-03:00 mail CRON[359398]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T08:09:01.762641-03:00 mail CRON[359398]: pam_unix(cron:session): session closed for user root
+2026-07-27T08:39:01.776740-03:00 mail CRON[361541]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T08:39:02.348665-03:00 mail CRON[361541]: pam_unix(cron:session): session closed for user root
+2026-07-27T09:09:01.362196-03:00 mail CRON[363648]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T09:09:01.917948-03:00 mail CRON[363648]: pam_unix(cron:session): session closed for user root
+2026-07-27T09:39:01.931550-03:00 mail CRON[365793]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T09:39:02.488173-03:00 mail CRON[365793]: pam_unix(cron:session): session closed for user root
+2026-07-27T10:09:01.502890-03:00 mail CRON[367933]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T10:09:02.054196-03:00 mail CRON[367933]: pam_unix(cron:session): session closed for user root
+2026-07-27T10:39:01.066463-03:00 mail CRON[370060]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T10:39:01.639568-03:00 mail CRON[370060]: pam_unix(cron:session): session closed for user root
+2026-07-27T11:09:01.652535-03:00 mail CRON[372195]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T11:09:02.242248-03:00 mail CRON[372195]: pam_unix(cron:session): session closed for user root
+2026-07-27T11:39:01.255220-03:00 mail CRON[374340]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T11:39:01.830963-03:00 mail CRON[374340]: pam_unix(cron:session): session closed for user root
+2026-07-27T12:09:01.843388-03:00 mail CRON[376446]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T12:09:02.391305-03:00 mail CRON[376446]: pam_unix(cron:session): session closed for user root
+2026-07-27T12:39:01.403325-03:00 mail CRON[378590]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T12:39:01.966301-03:00 mail CRON[378590]: pam_unix(cron:session): session closed for user root
+2026-07-27T13:09:01.978148-03:00 mail CRON[380735]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T13:09:02.544322-03:00 mail CRON[380735]: pam_unix(cron:session): session closed for user root
+2026-07-27T13:39:01.558011-03:00 mail CRON[382881]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T13:39:01.944928-03:00 mail CRON[382881]: pam_unix(cron:session): session closed for user root
+2026-07-27T14:09:01.958735-03:00 mail CRON[384993]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T14:09:02.509643-03:00 mail CRON[384993]: pam_unix(cron:session): session closed for user root
+2026-07-27T14:39:01.524198-03:00 mail CRON[387132]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T14:39:01.920014-03:00 mail CRON[387132]: pam_unix(cron:session): session closed for user root
+2026-07-27T15:09:01.934481-03:00 mail CRON[389270]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T15:09:02.501785-03:00 mail CRON[389270]: pam_unix(cron:session): session closed for user root
+2026-07-27T15:39:01.513905-03:00 mail CRON[391412]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T15:39:02.043878-03:00 mail CRON[391412]: pam_unix(cron:session): session closed for user root
+2026-07-27T16:09:01.055254-03:00 mail CRON[393516]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T16:09:01.587028-03:00 mail CRON[393516]: pam_unix(cron:session): session closed for user root
+2026-07-27T16:39:01.599024-03:00 mail CRON[395658]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T16:39:02.166989-03:00 mail CRON[395658]: pam_unix(cron:session): session closed for user root
+2026-07-27T17:09:01.178277-03:00 mail CRON[397801]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T17:09:01.742846-03:00 mail CRON[397801]: pam_unix(cron:session): session closed for user root
+2026-07-27T17:39:01.756160-03:00 mail CRON[399904]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T17:39:02.321374-03:00 mail CRON[399904]: pam_unix(cron:session): session closed for user root
+2026-07-27T18:09:01.333300-03:00 mail CRON[402045]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T18:09:01.883827-03:00 mail CRON[402045]: pam_unix(cron:session): session closed for user root
+2026-07-27T18:39:01.895674-03:00 mail CRON[404189]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T18:39:02.440843-03:00 mail CRON[404189]: pam_unix(cron:session): session closed for user root
+2026-07-27T19:09:01.453388-03:00 mail CRON[406297]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T19:09:02.007014-03:00 mail CRON[406297]: pam_unix(cron:session): session closed for user root
+2026-07-27T19:39:01.018692-03:00 mail CRON[408435]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T19:39:01.559119-03:00 mail CRON[408435]: pam_unix(cron:session): session closed for user root
+2026-07-27T20:09:01.571200-03:00 mail CRON[410580]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T20:09:02.134727-03:00 mail CRON[410580]: pam_unix(cron:session): session closed for user root
+2026-07-27T20:39:01.145811-03:00 mail CRON[412725]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T20:39:01.710553-03:00 mail CRON[412725]: pam_unix(cron:session): session closed for user root
+2026-07-27T21:09:01.723254-03:00 mail CRON[414847]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T21:09:02.275646-03:00 mail CRON[414847]: pam_unix(cron:session): session closed for user root
+2026-07-27T21:39:01.287462-03:00 mail CRON[416991]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T21:39:01.862513-03:00 mail CRON[416991]: pam_unix(cron:session): session closed for user root
+2026-07-27T22:09:01.875613-03:00 mail CRON[419155]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T22:09:02.418671-03:00 mail CRON[419155]: pam_unix(cron:session): session closed for user root
+2026-07-27T22:39:01.434209-03:00 mail CRON[421261]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T22:39:01.991782-03:00 mail CRON[421261]: pam_unix(cron:session): session closed for user root
+2026-07-27T23:09:01.005165-03:00 mail CRON[423422]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T23:09:01.558166-03:00 mail CRON[423422]: pam_unix(cron:session): session closed for user root
+2026-07-27T23:39:01.573004-03:00 mail CRON[425581]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-27T23:39:02.119035-03:00 mail CRON[425581]: pam_unix(cron:session): session closed for user root
+2026-07-28T00:01:01.131868-03:00 mail CRON[427158]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T00:01:01.171123-03:00 mail CRON[427158]: pam_unix(cron:session): session closed for user root
+2026-07-28T00:09:01.177817-03:00 mail CRON[427732]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T00:09:01.734743-03:00 mail CRON[427732]: pam_unix(cron:session): session closed for user root
+2026-07-28T00:39:01.747223-03:00 mail CRON[429841]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T00:39:02.289594-03:00 mail CRON[429841]: pam_unix(cron:session): session closed for user root
+2026-07-28T01:09:01.301312-03:00 mail CRON[431985]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T01:09:01.877605-03:00 mail CRON[431985]: pam_unix(cron:session): session closed for user root
+2026-07-28T01:39:01.888757-03:00 mail CRON[434121]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T01:39:02.424016-03:00 mail CRON[434121]: pam_unix(cron:session): session closed for user root
+2026-07-28T02:09:01.434384-03:00 mail CRON[436252]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T02:09:01.994908-03:00 mail CRON[436252]: pam_unix(cron:session): session closed for user root
+2026-07-28T02:39:01.007677-03:00 mail CRON[438403]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T02:39:01.560666-03:00 mail CRON[438403]: pam_unix(cron:session): session closed for user root
+2026-07-28T03:09:01.573036-03:00 mail CRON[440550]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T03:09:02.182830-03:00 mail CRON[440550]: pam_unix(cron:session): session closed for user root
+2026-07-28T03:10:01.185804-03:00 mail CRON[440663]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T03:10:01.185807-03:00 mail CRON[440664]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T03:10:01.191011-03:00 mail CRON[440663]: pam_unix(cron:session): session closed for user root
+2026-07-28T03:39:01.202717-03:00 mail CRON[442712]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T03:39:01.768599-03:00 mail CRON[442712]: pam_unix(cron:session): session closed for user root
+2026-07-28T04:09:01.780861-03:00 mail CRON[444833]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T04:09:02.350891-03:00 mail CRON[444833]: pam_unix(cron:session): session closed for user root
+2026-07-28T04:32:42.704076-03:00 mail CRON[440664]: pam_unix(cron:session): session closed for user root
+2026-07-28T04:39:01.712283-03:00 mail CRON[446977]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T04:39:02.264838-03:00 mail CRON[446977]: pam_unix(cron:session): session closed for user root
+2026-07-28T05:09:01.277330-03:00 mail CRON[449151]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T05:09:01.836415-03:00 mail CRON[449151]: pam_unix(cron:session): session closed for user root
+2026-07-28T05:30:01.847340-03:00 mail CRON[450663]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T05:30:02.389361-03:00 mail CRON[450663]: pam_unix(cron:session): session closed for user root
+2026-07-28T05:39:01.398287-03:00 mail CRON[451406]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T05:39:01.957263-03:00 mail CRON[451406]: pam_unix(cron:session): session closed for user root
+2026-07-28T06:09:01.970741-03:00 mail CRON[453583]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T06:09:02.533002-03:00 mail CRON[453583]: pam_unix(cron:session): session closed for user root
+2026-07-28T06:10:01.537121-03:00 mail CRON[453696]: pam_unix(cron:session): session opened for user mail(uid=8) by (uid=0)
+2026-07-28T06:10:01.964014-03:00 mail CRON[453696]: pam_unix(cron:session): session closed for user mail
+2026-07-28T06:11:01.967681-03:00 mail CRON[453777]: pam_unix(cron:session): session opened for user mail(uid=8) by (uid=0)
+2026-07-28T06:11:02.380864-03:00 mail CRON[453777]: pam_unix(cron:session): session closed for user mail
+2026-07-28T06:12:01.384070-03:00 mail CRON[453861]: pam_unix(cron:session): session opened for user mail(uid=8) by (uid=0)
+2026-07-28T06:12:02.097391-03:00 mail CRON[453861]: pam_unix(cron:session): session closed for user mail
+2026-07-28T06:25:01.105154-03:00 mail CRON[454799]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T06:25:01.105158-03:00 mail CRON[454798]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T06:25:01.398471-03:00 mail CRON[454799]: pam_unix(cron:session): session closed for user root
+2026-07-28T06:25:01.538855-03:00 mail CRON[454798]: pam_unix(cron:session): session closed for user root
+2026-07-28T06:26:01.543254-03:00 mail CRON[454885]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T06:26:01.888946-03:00 mail CRON[454885]: pam_unix(cron:session): session closed for user root
+2026-07-28T06:27:01.892702-03:00 mail CRON[454967]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T06:27:02.184171-03:00 mail CRON[454967]: pam_unix(cron:session): session closed for user root
+2026-07-28T06:28:01.187768-03:00 mail CRON[455045]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T06:28:01.589508-03:00 mail CRON[455045]: pam_unix(cron:session): session closed for user root
+2026-07-28T06:29:01.594219-03:00 mail CRON[455125]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T06:29:01.987832-03:00 mail CRON[455125]: pam_unix(cron:session): session closed for user root
+2026-07-28T06:30:01.992781-03:00 mail CRON[455204]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T06:30:02.120961-03:00 mail CRON[455204]: pam_unix(cron:session): session closed for user root
+2026-07-28T06:31:01.124841-03:00 mail CRON[455285]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T06:31:01.130145-03:00 mail CRON[455285]: pam_unix(cron:session): session closed for user root
+2026-07-28T06:32:01.134230-03:00 mail CRON[455358]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T06:32:01.144717-03:00 mail CRON[455358]: pam_unix(cron:session): session closed for user root
+2026-07-28T06:39:01.150551-03:00 mail CRON[455856]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T06:39:01.543039-03:00 mail CRON[455856]: pam_unix(cron:session): session closed for user root
+2026-07-28T07:09:01.554706-03:00 mail CRON[458015]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T07:09:02.118456-03:00 mail CRON[458015]: pam_unix(cron:session): session closed for user root
+2026-07-28T07:39:01.133525-03:00 mail CRON[460120]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T07:39:01.712298-03:00 mail CRON[460120]: pam_unix(cron:session): session closed for user root
+2026-07-28T08:09:01.725970-03:00 mail CRON[462256]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T08:09:02.299678-03:00 mail CRON[462256]: pam_unix(cron:session): session closed for user root
+2026-07-28T08:39:01.314845-03:00 mail CRON[464391]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T08:39:01.911653-03:00 mail CRON[464391]: pam_unix(cron:session): session closed for user root
+2026-07-28T09:09:01.927263-03:00 mail CRON[466506]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T09:09:02.475198-03:00 mail CRON[466506]: pam_unix(cron:session): session closed for user root
+2026-07-28T09:39:01.488241-03:00 mail CRON[468648]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T09:39:02.042011-03:00 mail CRON[468648]: pam_unix(cron:session): session closed for user root
+2026-07-28T10:09:01.055842-03:00 mail CRON[470795]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T10:09:01.629592-03:00 mail CRON[470795]: pam_unix(cron:session): session closed for user root
+2026-07-28T10:39:01.641647-03:00 mail CRON[472942]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T10:39:02.179950-03:00 mail CRON[472942]: pam_unix(cron:session): session closed for user root
+2026-07-28T11:09:01.192736-03:00 mail CRON[475044]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T11:09:01.758617-03:00 mail CRON[475044]: pam_unix(cron:session): session closed for user root
+2026-07-28T11:39:01.771260-03:00 mail CRON[477188]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T11:39:02.346751-03:00 mail CRON[477188]: pam_unix(cron:session): session closed for user root
+2026-07-28T12:09:01.360579-03:00 mail CRON[479324]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T12:09:01.914823-03:00 mail CRON[479324]: pam_unix(cron:session): session closed for user root
+2026-07-28T12:39:01.927242-03:00 mail CRON[481431]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T12:39:02.508681-03:00 mail CRON[481431]: pam_unix(cron:session): session closed for user root
+2026-07-28T13:09:01.521499-03:00 mail CRON[483575]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T13:09:02.049240-03:00 mail CRON[483575]: pam_unix(cron:session): session closed for user root
+2026-07-28T13:39:01.060910-03:00 mail CRON[485715]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T13:39:01.597983-03:00 mail CRON[485715]: pam_unix(cron:session): session closed for user root
+2026-07-28T14:09:01.609874-03:00 mail CRON[487858]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T14:09:02.151554-03:00 mail CRON[487858]: pam_unix(cron:session): session closed for user root
+2026-07-28T14:39:01.163298-03:00 mail CRON[489964]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T14:39:01.761948-03:00 mail CRON[489964]: pam_unix(cron:session): session closed for user root
+2026-07-28T15:09:01.773072-03:00 mail CRON[492105]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T15:09:02.363024-03:00 mail CRON[492105]: pam_unix(cron:session): session closed for user root
+2026-07-28T15:39:01.374619-03:00 mail CRON[494250]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T15:39:01.936585-03:00 mail CRON[494250]: pam_unix(cron:session): session closed for user root
+2026-07-28T16:09:01.949252-03:00 mail CRON[496376]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T16:09:02.500073-03:00 mail CRON[496376]: pam_unix(cron:session): session closed for user root
+2026-07-28T16:39:01.511646-03:00 mail CRON[498529]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T16:39:02.050698-03:00 mail CRON[498529]: pam_unix(cron:session): session closed for user root
+2026-07-28T17:09:01.061849-03:00 mail CRON[500672]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T17:09:01.612107-03:00 mail CRON[500672]: pam_unix(cron:session): session closed for user root
+2026-07-28T17:39:01.623471-03:00 mail CRON[502817]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T17:39:02.219567-03:00 mail CRON[502817]: pam_unix(cron:session): session closed for user root
+2026-07-28T18:09:01.232544-03:00 mail CRON[504922]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T18:09:01.808525-03:00 mail CRON[504922]: pam_unix(cron:session): session closed for user root
+2026-07-28T18:39:01.820599-03:00 mail CRON[507069]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T18:39:02.379795-03:00 mail CRON[507069]: pam_unix(cron:session): session closed for user root
+2026-07-28T19:09:01.392017-03:00 mail CRON[509207]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T19:09:01.753814-03:00 mail CRON[509207]: pam_unix(cron:session): session closed for user root
+2026-07-28T19:39:01.765099-03:00 mail CRON[511349]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T19:39:02.335531-03:00 mail CRON[511349]: pam_unix(cron:session): session closed for user root
+2026-07-28T20:09:01.349444-03:00 mail CRON[513464]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T20:09:01.926329-03:00 mail CRON[513464]: pam_unix(cron:session): session closed for user root
+2026-07-28T20:39:01.939992-03:00 mail CRON[515609]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T20:39:02.489949-03:00 mail CRON[515609]: pam_unix(cron:session): session closed for user root
+2026-07-28T21:09:01.502232-03:00 mail CRON[517758]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T21:09:02.056479-03:00 mail CRON[517758]: pam_unix(cron:session): session closed for user root
+2026-07-28T21:39:01.069927-03:00 mail CRON[519875]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T21:39:01.625257-03:00 mail CRON[519875]: pam_unix(cron:session): session closed for user root
+2026-07-28T22:09:01.637105-03:00 mail CRON[522025]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2026-07-28T22:09:02.186819-03:00 mail CRON[522025]: pam_unix(cron:session): session closed for user root

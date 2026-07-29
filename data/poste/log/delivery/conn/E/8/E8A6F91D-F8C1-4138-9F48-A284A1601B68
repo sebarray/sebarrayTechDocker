@@ -1,0 +1,203 @@
+2026-07-28T11:40:08.111Z [NOTICE] [core] connect ip=209.97.149.89 port=52426 local_ip=192.255.226.25 local_port=465
+2026-07-28T11:40:08.112Z [DEBUG] [core] running connect_init hooks
+2026-07-28T11:40:08.112Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-28T11:40:08.114Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-28T11:40:08.114Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-28T11:40:08.114Z [DEBUG] [relay] checking 209.97.149.89 in relay_acl_allow
+2026-07-28T11:40:08.114Z [DEBUG] [relay] checking if 209.97.149.89 is in 192.255.226.25/32
+2026-07-28T11:40:08.114Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-28T11:40:08.114Z [DEBUG] [core] running connect_init_respond
+2026-07-28T11:40:08.114Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-28T11:40:08.128Z [DEBUG] [core] [early_talker] state=4 esmtp=false line="GET /favicon.ico HTTP/1.1"
+2026-07-28T11:40:08.145Z [DEBUG] [core] running connect hooks
+2026-07-28T11:40:08.145Z [DEBUG] [core] running connect hook in guard plugin
+2026-07-28T11:40:08.145Z [DEBUG] [core] hook=connect plugin=guard function=hook_connect params="" retval=CONT msg=""
+2026-07-28T11:40:08.145Z [DEBUG] [core] running connect hook in relay plugin
+2026-07-28T11:40:08.145Z [DEBUG] [core] hook=connect plugin=relay function=pass_relaying params="" retval=CONT msg=""
+2026-07-28T11:40:08.145Z [DEBUG] [core] running connect hook in geoip plugin
+2026-07-28T11:40:08.146Z [INFO] [geoip] US
+2026-07-28T11:40:08.146Z [DEBUG] [core] hook=connect plugin=geoip function=lookup_maxmind params="" retval=CONT msg=""
+2026-07-28T11:40:08.146Z [PROTOCOL] [core] S: 220 mail.sebarray.tech ESMTP Haraka ready (E8A6F9)
+2026-07-28T11:40:08.146Z [PROTOCOL] [core] C: GET /favicon.ico HTTP/1.1 state=1
+2026-07-28T11:40:08.146Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.146Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.146Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=GET retval=CONT msg=""
+2026-07-28T11:40:08.146Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.146Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=GET retval=CONT msg=""
+2026-07-28T11:40:08.146Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.146Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=GET retval=CONT msg=""
+2026-07-28T11:40:08.146Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.146Z [PROTOCOL] [core] C: Host: 192.255.226.25 state=1
+2026-07-28T11:40:08.146Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.146Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.146Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=Host: retval=CONT msg=""
+2026-07-28T11:40:08.147Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.147Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=Host: retval=CONT msg=""
+2026-07-28T11:40:08.147Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.147Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=Host: retval=CONT msg=""
+2026-07-28T11:40:08.147Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.147Z [PROTOCOL] [core] C: Connection: keep-alive state=1
+2026-07-28T11:40:08.147Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.147Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.147Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=Connection: retval=CONT msg=""
+2026-07-28T11:40:08.147Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.147Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=Connection: retval=CONT msg=""
+2026-07-28T11:40:08.147Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.147Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=Connection: retval=CONT msg=""
+2026-07-28T11:40:08.147Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.147Z [PROTOCOL] [core] C: sec-ch-ua: "Google Chrome";v="142", "Not-A.Brand";v="8", "Chromium";v="142" state=1
+2026-07-28T11:40:08.147Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.147Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.147Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=sec-ch-ua: retval=CONT msg=""
+2026-07-28T11:40:08.147Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.147Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=sec-ch-ua: retval=CONT msg=""
+2026-07-28T11:40:08.147Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.147Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=sec-ch-ua: retval=CONT msg=""
+2026-07-28T11:40:08.147Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.147Z [PROTOCOL] [core] C: sec-ch-ua-mobile: ?0 state=1
+2026-07-28T11:40:08.147Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.147Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.148Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=sec-ch-ua-mobile: retval=CONT msg=""
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.148Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=sec-ch-ua-mobile: retval=CONT msg=""
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.148Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=sec-ch-ua-mobile: retval=CONT msg=""
+2026-07-28T11:40:08.148Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.148Z [PROTOCOL] [core] C: sec-ch-ua-platform: "Linux" state=1
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.148Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=sec-ch-ua-platform: retval=CONT msg=""
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.148Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=sec-ch-ua-platform: retval=CONT msg=""
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.148Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=sec-ch-ua-platform: retval=CONT msg=""
+2026-07-28T11:40:08.148Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.148Z [PROTOCOL] [core] C: Upgrade-Insecure-Requests: 1 state=1
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.148Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=Upgrade-Insecure-Requests: retval=CONT msg=""
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.148Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=Upgrade-Insecure-Requests: retval=CONT msg=""
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.148Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=Upgrade-Insecure-Requests: retval=CONT msg=""
+2026-07-28T11:40:08.148Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.148Z [PROTOCOL] [core] C: User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 state=1
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.148Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=User-Agent: retval=CONT msg=""
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.148Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=User-Agent: retval=CONT msg=""
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.148Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=User-Agent: retval=CONT msg=""
+2026-07-28T11:40:08.148Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.148Z [PROTOCOL] [core] C: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 state=1
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.148Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=Accept: retval=CONT msg=""
+2026-07-28T11:40:08.148Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.148Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=Accept: retval=CONT msg=""
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.149Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=Accept: retval=CONT msg=""
+2026-07-28T11:40:08.149Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.149Z [PROTOCOL] [core] C: Sec-GPC: 1 state=1
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.149Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=Sec-GPC: retval=CONT msg=""
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.149Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=Sec-GPC: retval=CONT msg=""
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.149Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=Sec-GPC: retval=CONT msg=""
+2026-07-28T11:40:08.149Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.149Z [PROTOCOL] [core] C: Accept-Language: en-US,en;q=0.5 state=1
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.149Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=Accept-Language: retval=CONT msg=""
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.149Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=Accept-Language: retval=CONT msg=""
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.149Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=Accept-Language: retval=CONT msg=""
+2026-07-28T11:40:08.149Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.149Z [PROTOCOL] [core] C: Sec-Fetch-Site: none state=1
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.149Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=Sec-Fetch-Site: retval=CONT msg=""
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.149Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=Sec-Fetch-Site: retval=CONT msg=""
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.149Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=Sec-Fetch-Site: retval=CONT msg=""
+2026-07-28T11:40:08.149Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.149Z [PROTOCOL] [core] C: Sec-Fetch-Mode: navigate state=1
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.149Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=Sec-Fetch-Mode: retval=CONT msg=""
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.149Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=Sec-Fetch-Mode: retval=CONT msg=""
+2026-07-28T11:40:08.149Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.149Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=Sec-Fetch-Mode: retval=CONT msg=""
+2026-07-28T11:40:08.149Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.149Z [PROTOCOL] [core] C: Sec-Fetch-User: ?1 state=1
+2026-07-28T11:40:08.150Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.150Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.150Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=Sec-Fetch-User: retval=CONT msg=""
+2026-07-28T11:40:08.150Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.150Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=Sec-Fetch-User: retval=CONT msg=""
+2026-07-28T11:40:08.150Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.150Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=Sec-Fetch-User: retval=CONT msg=""
+2026-07-28T11:40:08.150Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.150Z [PROTOCOL] [core] C: Sec-Fetch-Dest: document state=1
+2026-07-28T11:40:08.150Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.150Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.150Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=Sec-Fetch-Dest: retval=CONT msg=""
+2026-07-28T11:40:08.150Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.150Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=Sec-Fetch-Dest: retval=CONT msg=""
+2026-07-28T11:40:08.150Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.150Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=Sec-Fetch-Dest: retval=CONT msg=""
+2026-07-28T11:40:08.150Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.150Z [PROTOCOL] [core] C: Accept-Encoding: gzip, deflate state=1
+2026-07-28T11:40:08.150Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.150Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.150Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=Accept-Encoding: retval=CONT msg=""
+2026-07-28T11:40:08.150Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.150Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=Accept-Encoding: retval=CONT msg=""
+2026-07-28T11:40:08.150Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.151Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=Accept-Encoding: retval=CONT msg=""
+2026-07-28T11:40:08.151Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.151Z [PROTOCOL] [core] C: Referer: https://192.255.226.25:465/ state=1
+2026-07-28T11:40:08.151Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.151Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.151Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=Referer: retval=CONT msg=""
+2026-07-28T11:40:08.151Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.151Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=Referer: retval=CONT msg=""
+2026-07-28T11:40:08.151Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.151Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=Referer: retval=CONT msg=""
+2026-07-28T11:40:08.151Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:08.151Z [PROTOCOL] [core] C: state=1
+2026-07-28T11:40:08.151Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T11:40:08.151Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T11:40:08.151Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params="" retval=CONT msg=""
+2026-07-28T11:40:08.151Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T11:40:08.151Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params="" retval=CONT msg=""
+2026-07-28T11:40:08.151Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T11:40:08.151Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params="" retval=CONT msg=""
+2026-07-28T11:40:08.151Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T11:40:11.155Z [INFO] [core] client half closed connection ip=209.97.149.89
+2026-07-28T11:40:11.155Z [DEBUG] [core] client has disconnected
+2026-07-28T11:40:11.155Z [DEBUG] [core] running disconnect hooks
+2026-07-28T11:40:11.155Z [DEBUG] [core] client has disconnected
+2026-07-28T11:40:11.155Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-28T11:40:11.158Z [DEBUG] [core] client has disconnected
+2026-07-28T11:40:11.158Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T11:40:11.158Z [DEBUG] [core] client has disconnected
+2026-07-28T11:40:11.158Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-28T11:40:11.158Z [DEBUG] [block_bad_connections] Invalid connections: 2/100
+2026-07-28T11:40:11.159Z [DEBUG] [core] client has disconnected
+2026-07-28T11:40:11.159Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T11:40:11.159Z [DEBUG] [core] client has disconnected
+2026-07-28T11:40:11.159Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-28T11:40:11.159Z [DEBUG] [core] client has disconnected
+2026-07-28T11:40:11.159Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T11:40:11.159Z [DEBUG] [core] client has disconnected
+2026-07-28T11:40:11.159Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-28T11:40:11.159Z [DEBUG] [core] client has disconnected
+2026-07-28T11:40:11.159Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T11:40:11.160Z [NOTICE] [core] disconnect ip=209.97.149.89 rdns=NXDOMAIN helo="" relay=N early=Y esmtp=N tls=Y pipe=N errors=18 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="500 Unrecognized command" time=3.048

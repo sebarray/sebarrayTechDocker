@@ -1,0 +1,82 @@
+2026-07-26T23:58:44.257Z [NOTICE] [core] connect ip=68.183.105.175 port=25351 local_ip=192.255.226.25 local_port=25
+2026-07-26T23:58:44.257Z [DEBUG] [core] running connect_init hooks
+2026-07-26T23:58:44.257Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-26T23:58:44.259Z [DEBUG] [core] [early_talker] state=4 esmtp=false line=EHLO
+2026-07-26T23:58:44.262Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-26T23:58:44.262Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-26T23:58:44.269Z [DEBUG] [core] hook=connect_init plugin=karma function=results_init params="" retval=CONT msg=""
+2026-07-26T23:58:44.269Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-26T23:58:44.270Z [DEBUG] [core] hook=connect_init plugin=karma function=ip_history_from_redis params="" retval=CONT msg=""
+2026-07-26T23:58:44.270Z [DEBUG] [core] running connect_init hook in early_talker plugin
+2026-07-26T23:58:47.269Z [INFO] [core] hook=connect_init plugin=early_talker function=early_talker params="" retval=DENYDISCONNECT msg="You talk too soon"
+2026-07-26T23:58:47.269Z [DEBUG] [core] running connect_init hook in fcrdns plugin
+2026-07-26T23:58:47.269Z [DEBUG] [core] hook=connect_init plugin=fcrdns function=initialize_fcrdns params="" retval=CONT msg=""
+2026-07-26T23:58:47.269Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-26T23:58:47.270Z [DEBUG] [relay] checking 68.183.105.175 in relay_acl_allow
+2026-07-26T23:58:47.270Z [DEBUG] [relay] checking if 68.183.105.175 is in 192.255.226.25/32
+2026-07-26T23:58:47.270Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-26T23:58:47.270Z [DEBUG] [core] running connect_init_respond
+2026-07-26T23:58:47.270Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-26T23:58:47.270Z [DEBUG] [core] running lookup_rdns hook in p0f plugin
+2026-07-26T23:58:47.270Z [INFO] [p0f] os="Linux 2.2.x-3.x (barebone)" link_type="Ethernet or modem" distance=12 total_conn=1
+2026-07-26T23:58:47.270Z [DEBUG] [core] hook=lookup_rdns plugin=p0f function=query_p0f params="" retval=CONT msg=""
+2026-07-26T23:58:47.270Z [DEBUG] [core] running lookup_rdns hook in fcrdns plugin
+2026-07-26T23:58:47.293Z [DEBUG] [fcrdns] rdns.reverse(68.183.105.175)
+2026-07-26T23:58:47.293Z [DEBUG] [fcrdns] PTRdomain: portscanner-nyc1-01.prod.cyberresilience.io
+2026-07-26T23:58:47.319Z [INFO] [fcrdns] ip=68.183.105.175  rdns="portscanner-nyc1-01.prod.cyberresilience.io" rdns_len=1 fcrdns="portscanner-nyc1-01.prod.cyberresilience.io" fcrdns_len=1 other_ips_len=0 invalid_tlds=0 generic_rdns=false
+2026-07-26T23:58:47.319Z [DEBUG] [core] hook=lookup_rdns plugin=fcrdns function=do_dns_lookups params="" retval=CONT msg=""
+2026-07-26T23:58:47.319Z [DEBUG] [core] running lookup_rdns hook in uribl plugin
+2026-07-26T23:58:47.331Z [DEBUG] [uribl] (rdns) found 1 items for lookup
+2026-07-26T23:58:47.331Z [DEBUG] [uribl] (rdns) checking: portscanner-nyc1-01.prod.cyberresilience.io
+2026-07-26T23:58:47.389Z [DEBUG] [uribl] portscanner-nyc1-01.prod.cyberresilience.io.dbl.spamhaus.org. => (Error: queryA ENOTFOUND portscanner-nyc1-01.prod.cyberresilience.io.dbl.spamhaus.org.)
+2026-07-26T23:58:47.389Z [DEBUG] [core] hook=lookup_rdns plugin=uribl function=lookup_remote_ip params="" retval=CONT msg=""
+2026-07-26T23:58:47.389Z [DEBUG] [core] running lookup_rdns hook in asn plugin
+2026-07-26T23:58:47.544Z [INFO] [asn] asn: 14061, net: 68.183.96.0/20
+2026-07-26T23:58:47.544Z [DEBUG] [core] hook=lookup_rdns plugin=asn function=lookup_via_dns params="" retval=CONT msg=""
+2026-07-26T23:58:47.566Z [DEBUG] [core] running connect hooks
+2026-07-26T23:58:47.567Z [DEBUG] [core] running connect hook in guard plugin
+2026-07-26T23:58:47.567Z [DEBUG] [core] hook=connect plugin=guard function=hook_connect params="" retval=CONT msg=""
+2026-07-26T23:58:47.567Z [DEBUG] [core] running connect hook in karma plugin
+2026-07-26T23:58:47.567Z [DEBUG] [karma] applied early_talker:-3
+2026-07-26T23:58:47.567Z [DEBUG] [karma] static tarpit
+2026-07-26T23:58:47.567Z [DEBUG] [karma] tarpitting connect for 1s
+2026-07-26T23:58:48.566Z [DEBUG] [karma] tarpit connect end
+2026-07-26T23:58:48.566Z [DEBUG] [core] hook=connect plugin=karma function=hook_connect params="" retval=CONT msg=""
+2026-07-26T23:58:48.566Z [DEBUG] [core] running connect hook in dns-list plugin
+2026-07-26T23:58:48.639Z [INFO] [dns-list] pass:b.barracudacentral.org, psbl.surriel.com, bl.spamcop.net, zen.spamhaus.org, dnsbl.justspam.org, dnsbl-1.uceprotect.net, truncate.gbudb.net
+2026-07-26T23:58:48.639Z [DEBUG] [core] hook=connect plugin=dns-list function=onConnect params="" retval=CONT msg=""
+2026-07-26T23:58:48.639Z [DEBUG] [core] running connect hook in relay plugin
+2026-07-26T23:58:48.639Z [DEBUG] [core] hook=connect plugin=relay function=pass_relaying params="" retval=CONT msg=""
+2026-07-26T23:58:48.639Z [DEBUG] [core] running connect hook in geoip plugin
+2026-07-26T23:58:48.640Z [INFO] [geoip] US
+2026-07-26T23:58:48.640Z [DEBUG] [core] hook=connect plugin=geoip function=lookup_maxmind params="" retval=CONT msg=""
+2026-07-26T23:58:48.640Z [PROTOCOL] [core] S: 220 mail.sebarray.tech ESMTP Haraka ready (B24E7D)
+2026-07-26T23:58:48.640Z [PROTOCOL] [core] C: EHLO state=1
+2026-07-26T23:58:48.640Z [PROTOCOL] [core] S: 501 EHLO requires domain/address - see RFC-2821 4.1.1.1
+2026-07-26T23:58:48.784Z [INFO] [core] client connection error: Error: read ECONNRESET ip=68.183.105.175
+2026-07-26T23:58:48.784Z [DEBUG] [core] client has disconnected
+2026-07-26T23:58:48.784Z [DEBUG] [core] running disconnect hooks
+2026-07-26T23:58:48.784Z [DEBUG] [core] client has disconnected
+2026-07-26T23:58:48.784Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-26T23:58:48.785Z [DEBUG] [core] client has disconnected
+2026-07-26T23:58:48.785Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-26T23:58:48.785Z [DEBUG] [core] client has disconnected
+2026-07-26T23:58:48.785Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-26T23:58:48.785Z [DEBUG] [block_bad_connections] Invalid connections: 1/100
+2026-07-26T23:58:48.785Z [DEBUG] [core] client has disconnected
+2026-07-26T23:58:48.785Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-26T23:58:48.786Z [DEBUG] [core] client has disconnected
+2026-07-26T23:58:48.786Z [DEBUG] [core] running disconnect hook in karma plugin
+2026-07-26T23:58:48.786Z [INFO] [karma] score: -3, fail:early_talker
+2026-07-26T23:58:48.786Z [DEBUG] [core] client has disconnected
+2026-07-26T23:58:48.786Z [DEBUG] [core] hook=disconnect plugin=karma function=hook_disconnect params="" retval=CONT msg=""
+2026-07-26T23:58:48.786Z [DEBUG] [core] client has disconnected
+2026-07-26T23:58:48.786Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-26T23:58:48.786Z [DEBUG] [core] client has disconnected
+2026-07-26T23:58:48.786Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-26T23:58:48.786Z [DEBUG] [core] client has disconnected
+2026-07-26T23:58:48.786Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-26T23:58:48.786Z [DEBUG] [core] client has disconnected
+2026-07-26T23:58:48.786Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-26T23:58:48.786Z [NOTICE] [core] disconnect ip=68.183.105.175 rdns=portscanner-nyc1-01.prod.cyberresilience.io helo="" relay=N early=Y esmtp=N tls=N pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="501 EHLO requires domain/address - see RFC-2821 4.1.1.1" time=4.529
+2026-07-26T23:58:48.787Z [DEBUG] [karma] unsubscribed from result-B24E7DDA-04CB-4AD4-B0F0-9D4D1375E0C7*

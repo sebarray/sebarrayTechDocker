@@ -1,0 +1,97 @@
+2026-07-28T16:32:27.627Z [DEBUG] [core] running mail hooks
+2026-07-28T16:32:27.627Z [DEBUG] [core] running mail hook in bounce plugin
+2026-07-28T16:32:27.627Z [INFO] [bounce] isa: no
+2026-07-28T16:32:27.628Z [DEBUG] [core] hook=mail plugin=bounce function=check_null_sender params=<test@sebarray.tech> retval=CONT msg=""
+2026-07-28T16:32:27.628Z [DEBUG] [core] running mail hook in guard plugin
+2026-07-28T16:32:27.628Z [DEBUG] [core] hook=mail plugin=guard function=hook_mail params=<test@sebarray.tech> retval=CONT msg=""
+2026-07-28T16:32:27.628Z [DEBUG] [core] running mail hook in karma plugin
+2026-07-28T16:32:27.628Z [DEBUG] [karma] static tarpit
+2026-07-28T16:32:27.628Z [DEBUG] [karma] tarpitting mail for 1s
+2026-07-28T16:32:28.628Z [DEBUG] [karma] tarpit mail end
+2026-07-28T16:32:28.629Z [DEBUG] [core] hook=mail plugin=karma function=hook_mail params=<test@sebarray.tech> retval=CONT msg=""
+2026-07-28T16:32:28.629Z [DEBUG] [core] running mail hook in mail_from.is_resolvable plugin
+2026-07-28T16:32:28.629Z [DEBUG] [mail_from.is_resolvable] resolving MX for domain sebarray.tech
+2026-07-28T16:32:28.856Z [DEBUG] [mail_from.is_resolvable] sebarray.tech: MX => [{"exchange":"mail.sebarray.tech","priority":1,"from_dns":"sebarray.tech","bind_helo":"mail.sebarray.tech"}]
+2026-07-28T16:32:29.078Z [DEBUG] [mail_from.is_resolvable] resolved MX => [{"exchange":"192.255.226.25","priority":1,"from_dns":"mail.sebarray.tech","bind_helo":"mail.sebarray.tech"}]
+2026-07-28T16:32:29.078Z [INFO] [mail_from.is_resolvable] pass:has_fwd_dns
+2026-07-28T16:32:29.078Z [DEBUG] [core] hook=mail plugin=mail_from.is_resolvable function=hook_mail params=<test@sebarray.tech> retval=CONT msg=""
+2026-07-28T16:32:29.078Z [DEBUG] [core] running mail hook in mailauth/verify plugin
+2026-07-28T16:32:29.274Z [DEBUG] [core] hook=mail plugin=mailauth/verify function=hook_mail params=<test@sebarray.tech> retval=CONT msg=""
+2026-07-28T16:32:29.274Z [DEBUG] [core] running mail hook in uribl plugin
+2026-07-28T16:32:29.275Z [DEBUG] [uribl] (envfrom) found 1 items for lookup
+2026-07-28T16:32:29.275Z [DEBUG] [uribl] (envfrom) checking: sebarray.tech
+2026-07-28T16:32:29.320Z [DEBUG] [uribl] sebarray.tech.dbl.spamhaus.org. => (Error: queryA ENOTFOUND sebarray.tech.dbl.spamhaus.org.)
+2026-07-28T16:32:29.320Z [DEBUG] [core] hook=mail plugin=uribl function=lookup_mailfrom params=<test@sebarray.tech> retval=CONT msg=""
+2026-07-28T16:32:29.320Z [DEBUG] [core] running mail hook in known-senders plugin
+2026-07-28T16:32:29.320Z [DEBUG] [known-senders] []
+2026-07-28T16:32:29.320Z [DEBUG] [core] hook=mail plugin=known-senders function=is_authenticated params=<test@sebarray.tech> retval=CONT msg=""
+2026-07-28T16:32:29.320Z [DEBUG] [core] running mail hook in bounce plugin
+2026-07-28T16:32:29.320Z [DEBUG] [core] hook=mail plugin=bounce function=reject_all params=<test@sebarray.tech> retval=CONT msg=""
+2026-07-28T16:32:29.320Z [DEBUG] [core] running mail hook in log plugin
+2026-07-28T16:32:29.320Z [PROTOCOL] [core] C: MAIL FROM:<test@sebarray.tech> state=1
+2026-07-28T16:32:29.320Z [DEBUG] [core] hook=mail plugin=log function=hook_mail params=<test@sebarray.tech> retval=CONT msg=""
+2026-07-28T16:32:29.320Z [DEBUG] [core] running mail hook in rcpt_database plugin
+2026-07-28T16:32:29.322Z [DEBUG] [core] hook=mail plugin=rcpt_database function=is_remote_sender params=<test@sebarray.tech> retval=CONT msg=""
+2026-07-28T16:32:29.322Z [DEBUG] [core] running mail hook in dovecot_quota plugin
+2026-07-28T16:32:29.322Z [DEBUG] [core] hook=mail plugin=dovecot_quota function=hook_mail params=<test@sebarray.tech> retval=CONT msg=""
+2026-07-28T16:32:29.322Z [NOTICE] [core] sender <test@sebarray.tech> code=CONT msg=""
+2026-07-28T16:32:29.322Z [PROTOCOL] [core] S: 250 sender <test@sebarray.tech> OK
+2026-07-28T16:32:29.436Z [PROTOCOL] [core] C: RCPT TO:<test@gmail.com> state=1
+2026-07-28T16:32:29.436Z [DEBUG] [core] running rcpt hooks
+2026-07-28T16:32:29.437Z [DEBUG] [core] running rcpt hook in block_bad_connections plugin
+2026-07-28T16:32:29.437Z [DEBUG] [core] hook=rcpt plugin=block_bad_connections function=hook_rcpt params=<test@gmail.com> retval=CONT msg=""
+2026-07-28T16:32:29.437Z [DEBUG] [core] running rcpt hook in karma plugin
+2026-07-28T16:32:29.437Z [DEBUG] [karma] static tarpit
+2026-07-28T16:32:29.437Z [DEBUG] [karma] tarpitting rcpt for 1s
+2026-07-28T16:32:30.437Z [DEBUG] [karma] tarpit rcpt end
+2026-07-28T16:32:30.437Z [DEBUG] [core] hook=rcpt plugin=karma function=hook_rcpt params=<test@gmail.com> retval=CONT msg=""
+2026-07-28T16:32:30.437Z [DEBUG] [core] running rcpt hook in srs plugin
+2026-07-28T16:32:30.437Z [DEBUG] [srs] not an our SRS address
+2026-07-28T16:32:30.437Z [DEBUG] [core] hook=rcpt plugin=srs function=hook_rcpt params=<test@gmail.com> retval=CONT msg=""
+2026-07-28T16:32:30.437Z [DEBUG] [core] running rcpt hook in rcpt_database plugin
+2026-07-28T16:32:30.439Z [DEBUG] [rcpt_database] remote delivery domain <gmail.com>
+2026-07-28T16:32:30.439Z [DEBUG] [core] hook=rcpt plugin=rcpt_database function=database_rcpt params=<test@gmail.com> retval=CONT msg=""
+2026-07-28T16:32:30.439Z [NOTICE] [core] recipient <test@gmail.com> code=OK msg="" sender=test@sebarray.tech
+2026-07-28T16:32:30.439Z [PROTOCOL] [core] S: 550 I cannot deliver mail for <test@gmail.com>
+2026-07-28T16:32:30.835Z [INFO] [core] client half closed connection ip=141.98.9.67
+2026-07-28T16:32:30.835Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.836Z [DEBUG] [core] running reset_transaction hooks
+2026-07-28T16:32:30.836Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.836Z [DEBUG] [core] running reset_transaction hook in stats plugin
+2026-07-28T16:32:30.836Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.837Z [DEBUG] [core] hook=reset_transaction plugin=stats function=hook_reset_transaction params="" retval=CONT msg=""
+2026-07-28T16:32:30.837Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.837Z [DEBUG] [core] running reset_transaction hook in karma plugin
+2026-07-28T16:32:30.837Z [INFO] [karma] score: -18, awards: 031,086,116,130,133,003, asn_score: -5, deny_rc: 902, msg:deny: dns-list, fail:env_user_match, rcpt_to
+2026-07-28T16:32:30.837Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.837Z [DEBUG] [core] hook=reset_transaction plugin=karma function=hook_reset_transaction params="" retval=CONT msg=""
+2026-07-28T16:32:30.837Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.837Z [DEBUG] [core] running reset_transaction hook in log plugin
+2026-07-28T16:32:30.837Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.837Z [DEBUG] [core] hook=reset_transaction plugin=log function=hook_reset_transaction params="" retval=CONT msg=""
+2026-07-28T16:32:30.837Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.837Z [DEBUG] [core] running disconnect hooks
+2026-07-28T16:32:30.837Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.837Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-28T16:32:30.838Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.838Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T16:32:30.838Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.838Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-28T16:32:30.838Z [DEBUG] [block_bad_connections] Invalid connections: 2/100
+2026-07-28T16:32:30.839Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.839Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T16:32:30.839Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.839Z [DEBUG] [core] running disconnect hook in karma plugin
+2026-07-28T16:32:30.839Z [INFO] [karma] score: -18, awards: 031,086,116,130,133,003, asn_score: -5, deny_rc: 902, msg:deny: dns-list, fail:env_user_match, rcpt_to
+2026-07-28T16:32:30.839Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.839Z [DEBUG] [core] hook=disconnect plugin=karma function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T16:32:30.839Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.839Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-28T16:32:30.839Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.839Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T16:32:30.839Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.839Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-28T16:32:30.839Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:30.839Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T16:32:30.839Z [NOTICE] [core] disconnect ip=141.98.9.67 rdns=NXDOMAIN helo=win-clj1b0gq6jp.domain relay=N early=N esmtp=N tls=N pipe=N errors=0 txns=1 rcpts=0/0/1 msgs=0/0/0 bytes=0 lr="550 I cannot deliver mail for <test@gmail.com>" time=10.193
+2026-07-28T16:32:30.839Z [DEBUG] [karma] unsubscribed from result-847D3DAC-50EB-4689-AAB7-DCA8E88E8363*

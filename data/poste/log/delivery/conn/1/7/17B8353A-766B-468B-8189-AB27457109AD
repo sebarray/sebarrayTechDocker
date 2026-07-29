@@ -1,0 +1,33 @@
+2026-07-29T00:00:01.433Z [NOTICE] [core] connect ip=195.184.76.50 port=55555 local_ip=192.255.226.25 local_port=587
+2026-07-29T00:00:01.434Z [DEBUG] [core] running connect_init hooks
+2026-07-29T00:00:01.434Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-29T00:00:01.441Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-29T00:00:01.441Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-29T00:00:01.441Z [DEBUG] [relay] checking 195.184.76.50 in relay_acl_allow
+2026-07-29T00:00:01.441Z [DEBUG] [relay] checking if 195.184.76.50 is in 192.255.226.25/32
+2026-07-29T00:00:01.441Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-29T00:00:01.441Z [DEBUG] [core] running connect_init_respond
+2026-07-29T00:00:01.441Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-29T00:00:01.458Z [INFO] [core] client half closed connection ip=195.184.76.50
+2026-07-29T00:00:01.458Z [DEBUG] [core] client has disconnected
+2026-07-29T00:00:01.458Z [DEBUG] [core] running disconnect hooks
+2026-07-29T00:00:01.458Z [DEBUG] [core] client has disconnected
+2026-07-29T00:00:01.458Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-29T00:00:01.459Z [DEBUG] [core] client has disconnected
+2026-07-29T00:00:01.459Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T00:00:01.459Z [DEBUG] [core] client has disconnected
+2026-07-29T00:00:01.459Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-29T00:00:01.460Z [DEBUG] [block_bad_connections] Invalid connections: 1/100
+2026-07-29T00:00:01.460Z [DEBUG] [core] client has disconnected
+2026-07-29T00:00:01.460Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T00:00:01.460Z [DEBUG] [core] client has disconnected
+2026-07-29T00:00:01.460Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-29T00:00:01.460Z [DEBUG] [core] client has disconnected
+2026-07-29T00:00:01.460Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T00:00:01.460Z [DEBUG] [core] client has disconnected
+2026-07-29T00:00:01.460Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-29T00:00:01.460Z [DEBUG] [core] client has disconnected
+2026-07-29T00:00:01.460Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T00:00:01.460Z [NOTICE] [core] disconnect ip=195.184.76.50 rdns="" helo="" relay=N early=N esmtp=N tls=N pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="" time=0.026
+2026-07-29T00:00:01.462Z [DEBUG] [core] client has disconnected
+2026-07-29T00:00:01.462Z [DEBUG] [core] aborting connect hook

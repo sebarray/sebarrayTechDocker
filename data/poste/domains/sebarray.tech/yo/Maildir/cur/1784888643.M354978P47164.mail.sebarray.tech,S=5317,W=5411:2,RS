@@ -1,0 +1,94 @@
+Return-Path: <sebarray98@gmail.com>
+Delivered-To: yo@sebarray.tech
+Authentication-Results: mail.sebarray.tech;
+	iprev=pass;
+	spf=pass (mail.sebarray.tech: domain of sebarray98@gmail.com designates 209.85.208.50 as permitted sender) smtp.mailfrom=sebarray98@gmail.com smtp.helo=mail-ed1-f50.google.com;
+	dkim=pass header.i=@gmail.com header.s=20251104 header.a=rsa-sha256 header.b=g+47oNtM;
+	arc=pass (i=1);
+	dmarc=pass (p=NONE sp=QUARANTINE arc=pass) header.from=gmail.com header.d=gmail.com
+Received-SPF: pass (mail.sebarray.tech: domain of sebarray98@gmail.com designates 209.85.208.50 as permitted sender) client-ip=209.85.208.50;
+X-Haraka-FCrDNS: mail-ed1-f50.google.com
+Received: from mail-ed1-f50.google.com (mail-ed1-f50.google.com [209.85.208.50])
+	by mail.sebarray.tech (Haraka) with ESMTPS id F042DDA0-8A1E-44EF-8E28-B02A924F5D59.1
+	envelope-from <sebarray98@gmail.com>
+	tls TLS_AES_256_GCM_SHA384;
+	Fri, 24 Jul 2026 07:24:00 -0300
+Received: by mail-ed1-f50.google.com with SMTP id 4fb4d7f45d1cf-6983f20a8bfso396960a12.1
+        for <yo@sebarray.tech>; Fri, 24 Jul 2026 03:23:59 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1784888635; cv=none;
+        d=google.com; s=arc-20260327;
+        b=rCnMO7FkxpbKlacFUsxTzMrM2L2fKGKdUfURcnHLl2Vc69IZ8wzjKLym2vaFvi4zF1
+         +tG5u/NM+Rbqnq85acdCGVfsAkrzitKTHsjKhmnUotHLe6AJoywwC6hfX/RC0CcfZiLY
+         YH9VBTvCVNmMXP4ox4WMbOydn1rPQL5OSq2lzaMa0v4pMRW0oS40gHcn7AJ68cif63Wn
+         AlR5pEKgGqfznijShnT3Sy3rljp77ltSxEdiC4whR9qsfV+WXah/7W7u112UWztQUlwu
+         1EmqnaMUP5qNKUhaiUbRASVhV0pkpfApvXolTmRrX7t+iISqbxCaiVvFGKx8FV0mhFdp
+         7ISQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=d6taBWQ6C7aU+N5P3IgxE7tyGnfnTcQeQNepotEdq/E=;
+        fh=evNTVh/WThOwv+C2WP7X+Ty7bhwXQFXk04KpnSgaZHo=;
+        b=ZwNF9sRHbKEVdy8pHc7aRRKSMao+7jFCdBCZ8rW4C1ydLrgpgH/XiKXpNWwnMtvxVR
+         JO2p1QK6lvWD2YN2P4WJs5El4eTW0pFxJ6gfNfxPTQlpft9AfuTY2o0oCoDpmqstA6/d
+         1hUp6D8ubgMecVe6u9/7hNGIJNzkfk1W9w0AoYxkyfiFn3eMbMktSfJoVhcvJNdYrAAK
+         qTrqr2+rBkN9duLCzhA2QaqUP+XCjmR5XVeTt6GRt9BJQWraw5rnTM0tX1bJetEaj91E
+         4zbXNtDhh7lqOsKGtov49V6fJn6RywFbuDtZj+cnsCsRTkyS0xZZQNbvhdDFTv6ogj9E
+         WR5w==;
+        darn=sebarray.tech
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20251104; t=1784888635; x=1785493435; darn=sebarray.tech;
+        h=content-type:to:subject:message-id:date:from:mime-version:from:to
+         :cc:subject:date:message-id:reply-to:content-type;
+        bh=d6taBWQ6C7aU+N5P3IgxE7tyGnfnTcQeQNepotEdq/E=;
+        b=g+47oNtMapVsGgMv13y+fN65EQiRytcOIATK+BYjcC/x6IZDHV/l6LwqBYNQJA+LEy
+         1/asupeSh1RW/7CcNRGXg77KxWquLTIftBma6Ju5QyWQa2WeE23OLxLdgcf+jcmtZbB8
+         7ehLE9Jt5uVVEVF5fSMzkC2teQVcAS6SMRbDoMT2XxfVEE8Gc2CxMuHS2fHXoYVYnXSn
+         aSgmrOTKSpvTYbRaBErEKpDs2MWHGDhy/KyLDXwCDBiKdOVpHgkHZbnZHH8evTFhTPV0
+         H2wEHUO6Pxro7qAVsW149KhefI9pvr9pkQExykRN2Z1OSAAV9lLeqVkKQMdwwzRTI0m/
+         +GZg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1784888635; x=1785493435;
+        h=content-type:to:subject:message-id:date:from:mime-version:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to
+         :content-type;
+        bh=d6taBWQ6C7aU+N5P3IgxE7tyGnfnTcQeQNepotEdq/E=;
+        b=U3i7JIx9yi0qXJFLtb1ThTD/gjBUMSeaZw41PhFpFc2hC+hVMX83rPZ2ZssqK+pQG+
+         EJqo+3q7CNdy32jwcCQrgpX0Hvs5hwUalo1zagFtbZOZSpm3cPoVz4QWZBvwX+51qkLe
+         DgtVT82qFXErofSIKll0V+OMjW7y3W/BUKkZC/XigJbBvrg1tlcIQbMi9yPSk3a7pglM
+         ynM5DFcR15C02qAcKmTJwJx8E2M9KiKKJZrqdLNs8vNzeh9BBuQ2B77SINsFJPi9bTpn
+         W9O0zGBGxAiFcYEeJgM3KIvtmVQqfqVIed+zrWJCx5rk5EfbLonCan/aKujpsMJ06v1R
+         HOFA==
+X-Gm-Message-State: AOJu0Yyv/KkHBrtN4GSrWvUv5Kox8FWVW6MFemVB7XluF3FBGcFJ8lxY
+	84iI8Q7OuEIPk33K48aC5DfE7f9lkR653hT/FIzynNoE7beMor0qZjXI2nd/gfxQbLhmrqghS1Y
+	aZXaQzvwl2TtDaqEmvGR2mNAAtCHGv9Qx+Q==
+X-Gm-Gg: AR+sD111nGfhQ+d7kce7sMtaSkHWzneVZasSDwAKUTHN3JvC51Jdt++H2vYt0EO477T
+	8cUcrtX5aIv70Sb1427/a1EpOXawRI+c2wIfYID2iecpVEgtp0Hq2xqqS7JsBAg6qsdnzobybr+
+	BOyu+JvKoWrpx/0bqptN9jnKej7rUyHGfe6Rve0d06WDp54k/JcydkVHBniFrh3n3DahZWgY4ra
+	e6wFP3F9popl59cAqtKTi/KNir0cJpoOPv1fiOr94K3k2CRSVklR1zDwruB90k=
+X-Received: by 2002:a05:6402:21d0:b0:697:8d48:7fa7 with SMTP id
+ 4fb4d7f45d1cf-69f6bf1f16amr2457748a12.22.1784888635182; Fri, 24 Jul 2026
+ 03:23:55 -0700 (PDT)
+MIME-Version: 1.0
+From: =?UTF-8?Q?Sebasti=C3=A1n_De_mello?= <sebarray98@gmail.com>
+Date: Fri, 24 Jul 2026 07:23:44 -0300
+X-Gm-Features: AUfX_myr1nBcK3kwBcyFgJ4WKEbNxc0VxU6tzTJNPmD0khKFVCiyOzT8nvIl5NY
+Message-ID: <CA+iDgRmG5cbmWyjxRC5fUk0zUVApfc_nPMwXqicuwS4+QPQK9g@mail.gmail.com>
+Subject: response
+To: yo@sebarray.tech
+Content-Type: multipart/alternative; boundary="0000000000001050c9065758c5ea"
+X-Haraka-Karma: score: 3, awards: 089,131, asn_score: 2, fail:rcpt_to
+X-p0f-Result: os="Linux 2.2.x-3.x" link_type="DSL" distance=25 total_conn=1
+X-Haraka-GeoIP: US
+X-Haraka-GeoIP-Received: 209.85.208.50:US
+
+--0000000000001050c9065758c5ea
+Content-Type: text/plain; charset="UTF-8"
+
+hi
+
+--0000000000001050c9065758c5ea
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">hi</div>
+
+--0000000000001050c9065758c5ea--

@@ -1,0 +1,67 @@
+2026-07-26T09:07:47.635Z [NOTICE] [core] connect ip=94.154.43.36 port=40208 local_ip=192.255.226.25 local_port=25
+2026-07-26T09:07:47.636Z [DEBUG] [core] running connect_init hooks
+2026-07-26T09:07:47.636Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-26T09:07:47.642Z [DEBUG] [core] [early_talker] state=4 esmtp=false line="GET http://146.56.180.42:3333/ HTTP/1.1"
+2026-07-26T09:07:47.643Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-26T09:07:47.643Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-26T09:07:47.646Z [DEBUG] [core] hook=connect_init plugin=karma function=results_init params="" retval=CONT msg=""
+2026-07-26T09:07:47.646Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-26T09:07:47.646Z [INFO] [karma] score: 0, good: 0, bad: 2, connections: 2, history: -2
+2026-07-26T09:07:47.647Z [DEBUG] [karma] applied early_talker:-3
+2026-07-26T09:07:47.647Z [DEBUG] [core] hook=connect_init plugin=karma function=ip_history_from_redis params="" retval=CONT msg=""
+2026-07-26T09:07:47.647Z [DEBUG] [core] running connect_init hook in early_talker plugin
+2026-07-26T09:07:50.646Z [INFO] [core] hook=connect_init plugin=early_talker function=early_talker params="" retval=DENYDISCONNECT msg="You talk too soon"
+2026-07-26T09:07:50.646Z [DEBUG] [core] running connect_init hook in fcrdns plugin
+2026-07-26T09:07:50.646Z [DEBUG] [core] hook=connect_init plugin=fcrdns function=initialize_fcrdns params="" retval=CONT msg=""
+2026-07-26T09:07:50.646Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-26T09:07:50.646Z [DEBUG] [relay] checking 94.154.43.36 in relay_acl_allow
+2026-07-26T09:07:50.646Z [DEBUG] [relay] checking if 94.154.43.36 is in 192.255.226.25/32
+2026-07-26T09:07:50.647Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-26T09:07:50.647Z [DEBUG] [core] running connect_init_respond
+2026-07-26T09:07:50.647Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-26T09:07:50.647Z [DEBUG] [core] running lookup_rdns hook in p0f plugin
+2026-07-26T09:07:50.647Z [INFO] [p0f] os="Linux 2.2.x-3.x" link_type="Ethernet or modem" distance=16 total_conn=2
+2026-07-26T09:07:50.647Z [DEBUG] [core] hook=lookup_rdns plugin=p0f function=query_p0f params="" retval=CONT msg=""
+2026-07-26T09:07:50.647Z [DEBUG] [core] running lookup_rdns hook in fcrdns plugin
+2026-07-26T09:07:50.670Z [INFO] [fcrdns] ptr_multidomain: false, has_rdns: false, ptr_name_has_ips: false, generic_rdns: false, fail:has_rdns
+2026-07-26T09:07:50.670Z [DEBUG] [core] hook=lookup_rdns plugin=fcrdns function=do_dns_lookups params="" retval=CONT msg=""
+2026-07-26T09:07:50.670Z [DEBUG] [core] running lookup_rdns hook in uribl plugin
+2026-07-26T09:07:50.692Z [DEBUG] [core] hook=lookup_rdns plugin=uribl function=lookup_remote_ip params="" retval=CONT msg=""
+2026-07-26T09:07:50.692Z [DEBUG] [core] running lookup_rdns hook in asn plugin
+2026-07-26T09:07:50.715Z [INFO] [asn] asn: 219502, net: 94.154.43.0/24
+2026-07-26T09:07:50.715Z [DEBUG] [core] hook=lookup_rdns plugin=asn function=lookup_via_dns params="" retval=CONT msg=""
+2026-07-26T09:07:50.738Z [DEBUG] [core] running connect hooks
+2026-07-26T09:07:50.738Z [DEBUG] [core] running connect hook in guard plugin
+2026-07-26T09:07:50.738Z [DEBUG] [core] hook=connect plugin=guard function=hook_connect params="" retval=CONT msg=""
+2026-07-26T09:07:50.738Z [DEBUG] [core] running connect hook in karma plugin
+2026-07-26T09:07:50.738Z [DEBUG] [karma] static tarpit
+2026-07-26T09:07:50.738Z [DEBUG] [karma] tarpitting connect for 1s
+2026-07-26T09:07:50.739Z [INFO] [karma] score: -10, good: 0, bad: 2, connections: 2, history: -2, awards: 004,086, asn_score: -2, fail:early_talker
+2026-07-26T09:07:51.544Z [INFO] [core] client half closed connection ip=94.154.43.36
+2026-07-26T09:07:51.544Z [DEBUG] [core] client has disconnected
+2026-07-26T09:07:51.544Z [DEBUG] [core] running disconnect hooks
+2026-07-26T09:07:51.544Z [DEBUG] [core] client has disconnected
+2026-07-26T09:07:51.544Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-26T09:07:51.545Z [DEBUG] [core] client has disconnected
+2026-07-26T09:07:51.545Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-26T09:07:51.545Z [DEBUG] [core] client has disconnected
+2026-07-26T09:07:51.545Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-26T09:07:51.545Z [DEBUG] [block_bad_connections] Invalid connections: 1/100
+2026-07-26T09:07:51.545Z [DEBUG] [core] client has disconnected
+2026-07-26T09:07:51.545Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-26T09:07:51.545Z [DEBUG] [core] client has disconnected
+2026-07-26T09:07:51.545Z [DEBUG] [core] running disconnect hook in karma plugin
+2026-07-26T09:07:51.546Z [INFO] [karma] score: -10, good: 0, bad: 2, connections: 2, history: -2, awards: 004,086, asn_score: -2, fail:early_talker
+2026-07-26T09:07:51.546Z [DEBUG] [core] client has disconnected
+2026-07-26T09:07:51.546Z [DEBUG] [core] hook=disconnect plugin=karma function=hook_disconnect params="" retval=CONT msg=""
+2026-07-26T09:07:51.546Z [DEBUG] [core] client has disconnected
+2026-07-26T09:07:51.546Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-26T09:07:51.546Z [DEBUG] [core] client has disconnected
+2026-07-26T09:07:51.546Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-26T09:07:51.546Z [DEBUG] [core] client has disconnected
+2026-07-26T09:07:51.546Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-26T09:07:51.546Z [DEBUG] [core] client has disconnected
+2026-07-26T09:07:51.546Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-26T09:07:51.546Z [NOTICE] [core] disconnect ip=94.154.43.36 rdns=NXDOMAIN helo="" relay=N early=Y esmtp=N tls=N pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="" time=3.91
+2026-07-26T09:07:51.546Z [DEBUG] [karma] unsubscribed from result-0D6D0BAA-19EC-427A-8718-28902851C0E6*
+2026-07-26T09:07:51.738Z [DEBUG] [karma] tarpit connect end

@@ -1,0 +1,91 @@
+2026-07-27T10:40:17.208Z [NOTICE] [core] connect ip=20.168.1.102 port=59438 local_ip=192.255.226.25 local_port=25
+2026-07-27T10:40:17.209Z [DEBUG] [core] running connect_init hooks
+2026-07-27T10:40:17.209Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-27T10:40:17.212Z [DEBUG] [core] [early_talker] state=4 esmtp=false line=MGLNDD_192.255.226.25_25
+2026-07-27T10:40:17.216Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-27T10:40:17.216Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-27T10:40:17.219Z [DEBUG] [core] hook=connect_init plugin=karma function=results_init params="" retval=CONT msg=""
+2026-07-27T10:40:17.219Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-27T10:40:17.220Z [DEBUG] [core] hook=connect_init plugin=karma function=ip_history_from_redis params="" retval=CONT msg=""
+2026-07-27T10:40:17.220Z [DEBUG] [core] running connect_init hook in early_talker plugin
+2026-07-27T10:40:20.220Z [INFO] [core] hook=connect_init plugin=early_talker function=early_talker params="" retval=DENYDISCONNECT msg="You talk too soon"
+2026-07-27T10:40:20.221Z [DEBUG] [core] running connect_init hook in fcrdns plugin
+2026-07-27T10:40:20.221Z [DEBUG] [core] hook=connect_init plugin=fcrdns function=initialize_fcrdns params="" retval=CONT msg=""
+2026-07-27T10:40:20.221Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-27T10:40:20.221Z [DEBUG] [relay] checking 20.168.1.102 in relay_acl_allow
+2026-07-27T10:40:20.221Z [DEBUG] [relay] checking if 20.168.1.102 is in 192.255.226.25/32
+2026-07-27T10:40:20.221Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-27T10:40:20.221Z [DEBUG] [core] running connect_init_respond
+2026-07-27T10:40:20.221Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-27T10:40:20.221Z [DEBUG] [core] running lookup_rdns hook in p0f plugin
+2026-07-27T10:40:20.221Z [INFO] [p0f] os="Linux 2.2.x-3.x" link_type="IPIP or SIT" distance=24 total_conn=2
+2026-07-27T10:40:20.222Z [DEBUG] [core] hook=lookup_rdns plugin=p0f function=query_p0f params="" retval=CONT msg=""
+2026-07-27T10:40:20.222Z [DEBUG] [core] running lookup_rdns hook in fcrdns plugin
+2026-07-27T10:40:20.245Z [DEBUG] [fcrdns] rdns.reverse(20.168.1.102)
+2026-07-27T10:40:20.245Z [DEBUG] [fcrdns] PTRdomain: azpdwgvwjsp1.stretchoid.com
+2026-07-27T10:40:20.268Z [INFO] [fcrdns] ip=20.168.1.102  rdns="azpdwgvwjsp1.stretchoid.com" rdns_len=1 fcrdns="azpdwgvwjsp1.stretchoid.com" fcrdns_len=1 other_ips_len=0 invalid_tlds=0 generic_rdns=false
+2026-07-27T10:40:20.268Z [DEBUG] [core] hook=lookup_rdns plugin=fcrdns function=do_dns_lookups params="" retval=CONT msg=""
+2026-07-27T10:40:20.268Z [DEBUG] [core] running lookup_rdns hook in uribl plugin
+2026-07-27T10:40:20.302Z [DEBUG] [uribl] (rdns) found 1 items for lookup
+2026-07-27T10:40:20.302Z [DEBUG] [uribl] (rdns) checking: azpdwgvwjsp1.stretchoid.com
+2026-07-27T10:40:20.336Z [DEBUG] [uribl] azpdwgvwjsp1.stretchoid.com.dbl.spamhaus.org. => (Error: queryA ENOTFOUND azpdwgvwjsp1.stretchoid.com.dbl.spamhaus.org.)
+2026-07-27T10:40:20.336Z [DEBUG] [core] hook=lookup_rdns plugin=uribl function=lookup_remote_ip params="" retval=CONT msg=""
+2026-07-27T10:40:20.336Z [DEBUG] [core] running lookup_rdns hook in asn plugin
+2026-07-27T10:40:20.486Z [INFO] [asn] asn: 8075, net: 20.160.0.0/12
+2026-07-27T10:40:20.487Z [DEBUG] [core] hook=lookup_rdns plugin=asn function=lookup_via_dns params="" retval=CONT msg=""
+2026-07-27T10:40:20.509Z [DEBUG] [core] running connect hooks
+2026-07-27T10:40:20.509Z [DEBUG] [core] running connect hook in guard plugin
+2026-07-27T10:40:20.509Z [DEBUG] [core] hook=connect plugin=guard function=hook_connect params="" retval=CONT msg=""
+2026-07-27T10:40:20.509Z [DEBUG] [core] running connect hook in karma plugin
+2026-07-27T10:40:20.509Z [DEBUG] [karma] applied early_talker:-3
+2026-07-27T10:40:20.509Z [DEBUG] [karma] static tarpit
+2026-07-27T10:40:20.509Z [DEBUG] [karma] tarpitting connect for 1s
+2026-07-27T10:40:20.510Z [INFO] [karma] score: -3, asn_score: -4, fail:early_talker
+2026-07-27T10:40:21.509Z [DEBUG] [karma] tarpit connect end
+2026-07-27T10:40:21.509Z [DEBUG] [core] hook=connect plugin=karma function=hook_connect params="" retval=CONT msg=""
+2026-07-27T10:40:21.509Z [DEBUG] [core] running connect hook in dns-list plugin
+2026-07-27T10:40:21.646Z [INFO] [dns-list] pass:zen.spamhaus.org, b.barracudacentral.org, psbl.surriel.com, bl.spamcop.net, truncate.gbudb.net, dnsbl-1.uceprotect.net, dnsbl.justspam.org
+2026-07-27T10:40:21.646Z [DEBUG] [core] hook=connect plugin=dns-list function=onConnect params="" retval=CONT msg=""
+2026-07-27T10:40:21.647Z [DEBUG] [core] running connect hook in relay plugin
+2026-07-27T10:40:21.647Z [DEBUG] [core] hook=connect plugin=relay function=pass_relaying params="" retval=CONT msg=""
+2026-07-27T10:40:21.647Z [DEBUG] [core] running connect hook in geoip plugin
+2026-07-27T10:40:21.647Z [INFO] [geoip] US
+2026-07-27T10:40:21.647Z [DEBUG] [core] hook=connect plugin=geoip function=lookup_maxmind params="" retval=CONT msg=""
+2026-07-27T10:40:21.647Z [PROTOCOL] [core] S: 220 mail.sebarray.tech ESMTP Haraka ready (BCDB2E)
+2026-07-27T10:40:21.647Z [PROTOCOL] [core] C: MGLNDD_192.255.226.25_25 state=1
+2026-07-27T10:40:21.647Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-27T10:40:21.648Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-27T10:40:21.648Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=MGLNDD_192.255.226.25_25 retval=CONT msg=""
+2026-07-27T10:40:21.648Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-27T10:40:21.648Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=MGLNDD_192.255.226.25_25 retval=CONT msg=""
+2026-07-27T10:40:21.648Z [DEBUG] [core] running unrecognized_command hook in karma plugin
+2026-07-27T10:40:21.648Z [DEBUG] [karma] static tarpit
+2026-07-27T10:40:21.648Z [DEBUG] [karma] tarpitting unrecognized_command for 1s
+2026-07-27T10:40:21.744Z [INFO] [core] client half closed connection ip=20.168.1.102
+2026-07-27T10:40:21.745Z [DEBUG] [core] client has disconnected
+2026-07-27T10:40:21.745Z [DEBUG] [core] running disconnect hooks
+2026-07-27T10:40:21.745Z [DEBUG] [core] client has disconnected
+2026-07-27T10:40:21.745Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-27T10:40:21.746Z [DEBUG] [core] client has disconnected
+2026-07-27T10:40:21.746Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-27T10:40:21.746Z [DEBUG] [core] client has disconnected
+2026-07-27T10:40:21.746Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-27T10:40:21.746Z [DEBUG] [block_bad_connections] Invalid connections: 1/100
+2026-07-27T10:40:21.746Z [DEBUG] [core] client has disconnected
+2026-07-27T10:40:21.746Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-27T10:40:21.746Z [DEBUG] [core] client has disconnected
+2026-07-27T10:40:21.746Z [DEBUG] [core] running disconnect hook in karma plugin
+2026-07-27T10:40:21.746Z [INFO] [karma] score: -4, asn_score: -4, fail:early_talker, cmd:(MGLNDD_192.255.226.25_25,)
+2026-07-27T10:40:21.746Z [DEBUG] [core] client has disconnected
+2026-07-27T10:40:21.746Z [DEBUG] [core] hook=disconnect plugin=karma function=hook_disconnect params="" retval=CONT msg=""
+2026-07-27T10:40:21.746Z [DEBUG] [core] client has disconnected
+2026-07-27T10:40:21.746Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-27T10:40:21.747Z [DEBUG] [core] client has disconnected
+2026-07-27T10:40:21.747Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-27T10:40:21.747Z [DEBUG] [core] client has disconnected
+2026-07-27T10:40:21.747Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-27T10:40:21.747Z [DEBUG] [core] client has disconnected
+2026-07-27T10:40:21.747Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-27T10:40:21.747Z [NOTICE] [core] disconnect ip=20.168.1.102 rdns=azpdwgvwjsp1.stretchoid.com helo="" relay=N early=Y esmtp=N tls=N pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="" time=4.538
+2026-07-27T10:40:21.747Z [DEBUG] [karma] unsubscribed from result-BCDB2E4D-BC29-429C-BDAD-726ABF17F12B*
+2026-07-27T10:40:22.647Z [DEBUG] [karma] tarpit unrecognized_command end

@@ -1,0 +1,81 @@
+2026-07-23 18:19:30.281583500  [23-Jul-2026 18:19:30] NOTICE: fpm is running, pid 895
+2026-07-23 18:19:30.286154500  [23-Jul-2026 18:19:30] NOTICE: ready to handle connections
+2026-07-23 18:19:30.286162500  [23-Jul-2026 18:19:30] NOTICE: systemd monitor interval set to 10000ms
+2026-07-23 20:59:43.297401500  [23-Jul-2026 20:59:43] NOTICE: [pool www] child 1867 exited with code 0 after 8919.186106 seconds from start
+2026-07-23 20:59:43.298447500  [23-Jul-2026 20:59:43] NOTICE: [pool www] child 13285 started
+2026-07-23 21:02:44.979745500  [23-Jul-2026 21:02:44] NOTICE: Terminating ...
+2026-07-23 21:02:45.012905500  [23-Jul-2026 21:02:45] NOTICE: exiting, bye-bye!
+2026-07-23 21:02:55.850221500  [23-Jul-2026 21:02:55] NOTICE: fpm is running, pid 801
+2026-07-23 21:02:55.853431500  [23-Jul-2026 21:02:55] NOTICE: ready to handle connections
+2026-07-23 21:02:55.854088500  [23-Jul-2026 21:02:55] NOTICE: systemd monitor interval set to 10000ms
+2026-07-23 21:35:02.797260500  [23-Jul-2026 21:35:02] NOTICE: Terminating ...
+2026-07-23 21:35:02.828469500  [23-Jul-2026 21:35:02] NOTICE: exiting, bye-bye!
+2026-07-23 21:35:15.628144500  [23-Jul-2026 21:35:15] NOTICE: fpm is running, pid 815
+2026-07-23 21:35:15.628200500  [23-Jul-2026 21:35:15] NOTICE: ready to handle connections
+2026-07-23 21:35:15.628201500  [23-Jul-2026 21:35:15] NOTICE: systemd monitor interval set to 10000ms
+2026-07-23 21:41:18.642422500  [23-Jul-2026 21:41:18] NOTICE: Terminating ...
+2026-07-23 21:41:18.704310500  [23-Jul-2026 21:41:18] NOTICE: exiting, bye-bye!
+2026-07-23 21:42:19.092229500  [23-Jul-2026 21:42:19] NOTICE: fpm is running, pid 823
+2026-07-23 21:42:19.093033500  [23-Jul-2026 21:42:19] NOTICE: ready to handle connections
+2026-07-23 21:42:19.093059500  [23-Jul-2026 21:42:19] NOTICE: systemd monitor interval set to 10000ms
+2026-07-24 00:11:02.162206500  [24-Jul-2026 00:11:02] NOTICE: [pool www] child 8346 exited with code 0 after 3733.255826 seconds from start
+2026-07-24 00:11:02.163241500  [24-Jul-2026 00:11:02] NOTICE: [pool www] child 13478 started
+2026-07-24 01:56:48.348021500  [24-Jul-2026 01:56:48] NOTICE: [pool www] child 16929 exited with code 0 after 3664.818571 seconds from start
+2026-07-24 01:56:48.349261500  [24-Jul-2026 01:56:48] NOTICE: [pool www] child 21655 started
+2026-07-24 03:01:48.301588500  [24-Jul-2026 03:01:48] NOTICE: [pool www] child 21655 exited with code 0 after 3899.952081 seconds from start
+2026-07-24 03:01:48.302450500  [24-Jul-2026 03:01:48] NOTICE: [pool www] child 26654 started
+2026-07-24 07:15:07.454706500  [24-Jul-2026 07:15:07] WARNING: [pool admin] server reached pm.max_children setting (5), consider raising it
+2026-07-24 07:44:38.008374500  [24-Jul-2026 07:44:38] NOTICE: [pool www] child 41430 exited with code 0 after 4782.520676 seconds from start
+2026-07-24 07:44:38.010555500  [24-Jul-2026 07:44:38] NOTICE: [pool www] child 48968 started
+2026-07-24 08:36:52.315557500  [24-Jul-2026 08:36:52] NOTICE: [pool www] child 44891 exited with code 0 after 5727.082433 seconds from start
+2026-07-24 08:36:52.316744500  [24-Jul-2026 08:36:52] NOTICE: [pool www] child 52654 started
+2026-07-24 12:29:30.210855500  [24-Jul-2026 12:29:30] NOTICE: [pool www] child 62212 exited with code 0 after 5876.644334 seconds from start
+2026-07-24 12:29:30.211966500  [24-Jul-2026 12:29:30] NOTICE: [pool www] child 69184 started
+2026-07-24 16:10:30.517198500  [24-Jul-2026 16:10:30] NOTICE: [pool www] child 81067 exited with code 0 after 3255.954831 seconds from start
+2026-07-24 16:10:30.518321500  [24-Jul-2026 16:10:30] NOTICE: [pool www] child 84951 started
+2026-07-24 22:45:20.109848500  [24-Jul-2026 22:45:20] NOTICE: [pool www] child 104557 exited with code 0 after 7144.302180 seconds from start
+2026-07-24 22:45:20.109894500  [24-Jul-2026 22:45:20] NOTICE: [pool www] child 113057 started
+2026-07-25 01:50:09.575969500  [25-Jul-2026 01:50:09] NOTICE: [pool www] child 119560 exited with code 0 after 5605.051581 seconds from start
+2026-07-25 01:50:09.577716500  [25-Jul-2026 01:50:09] NOTICE: [pool www] child 126232 started
+2026-07-25 04:17:18.967910500  [25-Jul-2026 04:17:18] NOTICE: [pool www] child 126233 exited with code 0 after 8829.388836 seconds from start
+2026-07-25 04:17:18.969020500  [25-Jul-2026 04:17:18] NOTICE: [pool www] child 136786 started
+2026-07-25 07:04:33.961753500  [25-Jul-2026 07:04:33] NOTICE: [pool www] child 141960 exited with code 0 after 5665.394186 seconds from start
+2026-07-25 07:04:33.963456500  [25-Jul-2026 07:04:33] NOTICE: [pool www] child 149127 started
+2026-07-25 10:53:34.928188500  [25-Jul-2026 10:53:34] NOTICE: [pool www] child 158546 exited with code 0 after 5815.638642 seconds from start
+2026-07-25 10:53:34.929027500  [25-Jul-2026 10:53:34] NOTICE: [pool www] child 165441 started
+2026-07-25 18:01:04.173955500  [25-Jul-2026 18:01:04] NOTICE: [pool www] child 189390 exited with code 0 after 5423.625857 seconds from start
+2026-07-25 18:01:04.175362500  [25-Jul-2026 18:01:04] NOTICE: [pool www] child 195843 started
+2026-07-25 20:21:11.583594500  [25-Jul-2026 20:21:11] NOTICE: [pool www] child 198790 exited with code 0 after 5936.025429 seconds from start
+2026-07-25 20:21:11.584112500  [25-Jul-2026 20:21:11] NOTICE: [pool www] child 205824 started
+2026-07-25 23:33:06.058716500  [25-Jul-2026 23:33:06] NOTICE: [pool www] child 212996 exited with code 0 after 5454.453159 seconds from start
+2026-07-25 23:33:06.060582500  [25-Jul-2026 23:33:06] NOTICE: [pool www] child 219471 started
+2026-07-26 01:47:11.673109500  [26-Jul-2026 01:47:11] NOTICE: [pool www] child 219472 exited with code 0 after 8045.611645 seconds from start
+2026-07-26 01:47:11.674234500  [26-Jul-2026 01:47:11] NOTICE: [pool www] child 229065 started
+2026-07-26 03:23:36.408513500  [26-Jul-2026 03:23:36] NOTICE: [pool www] child 229065 exited with code 0 after 5784.734220 seconds from start
+2026-07-26 03:23:36.410266500  [26-Jul-2026 03:23:36] NOTICE: [pool www] child 235923 started
+2026-07-26 13:14:08.266285500  [26-Jul-2026 13:14:08] NOTICE: [pool www] child 269881 exited with code 0 after 6892.509782 seconds from start
+2026-07-26 13:14:08.266885500  [26-Jul-2026 13:14:08] NOTICE: [pool www] child 278050 started
+2026-07-26 17:43:55.045981500  [26-Jul-2026 17:43:55] NOTICE: [pool www] child 290383 exited with code 0 after 5755.464713 seconds from start
+2026-07-26 17:43:55.047139500  [26-Jul-2026 17:43:55] NOTICE: [pool www] child 297241 started
+2026-07-26 20:30:08.476938500  [26-Jul-2026 20:30:08] NOTICE: [pool www] child 302252 exited with code 0 after 5724.906227 seconds from start
+2026-07-26 20:30:08.477945500  [26-Jul-2026 20:30:08] NOTICE: [pool www] child 309025 started
+2026-07-26 22:59:19.020250500  [26-Jul-2026 22:59:19] NOTICE: [pool www] child 312778 exited with code 0 after 5786.444420 seconds from start
+2026-07-26 22:59:19.020300500  [26-Jul-2026 22:59:19] NOTICE: [pool www] child 319654 started
+2026-07-27 02:41:53.295384500  [27-Jul-2026 02:41:53] NOTICE: [pool www] child 329164 exited with code 0 after 5363.739895 seconds from start
+2026-07-27 02:41:53.296609500  [27-Jul-2026 02:41:53] NOTICE: [pool www] child 335613 started
+2026-07-27 04:55:59.135953500  [27-Jul-2026 04:55:59] NOTICE: [pool www] child 338611 exited with code 0 after 5514.572794 seconds from start
+2026-07-27 04:55:59.137535500  [27-Jul-2026 04:55:59] NOTICE: [pool www] child 345171 started
+2026-07-27 08:14:54.046406500  [27-Jul-2026 08:14:54] NOTICE: [pool www] child 352976 exited with code 0 after 5756.451602 seconds from start
+2026-07-27 08:14:54.048410500  [27-Jul-2026 08:14:54] NOTICE: [pool www] child 359852 started
+2026-07-27 20:52:07.970841500  [27-Jul-2026 20:52:07] NOTICE: [pool www] child 407197 exited with code 0 after 5462.423702 seconds from start
+2026-07-27 20:52:07.972064500  [27-Jul-2026 20:52:07] NOTICE: [pool www] child 413690 started
+2026-07-27 23:23:46.281870500  [27-Jul-2026 23:23:46] NOTICE: [pool www] child 417787 exited with code 0 after 5635.745185 seconds from start
+2026-07-27 23:23:46.283530500  [27-Jul-2026 23:23:46] NOTICE: [pool www] child 424516 started
+2026-07-28 09:56:18.851859500  [28-Jul-2026 09:56:18] NOTICE: [pool www] child 463066 exited with code 0 after 5756.234516 seconds from start
+2026-07-28 09:56:18.852620500  [28-Jul-2026 09:56:18] NOTICE: [pool www] child 469909 started
+2026-07-28 12:59:58.256888500  [28-Jul-2026 12:59:58] NOTICE: [pool www] child 469909 exited with code 0 after 11019.404171 seconds from start
+2026-07-28 12:59:58.258115500  [28-Jul-2026 12:59:58] NOTICE: [pool www] child 482943 started
+2026-07-28 18:56:19.882581500  [28-Jul-2026 18:56:19] NOTICE: [pool www] child 501677 exited with code 0 after 5605.288056 seconds from start
+2026-07-28 18:56:19.884287500  [28-Jul-2026 18:56:19] NOTICE: [pool www] child 508324 started
+2026-07-28 21:24:29.988605500  [28-Jul-2026 21:24:29] NOTICE: [pool www] child 512680 exited with code 0 after 5213.493408 seconds from start
+2026-07-28 21:24:29.989655500  [28-Jul-2026 21:24:29] NOTICE: [pool www] child 518880 started

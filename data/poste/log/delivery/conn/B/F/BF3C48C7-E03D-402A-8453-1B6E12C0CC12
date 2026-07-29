@@ -1,0 +1,86 @@
+2026-07-25T19:18:33.900Z [NOTICE] [core] connect ip=198.235.24.253 port=60998 local_ip=192.255.226.25 local_port=587
+2026-07-25T19:18:33.901Z [DEBUG] [core] running connect_init hooks
+2026-07-25T19:18:33.901Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-25T19:18:33.902Z [DEBUG] [core] [early_talker] state=4 esmtp=false line="GET / HTTP/1.1"
+2026-07-25T19:18:33.905Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-25T19:18:33.905Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-25T19:18:33.905Z [DEBUG] [relay] checking 198.235.24.253 in relay_acl_allow
+2026-07-25T19:18:33.905Z [DEBUG] [relay] checking if 198.235.24.253 is in 192.255.226.25/32
+2026-07-25T19:18:33.906Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-25T19:18:33.906Z [DEBUG] [core] running connect_init_respond
+2026-07-25T19:18:33.906Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-25T19:18:33.919Z [DEBUG] [core] running connect hooks
+2026-07-25T19:18:33.919Z [DEBUG] [core] running connect hook in guard plugin
+2026-07-25T19:18:33.919Z [DEBUG] [core] hook=connect plugin=guard function=hook_connect params="" retval=CONT msg=""
+2026-07-25T19:18:33.919Z [DEBUG] [core] running connect hook in relay plugin
+2026-07-25T19:18:33.919Z [DEBUG] [core] hook=connect plugin=relay function=pass_relaying params="" retval=CONT msg=""
+2026-07-25T19:18:33.919Z [DEBUG] [core] running connect hook in geoip plugin
+2026-07-25T19:18:33.919Z [INFO] [geoip] US
+2026-07-25T19:18:33.920Z [DEBUG] [core] hook=connect plugin=geoip function=lookup_maxmind params="" retval=CONT msg=""
+2026-07-25T19:18:33.920Z [PROTOCOL] [core] S: 220 mail.sebarray.tech ESMTP Haraka ready (BF3C48)
+2026-07-25T19:18:33.920Z [PROTOCOL] [core] C: GET / HTTP/1.1 state=1
+2026-07-25T19:18:33.920Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-25T19:18:33.920Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-25T19:18:33.920Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=GET retval=CONT msg=""
+2026-07-25T19:18:33.920Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-25T19:18:33.920Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=GET retval=CONT msg=""
+2026-07-25T19:18:33.920Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-25T19:18:33.920Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=GET retval=CONT msg=""
+2026-07-25T19:18:33.920Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-25T19:18:33.920Z [PROTOCOL] [core] C: Host: 192.255.226.25:587 state=1
+2026-07-25T19:18:33.920Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-25T19:18:33.920Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-25T19:18:33.920Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=Host: retval=CONT msg=""
+2026-07-25T19:18:33.920Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-25T19:18:33.920Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=Host: retval=CONT msg=""
+2026-07-25T19:18:33.920Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-25T19:18:33.920Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=Host: retval=CONT msg=""
+2026-07-25T19:18:33.920Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-25T19:18:33.921Z [PROTOCOL] [core] C: User-Agent: Hello from Palo Alto Networks, find out more about our scans in https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity state=1
+2026-07-25T19:18:33.921Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-25T19:18:33.921Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-25T19:18:33.921Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=User-Agent: retval=CONT msg=""
+2026-07-25T19:18:33.921Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-25T19:18:33.921Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=User-Agent: retval=CONT msg=""
+2026-07-25T19:18:33.921Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-25T19:18:33.921Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=User-Agent: retval=CONT msg=""
+2026-07-25T19:18:33.921Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-25T19:18:33.921Z [PROTOCOL] [core] C: Accept-Encoding: gzip state=1
+2026-07-25T19:18:33.921Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-25T19:18:33.921Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-25T19:18:33.921Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=Accept-Encoding: retval=CONT msg=""
+2026-07-25T19:18:33.921Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-25T19:18:33.921Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params=Accept-Encoding: retval=CONT msg=""
+2026-07-25T19:18:33.921Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-25T19:18:33.921Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=Accept-Encoding: retval=CONT msg=""
+2026-07-25T19:18:33.921Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-25T19:18:33.921Z [PROTOCOL] [core] C: state=1
+2026-07-25T19:18:33.921Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-25T19:18:33.921Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-25T19:18:33.921Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params="" retval=CONT msg=""
+2026-07-25T19:18:33.921Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-25T19:18:33.922Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params="" retval=CONT msg=""
+2026-07-25T19:18:33.922Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-25T19:18:33.922Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params="" retval=CONT msg=""
+2026-07-25T19:18:33.922Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-25T19:18:34.024Z [INFO] [core] client half closed connection ip=198.235.24.253
+2026-07-25T19:18:34.025Z [DEBUG] [core] client has disconnected
+2026-07-25T19:18:34.025Z [DEBUG] [core] running disconnect hooks
+2026-07-25T19:18:34.025Z [DEBUG] [core] client has disconnected
+2026-07-25T19:18:34.025Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-25T19:18:34.026Z [DEBUG] [core] client has disconnected
+2026-07-25T19:18:34.026Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-25T19:18:34.026Z [DEBUG] [core] client has disconnected
+2026-07-25T19:18:34.026Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-25T19:18:34.027Z [DEBUG] [block_bad_connections] Invalid connections: 1/100
+2026-07-25T19:18:34.027Z [DEBUG] [core] client has disconnected
+2026-07-25T19:18:34.027Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-25T19:18:34.027Z [DEBUG] [core] client has disconnected
+2026-07-25T19:18:34.027Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-25T19:18:34.027Z [DEBUG] [core] client has disconnected
+2026-07-25T19:18:34.027Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-25T19:18:34.027Z [DEBUG] [core] client has disconnected
+2026-07-25T19:18:34.027Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-25T19:18:34.027Z [DEBUG] [core] client has disconnected
+2026-07-25T19:18:34.027Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-25T19:18:34.027Z [NOTICE] [core] disconnect ip=198.235.24.253 rdns=NXDOMAIN helo="" relay=N early=Y esmtp=N tls=N pipe=N errors=5 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="500 Unrecognized command" time=0.126

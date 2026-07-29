@@ -1,0 +1,149 @@
+2026-07-25T16:24:05.855Z [NOTICE] [core] connect ip=193.176.31.206 port=10398 local_ip=192.255.226.25 local_port=25
+2026-07-25T16:24:05.856Z [DEBUG] [core] running connect_init hooks
+2026-07-25T16:24:05.856Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-25T16:24:05.858Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-25T16:24:05.858Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-25T16:24:05.860Z [DEBUG] [core] hook=connect_init plugin=karma function=results_init params="" retval=CONT msg=""
+2026-07-25T16:24:05.860Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-25T16:24:05.860Z [DEBUG] [core] hook=connect_init plugin=karma function=ip_history_from_redis params="" retval=CONT msg=""
+2026-07-25T16:24:05.861Z [DEBUG] [core] running connect_init hook in early_talker plugin
+2026-07-25T16:24:08.861Z [DEBUG] [core] hook=connect_init plugin=early_talker function=early_talker params="" retval=CONT msg=""
+2026-07-25T16:24:08.861Z [DEBUG] [core] running connect_init hook in fcrdns plugin
+2026-07-25T16:24:08.861Z [DEBUG] [core] hook=connect_init plugin=fcrdns function=initialize_fcrdns params="" retval=CONT msg=""
+2026-07-25T16:24:08.861Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-25T16:24:08.861Z [DEBUG] [relay] checking 193.176.31.206 in relay_acl_allow
+2026-07-25T16:24:08.861Z [DEBUG] [relay] checking if 193.176.31.206 is in 192.255.226.25/32
+2026-07-25T16:24:08.861Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-25T16:24:08.861Z [DEBUG] [core] running connect_init_respond
+2026-07-25T16:24:08.861Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-25T16:24:08.861Z [DEBUG] [core] running lookup_rdns hook in p0f plugin
+2026-07-25T16:24:08.862Z [INFO] [p0f] os="Linux 2.2.x-3.x" link_type="Ethernet or modem" distance=9 total_conn=1
+2026-07-25T16:24:08.862Z [DEBUG] [core] hook=lookup_rdns plugin=p0f function=query_p0f params="" retval=CONT msg=""
+2026-07-25T16:24:08.862Z [DEBUG] [core] running lookup_rdns hook in fcrdns plugin
+2026-07-25T16:24:08.875Z [DEBUG] [fcrdns] rdns.reverse(193.176.31.206)
+2026-07-25T16:24:08.876Z [DEBUG] [fcrdns] PTRdomain: 193-176-31-206.infrawat.ch
+2026-07-25T16:24:08.901Z [INFO] [fcrdns] ip=193.176.31.206  rdns="193-176-31-206.infrawat.ch" rdns_len=1 fcrdns="" fcrdns_len=0 other_ips_len=0 invalid_tlds=0 generic_rdns=true
+2026-07-25T16:24:08.902Z [DEBUG] [core] hook=lookup_rdns plugin=fcrdns function=do_dns_lookups params="" retval=CONT msg=""
+2026-07-25T16:24:08.902Z [DEBUG] [core] running lookup_rdns hook in uribl plugin
+2026-07-25T16:24:08.915Z [DEBUG] [uribl] (rdns) found 1 items for lookup
+2026-07-25T16:24:08.915Z [DEBUG] [uribl] (rdns) checking: 193-176-31-206.infrawat.ch
+2026-07-25T16:24:08.938Z [DEBUG] [uribl] 193-176-31-206.infrawat.ch.dbl.spamhaus.org. => (Error: queryA ENOTFOUND 193-176-31-206.infrawat.ch.dbl.spamhaus.org.)
+2026-07-25T16:24:08.939Z [DEBUG] [core] hook=lookup_rdns plugin=uribl function=lookup_remote_ip params="" retval=CONT msg=""
+2026-07-25T16:24:08.939Z [DEBUG] [core] running lookup_rdns hook in asn plugin
+2026-07-25T16:24:09.088Z [INFO] [asn] asn: 25369, net: 193.176.31.0/24
+2026-07-25T16:24:09.088Z [DEBUG] [core] hook=lookup_rdns plugin=asn function=lookup_via_dns params="" retval=CONT msg=""
+2026-07-25T16:24:09.109Z [DEBUG] [core] running connect hooks
+2026-07-25T16:24:09.109Z [DEBUG] [core] running connect hook in guard plugin
+2026-07-25T16:24:09.109Z [DEBUG] [core] hook=connect plugin=guard function=hook_connect params="" retval=CONT msg=""
+2026-07-25T16:24:09.109Z [DEBUG] [core] running connect hook in karma plugin
+2026-07-25T16:24:09.109Z [DEBUG] [karma] static tarpit
+2026-07-25T16:24:09.109Z [DEBUG] [karma] tarpitting connect for 1s
+2026-07-25T16:24:09.110Z [INFO] [karma] score: -5, awards: 084,088
+2026-07-25T16:24:10.110Z [DEBUG] [karma] tarpit connect end
+2026-07-25T16:24:10.110Z [DEBUG] [core] hook=connect plugin=karma function=hook_connect params="" retval=CONT msg=""
+2026-07-25T16:24:10.110Z [DEBUG] [core] running connect hook in dns-list plugin
+2026-07-25T16:24:10.249Z [INFO] [dns-list] msg:XBL, blacklist, pass:b.barracudacentral.org, psbl.surriel.com, truncate.gbudb.net, bl.spamcop.net, dnsbl.justspam.org, fail:zen.spamhaus.org, hostkarma.junkemailfilter.com, dnsbl-1.uceprotect.net
+2026-07-25T16:24:10.249Z [INFO] [core] hook=connect plugin=dns-list function=onConnect params="" retval=DENY msg="host [193.176.31.206] is listed on zen.spamhaus.org, hostkarma.junkemailfilter.com, dnsbl-1.uceprotect.net"
+2026-07-25T16:24:10.249Z [DEBUG] [core] running deny hooks
+2026-07-25T16:24:10.249Z [DEBUG] [core] running deny hook in guard plugin
+2026-07-25T16:24:10.249Z [DEBUG] [core] hook=deny plugin=guard function=hook_deny params=902 retval=CONT msg=""
+2026-07-25T16:24:10.249Z [DEBUG] [core] running deny hook in karma plugin
+2026-07-25T16:24:10.249Z [INFO] [core] hook=deny plugin=karma function=hook_deny params=902 retval=OK msg=""
+2026-07-25T16:24:10.249Z [INFO] [core] deny(soft?) overridden by deny hook
+2026-07-25T16:24:10.249Z [DEBUG] [core] running connect hook in relay plugin
+2026-07-25T16:24:10.249Z [DEBUG] [core] hook=connect plugin=relay function=pass_relaying params="" retval=CONT msg=""
+2026-07-25T16:24:10.249Z [DEBUG] [core] running connect hook in geoip plugin
+2026-07-25T16:24:10.249Z [INFO] [geoip] GB
+2026-07-25T16:24:10.249Z [DEBUG] [core] hook=connect plugin=geoip function=lookup_maxmind params="" retval=CONT msg=""
+2026-07-25T16:24:10.250Z [PROTOCOL] [core] S: 220 mail.sebarray.tech ESMTP Haraka ready (80201C)
+2026-07-25T16:24:10.336Z [PROTOCOL] [core] C: EHLO scan.invalid state=1
+2026-07-25T16:24:10.338Z [DEBUG] [core] running ehlo hooks
+2026-07-25T16:24:10.338Z [DEBUG] [core] running ehlo hook in hello_block plugin
+2026-07-25T16:24:10.338Z [DEBUG] [core] hook=ehlo plugin=hello_block function=check_ymlf params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:10.338Z [DEBUG] [core] running ehlo hook in karma plugin
+2026-07-25T16:24:10.338Z [DEBUG] [karma] static tarpit
+2026-07-25T16:24:10.338Z [DEBUG] [karma] tarpitting ehlo for 1s
+2026-07-25T16:24:11.339Z [DEBUG] [karma] tarpit ehlo end
+2026-07-25T16:24:11.339Z [DEBUG] [core] hook=ehlo plugin=karma function=hook_ehlo params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:11.340Z [DEBUG] [core] running ehlo hook in helo.checks plugin
+2026-07-25T16:24:11.340Z [DEBUG] [core] hook=ehlo plugin=helo.checks function=proto_mismatch_esmtp params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:11.340Z [DEBUG] [core] running ehlo hook in helo.checks plugin
+2026-07-25T16:24:11.340Z [DEBUG] [core] hook=ehlo plugin=helo.checks function=init params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:11.340Z [DEBUG] [core] running ehlo hook in helo.checks plugin
+2026-07-25T16:24:11.340Z [DEBUG] [core] hook=ehlo plugin=helo.checks function=match_re params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:11.340Z [DEBUG] [core] running ehlo hook in helo.checks plugin
+2026-07-25T16:24:11.340Z [DEBUG] [core] hook=ehlo plugin=helo.checks function=bare_ip params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:11.340Z [DEBUG] [core] running ehlo hook in helo.checks plugin
+2026-07-25T16:24:11.340Z [DEBUG] [core] hook=ehlo plugin=helo.checks function=dynamic params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:11.340Z [DEBUG] [core] running ehlo hook in helo.checks plugin
+2026-07-25T16:24:11.341Z [DEBUG] [core] hook=ehlo plugin=helo.checks function=big_company params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:11.341Z [DEBUG] [core] running ehlo hook in helo.checks plugin
+2026-07-25T16:24:11.341Z [DEBUG] [core] hook=ehlo plugin=helo.checks function=valid_hostname params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:11.341Z [DEBUG] [core] running ehlo hook in helo.checks plugin
+2026-07-25T16:24:11.341Z [DEBUG] [core] hook=ehlo plugin=helo.checks function=rdns_match params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:11.341Z [DEBUG] [core] running ehlo hook in helo.checks plugin
+2026-07-25T16:24:11.341Z [DEBUG] [core] hook=ehlo plugin=helo.checks function=forward_dns params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:11.341Z [DEBUG] [core] running ehlo hook in helo.checks plugin
+2026-07-25T16:24:11.341Z [DEBUG] [core] hook=ehlo plugin=helo.checks function=host_mismatch params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:11.341Z [DEBUG] [core] running ehlo hook in helo.checks plugin
+2026-07-25T16:24:11.341Z [DEBUG] [core] hook=ehlo plugin=helo.checks function=literal_mismatch params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:11.341Z [DEBUG] [core] running ehlo hook in helo.checks plugin
+2026-07-25T16:24:11.341Z [INFO] [helo.checks] helo_host: scan.invalid, pass:match_re, bare_ip, dynamic, big_co(not), host_mismatch, literal_mismatch, fail:valid_hostname, rdns_match, forward_dns(invalid_hostname)
+2026-07-25T16:24:11.342Z [DEBUG] [core] hook=ehlo plugin=helo.checks function=emit_log params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:11.342Z [DEBUG] [core] running ehlo hook in mailauth/verify plugin
+2026-07-25T16:24:11.342Z [DEBUG] [core] hook=ehlo plugin=mailauth/verify function=mailauth_helo params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:11.342Z [DEBUG] [core] running ehlo hook in uribl plugin
+2026-07-25T16:24:11.342Z [DEBUG] [uribl] (helo) found 1 items for lookup
+2026-07-25T16:24:11.342Z [DEBUG] [uribl] (helo) checking: scan.invalid
+2026-07-25T16:24:11.342Z [DEBUG] [core] hook=ehlo plugin=uribl function=lookup_ehlo params=scan.invalid retval=CONT msg=""
+2026-07-25T16:24:11.342Z [DEBUG] [core] running capabilities hooks
+2026-07-25T16:24:11.342Z [DEBUG] [core] running capabilities hook in auth/poste plugin
+2026-07-25T16:24:11.342Z [DEBUG] [core] hook=capabilities plugin=auth/poste function=hook_capabilities params="" retval=CONT msg=""
+2026-07-25T16:24:11.342Z [DEBUG] [core] running capabilities hook in status_http plugin
+2026-07-25T16:24:11.342Z [DEBUG] [core] hook=capabilities plugin=status_http function=hook_capabilities params="" retval=CONT msg=""
+2026-07-25T16:24:11.342Z [DEBUG] [core] running capabilities hook in tls plugin
+2026-07-25T16:24:11.344Z [DEBUG] [core] hook=capabilities plugin=tls function=advertise_starttls params="" retval=CONT msg=""
+2026-07-25T16:24:11.344Z [PROTOCOL] [core] S: 250-mail.sebarray.tech Hello 193-176-31-206.infrawat.ch [193.176.31.206], Haraka is at your service.
+2026-07-25T16:24:11.344Z [PROTOCOL] [core] S: 250-PIPELINING
+2026-07-25T16:24:11.344Z [PROTOCOL] [core] S: 250-8BITMIME
+2026-07-25T16:24:11.344Z [PROTOCOL] [core] S: 250-SMTPUTF8
+2026-07-25T16:24:11.344Z [PROTOCOL] [core] S: 250-SIZE 26214400
+2026-07-25T16:24:11.344Z [PROTOCOL] [core] S: 250 STARTTLS
+2026-07-25T16:24:11.430Z [PROTOCOL] [core] C: STARTTLS state=1
+2026-07-25T16:24:11.430Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-25T16:24:11.431Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-25T16:24:11.431Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params=STARTTLS retval=CONT msg=""
+2026-07-25T16:24:11.431Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-25T16:24:11.431Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params=STARTTLS retval=CONT msg=""
+2026-07-25T16:24:11.431Z [DEBUG] [core] running unrecognized_command hook in karma plugin
+2026-07-25T16:24:11.431Z [DEBUG] [core] hook=unrecognized_command plugin=karma function=hook_unrecognized_command params=STARTTLS retval=CONT msg=""
+2026-07-25T16:24:11.431Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-25T16:24:11.431Z [PROTOCOL] [core] S: 220 Go ahead.
+2026-07-25T16:24:11.518Z [INFO] [core] client connection error: Error: read ECONNRESET ip=193.176.31.206
+2026-07-25T16:24:11.518Z [DEBUG] [core] client has disconnected
+2026-07-25T16:24:11.518Z [DEBUG] [core] running disconnect hooks
+2026-07-25T16:24:11.518Z [DEBUG] [core] client has disconnected
+2026-07-25T16:24:11.518Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-25T16:24:11.519Z [DEBUG] [core] client has disconnected
+2026-07-25T16:24:11.519Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-25T16:24:11.519Z [DEBUG] [core] client has disconnected
+2026-07-25T16:24:11.520Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-25T16:24:11.520Z [DEBUG] [block_bad_connections] Invalid connections: 1/100
+2026-07-25T16:24:11.520Z [DEBUG] [core] client has disconnected
+2026-07-25T16:24:11.520Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-25T16:24:11.520Z [DEBUG] [core] client has disconnected
+2026-07-25T16:24:11.520Z [DEBUG] [core] running disconnect hook in karma plugin
+2026-07-25T16:24:11.520Z [INFO] [karma] score: -17, awards: 084,088,116,115,130,133, deny_rc: 902, msg:deny: dns-list
+2026-07-25T16:24:11.520Z [DEBUG] [core] client has disconnected
+2026-07-25T16:24:11.520Z [DEBUG] [core] hook=disconnect plugin=karma function=hook_disconnect params="" retval=CONT msg=""
+2026-07-25T16:24:11.520Z [DEBUG] [core] client has disconnected
+2026-07-25T16:24:11.521Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-25T16:24:11.521Z [DEBUG] [core] client has disconnected
+2026-07-25T16:24:11.521Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-25T16:24:11.521Z [DEBUG] [core] client has disconnected
+2026-07-25T16:24:11.521Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-25T16:24:11.521Z [NOTICE] [tls] STARTTLS failed. Marking 193.176.31.206 as non-TLS host for 3600 seconds
+2026-07-25T16:24:11.521Z [DEBUG] [core] client has disconnected
+2026-07-25T16:24:11.521Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-25T16:24:11.521Z [NOTICE] [core] disconnect ip=193.176.31.206 rdns=193-176-31-206.infrawat.ch helo=scan.invalid relay=N early=N esmtp=Y tls=N pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="" time=5.665
+2026-07-25T16:24:11.522Z [DEBUG] [karma] unsubscribed from result-80201C0D-FA17-431C-82BD-2A2284710D04*

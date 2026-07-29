@@ -1,0 +1,77 @@
+2026-07-25T03:04:22.965Z [E055A246-F84E-41E5-863B-6193AF556A10] 91.231.89.246:47359%saad.probe.onyphe.net ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (E055A2)
+2026-07-25T03:04:33.667Z [C877C436-B00D-4478-9593-17969291A8F9] 91.231.89.245:41607%cuevas.probe.onyphe.net ()  ->  - [][] 220 Go ahead.
+2026-07-25T03:41:30.651Z [E73EF2A3-74F5-4ACE-A004-FE907281F115] 85.217.149.58:52448%o058.scanner.modat.io ()  ->  - [][] 501 SSL attempted over a non-SSL socket
+2026-07-25T03:57:02.098Z [D7B2D9F0-B698-4772-84ED-9BC92A4E3165] 85.217.149.36:44428%o037.scanner.modat.io ()  ->  - [][] 501 SSL attempted over a non-SSL socket
+2026-07-25T04:20:35.901Z [C2CDD942-EFC9-4623-A006-5D7756B5FC48] 193.176.31.157:6466%193-176-31-157.infrawat.ch ()  ->  - [][] 250-mail.sebarray.tech Hello 193-176-31-157.infrawat.ch [193.176.31.157], Haraka is at your service.\n250-PIPELINING\n250-8BITMIME\n250-SMTPUTF8\n250-SIZE 26214400\n250 AUTH PLAIN LOGIN
+2026-07-25T05:10:05.901Z [03CD8457-1B20-4DE2-B958-6D369E838446] 20.127.245.101:60274%azpdeswfqr02.stretchoid.com ()  ->  - [][] 501 EHLO requires domain/address - see RFC-2821 4.1.1.1
+2026-07-25T05:10:10.366Z [F4807D37-954F-4E5E-B84F-10D543648223] 20.127.245.101:35708%azpdeswfqr02.stretchoid.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (F4807D)
+2026-07-25T05:25:59.973Z [5B3EB5E2-208C-449D-B69F-EFDA8BBFC20F] 3.130.168.2:45642%scan.visionheight.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (5B3EB5)
+2026-07-25T05:27:37.243Z [1FF238B1-83FB-43DD-812F-0416768EDC73] 87.236.176.219:40877%r3-219-db.monitoring.internet-measurement.com ()  ->  - [][] 221 mail.sebarray.tech closing connection. Have a jolly good day.
+2026-07-25T06:02:05.194Z [C5E81E80-9118-48AC-9A17-E72D695E18D9] 64.62.197.122:14950%scan-40a.shadowserver.io ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (C5E81E)
+2026-07-25T06:03:28.771Z [607F2D19-20EF-48B4-B690-4B9602CA68CB] 64.62.197.122:43582%scan-40a.shadowserver.io ()  ->  - [][] 500 Unrecognized command
+2026-07-25T07:00:09.715Z [5E30BDD8-7D9B-4BF3-BA9E-9EB525A55E4A] 34.76.114.166:52432%166.114.76.34.bc.googleusercontent.com ()  ->  - [][] 250-mail.sebarray.tech Hello 166.114.76.34.bc.googleusercontent.com [34.76.114.166], Haraka is at your service.\n250-PIPELINING\n250-8BITMIME\n250-SMTPUTF8\n250-SIZE 26214400\n250 STARTTLS
+2026-07-25T07:01:08.414Z [93205FEF-4F73-4C7A-B530-0FC66C6AA65A] 104.199.24.218:21012%218.24.199.104.bc.googleusercontent.com ()  ->  - [][] 501 EHLO requires domain/address - see RFC-2821 4.1.1.1
+2026-07-25T07:01:16.024Z [6C0FF391-12D3-4499-ABEB-7572B47BA4F0] 104.199.24.218:61846%218.24.199.104.bc.googleusercontent.com ()  ->  - [][] 250 Not implemented
+2026-07-25T07:01:21.129Z [F5AE1973-1B5F-48B9-9A80-9AFC1DDB4566] 104.199.24.218:30874%218.24.199.104.bc.googleusercontent.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (F5AE19)
+2026-07-25T07:01:26.221Z [8DAD5208-B96F-4391-AAC1-2F7C4978A58B] 104.199.24.218:30886%218.24.199.104.bc.googleusercontent.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (8DAD52)
+2026-07-25T07:01:32.042Z [CBE7D83D-72E7-45EE-8FB3-408AAD7F895E] 104.199.24.218:55550%218.24.199.104.bc.googleusercontent.com ()  ->  - [][] 221 mail.sebarray.tech closing connection. Have a jolly good day.
+2026-07-25T07:15:17.609Z [9E942A25-BF4F-4977-B579-4B71BFD5D693] 20.65.194.25:57330%azpdssrvaql5.stretchoid.com ()  ->  - [][] 501 EHLO requires domain/address - see RFC-2821 4.1.1.1
+2026-07-25T07:15:17.746Z [1349F5FA-857F-4350-B189-B943B0BC6E87] 20.65.194.25:57342%azpdssrvaql5.stretchoid.com ()  ->  - [][] 500 Unrecognized command
+2026-07-25T07:50:34.279Z [1F5C293B-31B3-44B2-BB48-CA525F003019] 162.216.150.237:51359%237.150.216.162.bc.googleusercontent.com ()  ->  - [][] 500 Unrecognized command
+2026-07-25T07:50:34.433Z [AA01503E-9B37-4667-99C8-C3422BC9AEA0] 162.216.150.237:63402%237.150.216.162.bc.googleusercontent.com ()  ->  - [][] 250-mail.sebarray.tech Hello 237.150.216.162.bc.googleusercontent.com [162.216.150.237], Haraka is at your service.\n250-PIPELINING\n250-8BITMIME\n250-SMTPUTF8\n250-SIZE 26214400\n250 STARTTLS
+2026-07-25T09:14:52.316Z [58546770-213A-41EE-9B72-755EDDA8C8F8.1] 127.0.0.1:54456%localhost.localdomain (yo@sebarray.tech) <yo@sebarray.tech> -> <sebarray98@gmail.com> - [][<5dca125b08d9ddcffd73859969963fa6@sebarray.tech>] 250 Message Queued (58546770-213A-41EE-9B72-755EDDA8C8F8.1)
+2026-07-25T11:20:30.694Z [AAB8E23A-B59B-47B3-8D7F-787515016C74] 85.217.149.57:54916%o057.scanner.modat.io ()  ->  - [][] 501 EHLO requires domain/address - see RFC-2821 4.1.1.1
+2026-07-25T11:28:20.318Z [E1F66AFD-5BE9-4B3E-902B-CDB4447535D9] 85.217.149.29:53656%o030.scanner.modat.io ()  ->  - [][] 501 EHLO requires domain/address - see RFC-2821 4.1.1.1
+2026-07-25T11:35:39.684Z [B8CA95CA-77DC-4D13-BE59-5D01B99F05C9] 85.217.149.16:51206%o017.scanner.modat.io ()  ->  - [][] 501 EHLO requires domain/address - see RFC-2821 4.1.1.1
+2026-07-25T13:10:57.644Z [FE491264-2DEA-46B5-8E91-3B808EBC6A1D] 184.105.139.69:64486% ()  ->  - [][] 
+2026-07-25T13:20:15.119Z [47C5D7E7-CF1E-496F-A7B7-AF545B6462E8] 44.220.188.7:49740%scanner-44-220-188-7.reposify.net ()  ->  - [][] 500 Unrecognized command
+2026-07-25T15:01:42.642Z [92A9C00D-876D-4722-93CB-91832D24F994] 172.232.160.26:49031%172.232.160.26.socradar-curiosity-wide-scan-project.socradar.com ()  ->  - [][] 421 Unrecognized command
+2026-07-25T15:01:51.431Z [628A01EB-FAD6-4032-8356-DFB5B38492BA] 172.232.160.26:49062%172.232.160.26.socradar-curiosity-wide-scan-project.socradar.com ()  ->  - [][] 421 Unrecognized command
+2026-07-25T16:24:11.521Z [80201C0D-FA17-431C-82BD-2A2284710D04] 193.176.31.206:10398%193-176-31-206.infrawat.ch ()  ->  - [][] 220 Go ahead.
+2026-07-25T16:28:49.900Z [7F69D5F8-A71F-41C7-9217-31CC6E930890] 154.16.44.213:42612%NXDOMAIN ()  ->  - [][] 421 timeout
+2026-07-25T17:21:08.842Z [D86FC41D-AEE6-41BA-8293-A72DAC167F94] 3.129.187.38:58624%scan.visionheight.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (D86FC4)
+2026-07-25T17:21:15.365Z [07E15AB2-DF94-43CC-99C1-E2B6E2DE670B] 3.129.187.38:45312%scan.visionheight.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (07E15A)
+2026-07-25T17:22:38.998Z [A033DF8B-4F1E-4788-9889-E7885CEFA4DE] 3.129.187.38:41208%scan.visionheight.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (A033DF)
+2026-07-25T17:24:17.222Z [652B0C98-40F7-4EAB-B397-14C9ECDFE27A] 3.129.187.38:16884%scan.visionheight.com ()  ->  - [][] 501 SSL attempted over a non-SSL socket
+2026-07-25T17:26:23.953Z [4B9DE3C9-67CF-4638-9CCB-202C40230669] 3.129.187.38:33722%scan.visionheight.com ()  ->  - [][] 501 SSL attempted over a non-SSL socket
+2026-07-25T17:26:37.372Z [13B862B3-200D-497C-83F5-02A7C22B7A78] 3.129.187.38:22000%scan.visionheight.com ()  ->  - [][] 501 EHLO requires domain/address - see RFC-2821 4.1.1.1
+2026-07-25T17:44:44.637Z [3EF4A798-C773-411A-A99D-7718EBD83866] 172.94.9.231:53132% ()  ->  - [][] 
+2026-07-25T17:44:53.095Z [04988CE4-5577-414E-B65D-C526CA297018.1] 172.94.9.231:53270%NXDOMAIN () <office@sebarray.tech> ->  - [][] 550 I cannot deliver mail for <dscolder4@atomicmail.io>
+2026-07-25T18:16:20.936Z [E66E55AE-9B9B-41DC-9FF4-2E508AD09870] 199.45.154.115:39570%115.154.45.199.censys-scanner.com ()  ->  - [][] 250-mail.sebarray.tech Hello 115.154.45.199.censys-scanner.com [199.45.154.115], Haraka is at your service.\n250-PIPELINING\n250-8BITMIME\n250-SMTPUTF8\n250-SIZE 26214400\n250 AUTH PLAIN LOGIN
+2026-07-25T18:16:28.872Z [946F88BC-897A-4B8B-B381-A3D1E54FD340] 199.45.154.115:53912%115.154.45.199.censys-scanner.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (946F88)
+2026-07-25T18:16:31.561Z [23E15E1D-F6E4-461D-B01E-7C1A4CA4842E] 199.45.154.115:54406%115.154.45.199.censys-scanner.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (23E15E)
+2026-07-25T18:16:35.044Z [0A807044-71AF-461F-B7F3-9645AFB42CC5] 199.45.154.115:54432%115.154.45.199.censys-scanner.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (0A8070)
+2026-07-25T19:18:34.027Z [BF3C48C7-E03D-402A-8453-1B6E12C0CC12] 198.235.24.253:60998%NXDOMAIN ()  ->  - [][] 500 Unrecognized command
+2026-07-25T19:43:34.279Z [B8FFC9FF-7464-4B13-8FAB-F3CC19831AA9] 85.217.149.42:52608%o042.scanner.modat.io ()  ->  - [][] 501 SSL attempted over a non-SSL socket
+2026-07-25T19:55:22.271Z [24313D3C-5DBC-45E2-8FC6-DB222B694B27] 85.217.149.49:35098%o049.scanner.modat.io ()  ->  - [][] 501 EHLO requires domain/address - see RFC-2821 4.1.1.1
+2026-07-25T19:58:27.703Z [C0979F6A-0239-41EC-87D2-1C0ED7E9A2BC] 85.217.149.34:50962%o035.scanner.modat.io ()  ->  - [][] 501 SSL attempted over a non-SSL socket
+2026-07-25T20:11:23.181Z [8DAF7108-CC2F-423E-8DA0-1EFD5BD70AC5] 85.217.149.28:33046%o029.scanner.modat.io ()  ->  - [][] 501 EHLO requires domain/address - see RFC-2821 4.1.1.1
+2026-07-25T21:44:21.875Z [037F075B-1E8F-4451-9109-448A0BFABA2D] 139.59.134.210:11881%NXDOMAIN ()  ->  - [][] 501 EHLO requires domain/address - see RFC-2821 4.1.1.1
+2026-07-25T21:44:29.573Z [4677DF11-A199-4225-B889-C4F11C189AF6] 139.59.134.210:20229%NXDOMAIN ()  ->  - [][] 250 Not implemented
+2026-07-25T21:44:34.773Z [F4183F66-7A39-4B44-8F64-DCCCD992540E] 139.59.134.210:6563%NXDOMAIN ()  ->  - [][] 500 Unrecognized command
+2026-07-25T21:44:39.983Z [402DE183-AE2D-49A0-9878-AB1DAFE36279] 139.59.134.210:32015%NXDOMAIN ()  ->  - [][] 500 Unrecognized command
+2026-07-25T23:16:59.140Z [D65A2DCB-51A9-4DBE-8B3C-280FFE0AE2B1] 135.237.127.116:47096%azpdegjmx2gf.stretchoid.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (D65A2D)
+2026-07-25T23:33:36.025Z [7BBB54E6-407B-4BCC-BA94-F84A3CF94D32] 66.132.195.98:6842%98.195.132.66.censys-scanner.com ()  ->  - [][] 220 Go ahead.
+2026-07-25T23:50:03.086Z [92C5BEF2-ABA7-439F-A073-DF80715E25CE] 45.133.173.91:54837%NXDOMAIN ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (92C5BE)
+2026-07-25T23:50:14.702Z [7FDB9B88-7842-487B-91C7-C0AD810706C2] 193.176.31.224:3148%193-176-31-224.infrawat.ch ()  ->  - [][] 220 Go ahead.
+2026-07-26T00:13:35.801Z [27EA847B-6A23-4580-9C9E-EA1424AA3EE9.1] 158.94.211.198:56461%NXDOMAIN () <spameri@tiscali.it> ->  - [][] 550 I cannot deliver mail for <spameri@tiscali.it>
+2026-07-26T01:04:44.769Z [AA2319CF-449A-44B7-A5EB-CBE1759E75D7] 18.97.5.112:51656%scanner-18-97-5-112.reposify.net ()  ->  - [][] 500 Unrecognized command
+2026-07-26T01:31:05.307Z [2662EBA2-057B-4B51-B298-009C28A3E8F8] 195.96.139.243:40777%r5-243-f3.monitoring.internet-measurement.com ()  ->  - [][] 221 mail.sebarray.tech closing connection. Have a jolly good day.
+2026-07-26T01:31:06.596Z [97350A83-0B74-45C4-8920-FBC61BED8C33] 87.236.176.178:39823%r3-178-b2.monitoring.internet-measurement.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (97350A)
+2026-07-26T01:31:40.292Z [880FCC7F-0D80-48DE-9445-B3DB720AA940] 185.247.137.155:55633%r4-155-9b.monitoring.internet-measurement.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (880FCC)
+2026-07-26T01:32:14.085Z [5024545E-194F-453C-8A60-7E3CE46E67BE] 87.236.176.169:38811%r3-169-a9.monitoring.internet-measurement.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (502454)
+2026-07-26T01:33:20.989Z [759A4B19-16BF-4FD8-9443-1E0C8B088531] 195.96.139.156:41497%r5-156-9c.monitoring.internet-measurement.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (759A4B)
+2026-07-26T01:33:54.696Z [838BB36F-CEEB-4455-9D3D-2A0A4BB9541F] 185.247.137.158:49613%r4-158-9e.monitoring.internet-measurement.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (838BB3)
+2026-07-26T01:34:28.485Z [43124427-6E7F-42C9-8165-1E40F96F6262] 195.96.139.152:35685%r5-152-98.monitoring.internet-measurement.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (431244)
+2026-07-26T01:35:02.287Z [44988978-99CF-492F-A369-696AA9F766BF] 185.247.137.149:53639%r4-149-95.monitoring.internet-measurement.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (449889)
+2026-07-26T01:35:36.084Z [CE48D0C7-E964-4191-8EFA-2DD676016335] 185.247.137.169:58767%r4-169-a9.monitoring.internet-measurement.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (CE48D0)
+2026-07-26T01:36:09.879Z [6D424A11-A662-4549-A1BC-F40103F35F41] 195.96.139.161:33661%r5-161-a1.monitoring.internet-measurement.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (6D424A)
+2026-07-26T01:36:43.681Z [B09D1571-F153-444B-935E-6B536670DF5E] 185.247.137.147:52481%r4-147-93.monitoring.internet-measurement.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (B09D15)
+2026-07-26T01:38:20.521Z [4BA4015A-D6EF-4A5C-AFBC-C5E90FF592AA.1] 178.16.53.247:54940%NXDOMAIN () <spameri@tiscali.it> ->  - [][] 550 I cannot deliver mail for <spameri@tiscali.it>
+2026-07-26T02:16:37.205Z [F8106AF9-29F3-47F4-A458-0FE9DA31CBB3] 35.205.168.24:51384%24.168.205.35.bc.googleusercontent.com ()  ->  - [][] 250-mail.sebarray.tech Hello 24.168.205.35.bc.googleusercontent.com [35.205.168.24], Haraka is at your service.\n250-PIPELINING\n250-8BITMIME\n250-SMTPUTF8\n250-SIZE 26214400\n250 STARTTLS
+2026-07-26T02:16:51.551Z [D5ED0495-52B5-4FC4-BC62-B87093C61FF3] 34.62.253.34:39784%34.253.62.34.bc.googleusercontent.com ()  ->  - [][] 501 EHLO requires domain/address - see RFC-2821 4.1.1.1
+2026-07-26T02:16:59.147Z [07875043-5BA7-44DE-97B7-0CEC87242C76] 34.62.253.34:56436%34.253.62.34.bc.googleusercontent.com ()  ->  - [][] 250 Not implemented
+2026-07-26T02:17:04.245Z [3AACE3D1-318B-4B55-A259-503B855CD9B5] 34.62.253.34:4382%34.253.62.34.bc.googleusercontent.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (3AACE3)
+2026-07-26T02:17:09.357Z [C1F6A735-41E3-43D4-A1CF-8721A9B33833] 34.62.253.34:27098%34.253.62.34.bc.googleusercontent.com ()  ->  - [][] 220 mail.sebarray.tech ESMTP Haraka ready (C1F6A7)
+2026-07-26T02:17:46.090Z [F85915C9-B413-4B36-9A73-C10DCF828A08] 34.62.253.34:47376%34.253.62.34.bc.googleusercontent.com ()  ->  - [][] 221 mail.sebarray.tech closing connection. Have a jolly good day.
+2026-07-26T02:30:31.981Z [BAEAAB83-45EC-43CA-877F-93DF00C87D94] 66.132.195.111:49558%111.195.132.66.censys-scanner.com ()  ->  - [][] 220 Go ahead.

@@ -1,0 +1,57 @@
+2026-07-25T18:16:20.269Z [NOTICE] [core] connect ip=199.45.154.115 port=39570 local_ip=192.255.226.25 local_port=465
+2026-07-25T18:16:20.270Z [DEBUG] [core] running connect_init hooks
+2026-07-25T18:16:20.270Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-25T18:16:20.274Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-25T18:16:20.274Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-25T18:16:20.274Z [DEBUG] [relay] checking 199.45.154.115 in relay_acl_allow
+2026-07-25T18:16:20.274Z [DEBUG] [relay] checking if 199.45.154.115 is in 192.255.226.25/32
+2026-07-25T18:16:20.275Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-25T18:16:20.275Z [DEBUG] [core] running connect_init_respond
+2026-07-25T18:16:20.275Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-25T18:16:20.302Z [DEBUG] [core] running connect hooks
+2026-07-25T18:16:20.302Z [DEBUG] [core] running connect hook in guard plugin
+2026-07-25T18:16:20.302Z [DEBUG] [core] hook=connect plugin=guard function=hook_connect params="" retval=CONT msg=""
+2026-07-25T18:16:20.302Z [DEBUG] [core] running connect hook in relay plugin
+2026-07-25T18:16:20.302Z [DEBUG] [core] hook=connect plugin=relay function=pass_relaying params="" retval=CONT msg=""
+2026-07-25T18:16:20.302Z [DEBUG] [core] running connect hook in geoip plugin
+2026-07-25T18:16:20.303Z [INFO] [geoip] US
+2026-07-25T18:16:20.303Z [DEBUG] [core] hook=connect plugin=geoip function=lookup_maxmind params="" retval=CONT msg=""
+2026-07-25T18:16:20.303Z [PROTOCOL] [core] S: 220 mail.sebarray.tech ESMTP Haraka ready (E66E55)
+2026-07-25T18:16:20.725Z [PROTOCOL] [core] C: EHLO www.censys.io state=1
+2026-07-25T18:16:20.725Z [DEBUG] [core] running ehlo hooks
+2026-07-25T18:16:20.725Z [DEBUG] [core] running ehlo hook in hello_block plugin
+2026-07-25T18:16:20.725Z [DEBUG] [core] hook=ehlo plugin=hello_block function=check_ymlf params=www.censys.io retval=CONT msg=""
+2026-07-25T18:16:20.726Z [DEBUG] [core] running capabilities hooks
+2026-07-25T18:16:20.726Z [DEBUG] [core] running capabilities hook in status_http plugin
+2026-07-25T18:16:20.726Z [DEBUG] [core] hook=capabilities plugin=status_http function=hook_capabilities params="" retval=CONT msg=""
+2026-07-25T18:16:20.726Z [DEBUG] [core] running capabilities hook in tls plugin
+2026-07-25T18:16:20.726Z [DEBUG] [core] hook=capabilities plugin=tls function=advertise_starttls params="" retval=CONT msg=""
+2026-07-25T18:16:20.726Z [DEBUG] [core] running capabilities hook in auth/poste plugin
+2026-07-25T18:16:20.726Z [DEBUG] [core] hook=capabilities plugin=auth/poste function=hook_capabilities params="" retval=CONT msg=""
+2026-07-25T18:16:20.726Z [PROTOCOL] [core] S: 250-mail.sebarray.tech Hello 115.154.45.199.censys-scanner.com [199.45.154.115], Haraka is at your service.
+2026-07-25T18:16:20.726Z [PROTOCOL] [core] S: 250-PIPELINING
+2026-07-25T18:16:20.726Z [PROTOCOL] [core] S: 250-8BITMIME
+2026-07-25T18:16:20.726Z [PROTOCOL] [core] S: 250-SMTPUTF8
+2026-07-25T18:16:20.726Z [PROTOCOL] [core] S: 250-SIZE 26214400
+2026-07-25T18:16:20.726Z [PROTOCOL] [core] S: 250 AUTH PLAIN LOGIN
+2026-07-25T18:16:20.934Z [INFO] [core] client half closed connection ip=199.45.154.115
+2026-07-25T18:16:20.934Z [DEBUG] [core] client has disconnected
+2026-07-25T18:16:20.934Z [DEBUG] [core] running disconnect hooks
+2026-07-25T18:16:20.934Z [DEBUG] [core] client has disconnected
+2026-07-25T18:16:20.934Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-25T18:16:20.935Z [DEBUG] [core] client has disconnected
+2026-07-25T18:16:20.935Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-25T18:16:20.935Z [DEBUG] [core] client has disconnected
+2026-07-25T18:16:20.935Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-25T18:16:20.936Z [DEBUG] [block_bad_connections] Invalid connections: 1/100
+2026-07-25T18:16:20.936Z [DEBUG] [core] client has disconnected
+2026-07-25T18:16:20.936Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-25T18:16:20.936Z [DEBUG] [core] client has disconnected
+2026-07-25T18:16:20.936Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-25T18:16:20.936Z [DEBUG] [core] client has disconnected
+2026-07-25T18:16:20.936Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-25T18:16:20.936Z [DEBUG] [core] client has disconnected
+2026-07-25T18:16:20.936Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-25T18:16:20.936Z [DEBUG] [core] client has disconnected
+2026-07-25T18:16:20.936Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-25T18:16:20.936Z [NOTICE] [core] disconnect ip=199.45.154.115 rdns=115.154.45.199.censys-scanner.com helo=www.censys.io relay=N early=N esmtp=Y tls=Y pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="" time=0.666

@@ -1,0 +1,80 @@
+2026-07-28T02:13:50.301Z [NOTICE] [core] connect ip=34.140.177.43 port=58634 local_ip=192.255.226.25 local_port=25
+2026-07-28T02:13:50.301Z [DEBUG] [core] running connect_init hooks
+2026-07-28T02:13:50.301Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-28T02:13:50.302Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-28T02:13:50.302Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-28T02:13:50.304Z [DEBUG] [core] hook=connect_init plugin=karma function=results_init params="" retval=CONT msg=""
+2026-07-28T02:13:50.304Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-28T02:13:50.304Z [INFO] [karma] score: 0, good: 0, bad: 5, connections: 6, history: -5
+2026-07-28T02:13:50.304Z [DEBUG] [core] hook=connect_init plugin=karma function=ip_history_from_redis params="" retval=CONT msg=""
+2026-07-28T02:13:50.304Z [DEBUG] [core] running connect_init hook in early_talker plugin
+2026-07-28T02:13:53.305Z [DEBUG] [core] hook=connect_init plugin=early_talker function=early_talker params="" retval=CONT msg=""
+2026-07-28T02:13:53.306Z [DEBUG] [core] running connect_init hook in fcrdns plugin
+2026-07-28T02:13:53.306Z [DEBUG] [core] hook=connect_init plugin=fcrdns function=initialize_fcrdns params="" retval=CONT msg=""
+2026-07-28T02:13:53.306Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-28T02:13:53.306Z [DEBUG] [relay] checking 34.140.177.43 in relay_acl_allow
+2026-07-28T02:13:53.306Z [DEBUG] [relay] checking if 34.140.177.43 is in 192.255.226.25/32
+2026-07-28T02:13:53.306Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-28T02:13:53.306Z [DEBUG] [core] running connect_init_respond
+2026-07-28T02:13:53.306Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-28T02:13:53.306Z [DEBUG] [core] running lookup_rdns hook in p0f plugin
+2026-07-28T02:13:53.306Z [INFO] [p0f] os="Linux 2.2.x-3.x" link_type="generic tunnel or VPN" distance=10 total_conn=7
+2026-07-28T02:13:53.306Z [DEBUG] [core] hook=lookup_rdns plugin=p0f function=query_p0f params="" retval=CONT msg=""
+2026-07-28T02:13:53.306Z [DEBUG] [core] running lookup_rdns hook in fcrdns plugin
+2026-07-28T02:13:53.330Z [DEBUG] [fcrdns] rdns.reverse(34.140.177.43)
+2026-07-28T02:13:53.330Z [DEBUG] [fcrdns] PTRdomain: 43.177.140.34.bc.googleusercontent.com
+2026-07-28T02:13:53.375Z [INFO] [fcrdns] ip=34.140.177.43  rdns="43.177.140.34.bc.googleusercontent.com" rdns_len=1 fcrdns="43.177.140.34.bc.googleusercontent.com" fcrdns_len=1 other_ips_len=0 invalid_tlds=0 generic_rdns=true
+2026-07-28T02:13:53.375Z [DEBUG] [core] hook=lookup_rdns plugin=fcrdns function=do_dns_lookups params="" retval=CONT msg=""
+2026-07-28T02:13:53.375Z [DEBUG] [core] running lookup_rdns hook in uribl plugin
+2026-07-28T02:13:53.398Z [DEBUG] [uribl] (rdns) found 1 items for lookup
+2026-07-28T02:13:53.398Z [DEBUG] [uribl] (rdns) checking: 43.177.140.34.bc.googleusercontent.com
+2026-07-28T02:13:53.445Z [DEBUG] [uribl] 43.177.140.34.bc.googleusercontent.com.dbl.spamhaus.org. => (Error: queryA ENOTFOUND 43.177.140.34.bc.googleusercontent.com.dbl.spamhaus.org.)
+2026-07-28T02:13:53.445Z [DEBUG] [core] hook=lookup_rdns plugin=uribl function=lookup_remote_ip params="" retval=CONT msg=""
+2026-07-28T02:13:53.445Z [DEBUG] [core] running lookup_rdns hook in asn plugin
+2026-07-28T02:13:53.599Z [INFO] [asn] asn: 396982, net: 34.140.176.0/20
+2026-07-28T02:13:53.599Z [DEBUG] [core] hook=lookup_rdns plugin=asn function=lookup_via_dns params="" retval=CONT msg=""
+2026-07-28T02:13:53.620Z [DEBUG] [core] running connect hooks
+2026-07-28T02:13:53.621Z [DEBUG] [core] running connect hook in guard plugin
+2026-07-28T02:13:53.621Z [DEBUG] [core] hook=connect plugin=guard function=hook_connect params="" retval=CONT msg=""
+2026-07-28T02:13:53.621Z [DEBUG] [core] running connect hook in karma plugin
+2026-07-28T02:13:53.621Z [DEBUG] [karma] static tarpit
+2026-07-28T02:13:53.621Z [DEBUG] [karma] tarpitting connect for 1s
+2026-07-28T02:13:53.621Z [INFO] [karma] score: -3, good: 0, bad: 5, connections: 6, history: -5, awards: 004,005,088, asn_score: -28, fail:asn:history, asn:all_bad
+2026-07-28T02:13:54.620Z [DEBUG] [karma] tarpit connect end
+2026-07-28T02:13:54.620Z [DEBUG] [core] hook=connect plugin=karma function=hook_connect params="" retval=CONT msg=""
+2026-07-28T02:13:54.621Z [DEBUG] [core] running connect hook in dns-list plugin
+2026-07-28T02:13:54.700Z [INFO] [dns-list] pass:b.barracudacentral.org, psbl.surriel.com, bl.spamcop.net, zen.spamhaus.org, dnsbl-1.uceprotect.net, truncate.gbudb.net, dnsbl.justspam.org
+2026-07-28T02:13:54.700Z [DEBUG] [core] hook=connect plugin=dns-list function=onConnect params="" retval=CONT msg=""
+2026-07-28T02:13:54.700Z [DEBUG] [core] running connect hook in relay plugin
+2026-07-28T02:13:54.700Z [DEBUG] [core] hook=connect plugin=relay function=pass_relaying params="" retval=CONT msg=""
+2026-07-28T02:13:54.700Z [DEBUG] [core] running connect hook in geoip plugin
+2026-07-28T02:13:54.700Z [INFO] [geoip] US
+2026-07-28T02:13:54.700Z [DEBUG] [core] hook=connect plugin=geoip function=lookup_maxmind params="" retval=CONT msg=""
+2026-07-28T02:13:54.700Z [PROTOCOL] [core] S: 220 mail.sebarray.tech ESMTP Haraka ready (572C68)
+2026-07-28T02:14:24.846Z [INFO] [core] client connection error: Error: read ECONNRESET ip=34.140.177.43
+2026-07-28T02:14:24.846Z [DEBUG] [core] client has disconnected
+2026-07-28T02:14:24.846Z [DEBUG] [core] running disconnect hooks
+2026-07-28T02:14:24.846Z [DEBUG] [core] client has disconnected
+2026-07-28T02:14:24.846Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-28T02:14:24.847Z [DEBUG] [core] client has disconnected
+2026-07-28T02:14:24.848Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T02:14:24.848Z [DEBUG] [core] client has disconnected
+2026-07-28T02:14:24.848Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-28T02:14:24.848Z [DEBUG] [block_bad_connections] Invalid connections: 6/100
+2026-07-28T02:14:24.848Z [DEBUG] [core] client has disconnected
+2026-07-28T02:14:24.848Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T02:14:24.848Z [DEBUG] [core] client has disconnected
+2026-07-28T02:14:24.848Z [DEBUG] [core] running disconnect hook in karma plugin
+2026-07-28T02:14:24.848Z [INFO] [karma] score: -3, good: 0, bad: 5, connections: 6, history: -5, awards: 004,005,088, asn_score: -28, fail:asn:history, asn:all_bad
+2026-07-28T02:14:24.848Z [DEBUG] [core] client has disconnected
+2026-07-28T02:14:24.849Z [DEBUG] [core] hook=disconnect plugin=karma function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T02:14:24.849Z [DEBUG] [core] client has disconnected
+2026-07-28T02:14:24.849Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-28T02:14:24.849Z [DEBUG] [core] client has disconnected
+2026-07-28T02:14:24.849Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T02:14:24.849Z [DEBUG] [core] client has disconnected
+2026-07-28T02:14:24.849Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-28T02:14:24.849Z [DEBUG] [core] client has disconnected
+2026-07-28T02:14:24.849Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T02:14:24.850Z [NOTICE] [core] disconnect ip=34.140.177.43 rdns=43.177.140.34.bc.googleusercontent.com helo="" relay=N early=N esmtp=N tls=N pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="" time=34.549
+2026-07-28T02:14:24.850Z [DEBUG] [karma] unsubscribed from result-572C6810-DA55-4626-A2AB-EDF82F75E82E*

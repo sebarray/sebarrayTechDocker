@@ -1,0 +1,87 @@
+2026-07-27T05:08:44.026Z [NOTICE] [core] connect ip=195.206.182.210 port=48533 local_ip=192.255.226.25 local_port=25
+2026-07-27T05:08:44.026Z [DEBUG] [core] running connect_init hooks
+2026-07-27T05:08:44.027Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-27T05:08:44.030Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-27T05:08:44.030Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-27T05:08:44.033Z [DEBUG] [core] hook=connect_init plugin=karma function=results_init params="" retval=CONT msg=""
+2026-07-27T05:08:44.033Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-27T05:08:44.034Z [DEBUG] [core] hook=connect_init plugin=karma function=ip_history_from_redis params="" retval=CONT msg=""
+2026-07-27T05:08:44.034Z [DEBUG] [core] running connect_init hook in early_talker plugin
+2026-07-27T05:08:47.035Z [DEBUG] [core] hook=connect_init plugin=early_talker function=early_talker params="" retval=CONT msg=""
+2026-07-27T05:08:47.035Z [DEBUG] [core] running connect_init hook in fcrdns plugin
+2026-07-27T05:08:47.035Z [DEBUG] [core] hook=connect_init plugin=fcrdns function=initialize_fcrdns params="" retval=CONT msg=""
+2026-07-27T05:08:47.035Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-27T05:08:47.035Z [DEBUG] [relay] checking 195.206.182.210 in relay_acl_allow
+2026-07-27T05:08:47.035Z [DEBUG] [relay] checking if 195.206.182.210 is in 192.255.226.25/32
+2026-07-27T05:08:47.035Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-27T05:08:47.035Z [DEBUG] [core] running connect_init_respond
+2026-07-27T05:08:47.036Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-27T05:08:47.036Z [DEBUG] [core] running lookup_rdns hook in p0f plugin
+2026-07-27T05:08:47.036Z [INFO] [p0f] distance=13 total_conn=1
+2026-07-27T05:08:47.036Z [DEBUG] [core] hook=lookup_rdns plugin=p0f function=query_p0f params="" retval=CONT msg=""
+2026-07-27T05:08:47.036Z [DEBUG] [core] running lookup_rdns hook in fcrdns plugin
+2026-07-27T05:08:47.057Z [DEBUG] [fcrdns] rdns.reverse(195.206.182.210)
+2026-07-27T05:08:47.058Z [DEBUG] [fcrdns] PTRdomain: 195-206-182-210.infrawat.ch
+2026-07-27T05:08:47.105Z [INFO] [fcrdns] ip=195.206.182.210  rdns="195-206-182-210.infrawat.ch" rdns_len=1 fcrdns="" fcrdns_len=0 other_ips_len=0 invalid_tlds=0 generic_rdns=true
+2026-07-27T05:08:47.105Z [DEBUG] [core] hook=lookup_rdns plugin=fcrdns function=do_dns_lookups params="" retval=CONT msg=""
+2026-07-27T05:08:47.105Z [DEBUG] [core] running lookup_rdns hook in uribl plugin
+2026-07-27T05:08:47.118Z [DEBUG] [uribl] (rdns) found 1 items for lookup
+2026-07-27T05:08:47.118Z [DEBUG] [uribl] (rdns) checking: 195-206-182-210.infrawat.ch
+2026-07-27T05:08:47.157Z [DEBUG] [uribl] 195-206-182-210.infrawat.ch.dbl.spamhaus.org. => (Error: queryA ENOTFOUND 195-206-182-210.infrawat.ch.dbl.spamhaus.org.)
+2026-07-27T05:08:47.157Z [DEBUG] [core] hook=lookup_rdns plugin=uribl function=lookup_remote_ip params="" retval=CONT msg=""
+2026-07-27T05:08:47.157Z [DEBUG] [core] running lookup_rdns hook in asn plugin
+2026-07-27T05:08:47.305Z [INFO] [asn] asn: 25369, net: 195.206.180.0/22
+2026-07-27T05:08:47.305Z [DEBUG] [core] hook=lookup_rdns plugin=asn function=lookup_via_dns params="" retval=CONT msg=""
+2026-07-27T05:08:47.318Z [DEBUG] [core] running connect hooks
+2026-07-27T05:08:47.318Z [DEBUG] [core] running connect hook in guard plugin
+2026-07-27T05:08:47.318Z [DEBUG] [core] hook=connect plugin=guard function=hook_connect params="" retval=CONT msg=""
+2026-07-27T05:08:47.318Z [DEBUG] [core] running connect hook in karma plugin
+2026-07-27T05:08:47.318Z [DEBUG] [karma] static tarpit
+2026-07-27T05:08:47.318Z [DEBUG] [karma] tarpitting connect for 1s
+2026-07-27T05:08:47.319Z [INFO] [karma] score: -5, awards: 084,088, asn_score: -4
+2026-07-27T05:08:48.319Z [DEBUG] [karma] tarpit connect end
+2026-07-27T05:08:48.320Z [DEBUG] [core] hook=connect plugin=karma function=hook_connect params="" retval=CONT msg=""
+2026-07-27T05:08:48.320Z [DEBUG] [core] running connect hook in dns-list plugin
+2026-07-27T05:08:48.456Z [INFO] [dns-list] pass:b.barracudacentral.org, psbl.surriel.com, bl.spamcop.net, truncate.gbudb.net, zen.spamhaus.org, dnsbl.justspam.org, fail:dnsbl-1.uceprotect.net
+2026-07-27T05:08:48.456Z [INFO] [core] hook=connect plugin=dns-list function=onConnect params="" retval=DENY msg="host [195.206.182.210] is listed on dnsbl-1.uceprotect.net"
+2026-07-27T05:08:48.456Z [DEBUG] [core] running deny hooks
+2026-07-27T05:08:48.456Z [DEBUG] [core] running deny hook in guard plugin
+2026-07-27T05:08:48.456Z [DEBUG] [core] hook=deny plugin=guard function=hook_deny params=902 retval=CONT msg=""
+2026-07-27T05:08:48.456Z [DEBUG] [core] running deny hook in karma plugin
+2026-07-27T05:08:48.457Z [INFO] [core] hook=deny plugin=karma function=hook_deny params=902 retval=OK msg=""
+2026-07-27T05:08:48.457Z [INFO] [core] deny(soft?) overridden by deny hook
+2026-07-27T05:08:48.457Z [DEBUG] [core] running connect hook in relay plugin
+2026-07-27T05:08:48.457Z [DEBUG] [core] hook=connect plugin=relay function=pass_relaying params="" retval=CONT msg=""
+2026-07-27T05:08:48.457Z [DEBUG] [core] running connect hook in geoip plugin
+2026-07-27T05:08:48.457Z [INFO] [geoip] GB
+2026-07-27T05:08:48.457Z [DEBUG] [core] hook=connect plugin=geoip function=lookup_maxmind params="" retval=CONT msg=""
+2026-07-27T05:08:48.457Z [PROTOCOL] [core] S: 220 mail.sebarray.tech ESMTP Haraka ready (5DB31C)
+2026-07-27T05:13:48.459Z [PROTOCOL] [core] S: 421 timeout
+2026-07-27T05:13:48.460Z [WARN] [core] client connection timed out ip=195.206.182.210
+2026-07-27T05:13:48.460Z [DEBUG] [core] client has disconnected
+2026-07-27T05:13:48.460Z [DEBUG] [core] running disconnect hooks
+2026-07-27T05:13:48.460Z [DEBUG] [core] client has disconnected
+2026-07-27T05:13:48.460Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-27T05:13:48.464Z [DEBUG] [core] client has disconnected
+2026-07-27T05:13:48.464Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-27T05:13:48.464Z [DEBUG] [core] client has disconnected
+2026-07-27T05:13:48.464Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-27T05:13:48.467Z [DEBUG] [block_bad_connections] Invalid connections: 1/100
+2026-07-27T05:13:48.467Z [DEBUG] [core] client has disconnected
+2026-07-27T05:13:48.467Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-27T05:13:48.467Z [DEBUG] [core] client has disconnected
+2026-07-27T05:13:48.468Z [DEBUG] [core] running disconnect hook in karma plugin
+2026-07-27T05:13:48.468Z [INFO] [karma] score: -10, awards: 084,088,115, asn_score: -4, deny_rc: 902, msg:deny: dns-list
+2026-07-27T05:13:48.468Z [DEBUG] [core] client has disconnected
+2026-07-27T05:13:48.468Z [DEBUG] [core] hook=disconnect plugin=karma function=hook_disconnect params="" retval=CONT msg=""
+2026-07-27T05:13:48.468Z [DEBUG] [core] client has disconnected
+2026-07-27T05:13:48.468Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-27T05:13:48.468Z [DEBUG] [core] client has disconnected
+2026-07-27T05:13:48.468Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-27T05:13:48.468Z [DEBUG] [core] client has disconnected
+2026-07-27T05:13:48.468Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-27T05:13:48.468Z [DEBUG] [core] client has disconnected
+2026-07-27T05:13:48.468Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-27T05:13:48.469Z [NOTICE] [core] disconnect ip=195.206.182.210 rdns=195-206-182-210.infrawat.ch helo="" relay=N early=N esmtp=N tls=N pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="421 timeout" time=304.442
+2026-07-27T05:13:48.469Z [DEBUG] [karma] unsubscribed from result-5DB31C33-CD7D-44EE-8910-BC9C9E58B052*
+2026-07-27T05:18:48.462Z [INFO] [core] timeout, destroy socket (state:100)

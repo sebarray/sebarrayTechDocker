@@ -1,0 +1,30 @@
+2026-07-28T16:32:20.204Z [NOTICE] [core] connect ip=141.98.9.67 port=64125 local_ip=192.255.226.25 local_port=25
+2026-07-28T16:32:20.205Z [DEBUG] [core] running connect_init hooks
+2026-07-28T16:32:20.205Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-28T16:32:20.206Z [INFO] [core] client half closed connection ip=141.98.9.67
+2026-07-28T16:32:20.208Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:20.208Z [DEBUG] [core] running disconnect hooks
+2026-07-28T16:32:20.208Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:20.208Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-28T16:32:20.210Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:20.211Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T16:32:20.211Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:20.211Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-28T16:32:20.211Z [DEBUG] [block_bad_connections] Invalid connections: 1/100
+2026-07-28T16:32:20.211Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:20.212Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T16:32:20.212Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:20.212Z [DEBUG] [core] running disconnect hook in karma plugin
+2026-07-28T16:32:20.212Z [ERROR] [karma] redis_unsubscribe called when no redis
+2026-07-28T16:32:20.212Z [ERROR] [karma] karma results missing
+2026-07-28T16:32:20.212Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:20.212Z [DEBUG] [core] hook=disconnect plugin=karma function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T16:32:20.212Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:20.212Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-28T16:32:20.212Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:20.212Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T16:32:20.212Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:20.212Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-28T16:32:20.212Z [DEBUG] [core] client has disconnected
+2026-07-28T16:32:20.212Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T16:32:20.213Z [NOTICE] [core] disconnect ip=141.98.9.67 rdns="" helo="" relay=N early=N esmtp=N tls=N pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="" time=0.008

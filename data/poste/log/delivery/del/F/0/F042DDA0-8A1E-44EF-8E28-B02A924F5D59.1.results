@@ -1,0 +1,1 @@
+{"type":"delivered","date":"2026-07-24T10:24:03.363Z","data":{"host":"127.0.0.1","ip":"/run/dovecot/lmtp","response":"<yo@sebarray.tech> u+HyFEM9Y2o8uAAAAijahw Saved","delay":0.036,"port":24,"mode":"LMTP","ok_recips":[{"original":"<yo@sebarray.tech>","original_host":"sebarray.tech","host":"sebarray.tech","user":"yo"}],"secured":false}}

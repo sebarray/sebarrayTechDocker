@@ -1,0 +1,50 @@
+2026-07-28T16:03:05.157Z [NOTICE] [core] connect ip=164.52.0.93 port=37139 local_ip=192.255.226.25 local_port=465
+2026-07-28T16:03:05.158Z [DEBUG] [core] running connect_init hooks
+2026-07-28T16:03:05.158Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-28T16:03:05.160Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-28T16:03:05.160Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-28T16:03:05.160Z [DEBUG] [relay] checking 164.52.0.93 in relay_acl_allow
+2026-07-28T16:03:05.160Z [DEBUG] [relay] checking if 164.52.0.93 is in 192.255.226.25/32
+2026-07-28T16:03:05.160Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-28T16:03:05.160Z [DEBUG] [core] running connect_init_respond
+2026-07-28T16:03:05.160Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-28T16:03:05.327Z [DEBUG] [core] [early_talker] state=4 esmtp=false line="{\"id\": 1, \"method\": \"mining.subscribe\", \"params\": [], \"jsonrpc\":\"2.0\"}"
+2026-07-28T16:03:07.098Z [DEBUG] [core] running connect hooks
+2026-07-28T16:03:07.098Z [DEBUG] [core] running connect hook in guard plugin
+2026-07-28T16:03:07.098Z [DEBUG] [core] hook=connect plugin=guard function=hook_connect params="" retval=CONT msg=""
+2026-07-28T16:03:07.098Z [DEBUG] [core] running connect hook in relay plugin
+2026-07-28T16:03:07.098Z [DEBUG] [core] hook=connect plugin=relay function=pass_relaying params="" retval=CONT msg=""
+2026-07-28T16:03:07.098Z [DEBUG] [core] running connect hook in geoip plugin
+2026-07-28T16:03:07.098Z [INFO] [geoip] CN
+2026-07-28T16:03:07.098Z [DEBUG] [core] hook=connect plugin=geoip function=lookup_maxmind params="" retval=CONT msg=""
+2026-07-28T16:03:07.098Z [PROTOCOL] [core] S: 220 mail.sebarray.tech ESMTP Haraka ready (8677C9)
+2026-07-28T16:03:07.098Z [PROTOCOL] [core] C: {"id": 1, "method": "mining.subscribe", "params": [], "jsonrpc":"2.0"} state=1
+2026-07-28T16:03:07.098Z [DEBUG] [core] running unrecognized_command hooks
+2026-07-28T16:03:07.099Z [DEBUG] [core] running unrecognized_command hook in status_http plugin
+2026-07-28T16:03:07.099Z [DEBUG] [core] hook=unrecognized_command plugin=status_http function=hook_unrecognized_command params="{\"id\":" retval=CONT msg=""
+2026-07-28T16:03:07.099Z [DEBUG] [core] running unrecognized_command hook in tls plugin
+2026-07-28T16:03:07.099Z [DEBUG] [core] hook=unrecognized_command plugin=tls function=upgrade_connection params="{\"id\":" retval=CONT msg=""
+2026-07-28T16:03:07.099Z [DEBUG] [core] running unrecognized_command hook in auth/poste plugin
+2026-07-28T16:03:07.099Z [DEBUG] [core] hook=unrecognized_command plugin=auth/poste function=hook_unrecognized_command params="{\"id\":" retval=CONT msg=""
+2026-07-28T16:03:07.099Z [PROTOCOL] [core] S: 500 Unrecognized command
+2026-07-28T16:03:10.477Z [INFO] [core] client connection error: Error: read ECONNRESET ip=164.52.0.93
+2026-07-28T16:03:10.477Z [DEBUG] [core] client has disconnected
+2026-07-28T16:03:10.477Z [DEBUG] [core] running disconnect hooks
+2026-07-28T16:03:10.477Z [DEBUG] [core] client has disconnected
+2026-07-28T16:03:10.477Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-28T16:03:10.478Z [DEBUG] [core] client has disconnected
+2026-07-28T16:03:10.478Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T16:03:10.478Z [DEBUG] [core] client has disconnected
+2026-07-28T16:03:10.478Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-28T16:03:10.479Z [DEBUG] [block_bad_connections] Invalid connections: 2/100
+2026-07-28T16:03:10.479Z [DEBUG] [core] client has disconnected
+2026-07-28T16:03:10.479Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T16:03:10.479Z [DEBUG] [core] client has disconnected
+2026-07-28T16:03:10.479Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-28T16:03:10.479Z [DEBUG] [core] client has disconnected
+2026-07-28T16:03:10.479Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T16:03:10.479Z [DEBUG] [core] client has disconnected
+2026-07-28T16:03:10.479Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-28T16:03:10.479Z [DEBUG] [core] client has disconnected
+2026-07-28T16:03:10.479Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28T16:03:10.479Z [NOTICE] [core] disconnect ip=164.52.0.93 rdns=NXDOMAIN helo="" relay=N early=Y esmtp=N tls=Y pipe=N errors=1 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="500 Unrecognized command" time=5.321

@@ -1,0 +1,90 @@
+2026-07-28 21:26:55.114646500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] running connect hook in karma plugin
+2026-07-28 21:26:55.114650500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [karma] applied early_talker:-3
+2026-07-28 21:26:55.114651500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [karma] static tarpit
+2026-07-28 21:26:55.114652500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [karma] tarpitting connect for 1s
+2026-07-28 21:26:55.114653500  [INFO] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [karma] score: -9, awards: 086, asn_score: -1, fail:early_talker
+2026-07-28 21:26:56.113663500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [karma] tarpit connect end
+2026-07-28 21:26:56.113766500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core]  hook=connect plugin=karma function=hook_connect params="" retval=CONT msg=""
+2026-07-28 21:26:56.113805500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] running connect hook in dns-list plugin
+2026-07-28 21:26:56.337139500  [INFO] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [dns-list] pass:b.barracudacentral.org, psbl.surriel.com, bl.spamcop.net, zen.spamhaus.org, truncate.gbudb.net, dnsbl.justspam.org, dnsbl-1.uceprotect.net
+2026-07-28 21:26:56.337251500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core]  hook=connect plugin=dns-list function=onConnect params="" retval=CONT msg=""
+2026-07-28 21:26:56.337287500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] running connect hook in relay plugin
+2026-07-28 21:26:56.337341500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core]  hook=connect plugin=relay function=pass_relaying params="" retval=CONT msg=""
+2026-07-28 21:26:56.337380500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] running connect hook in geoip plugin
+2026-07-28 21:26:56.337676500  [INFO] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [geoip] US
+2026-07-28 21:26:56.337728500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core]  hook=connect plugin=geoip function=lookup_maxmind params="" retval=CONT msg=""
+2026-07-28 21:26:56.337853500  [PROTOCOL] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] S: 220 mail.sebarray.tech ESMTP Haraka ready (CE71FE)
+2026-07-28 21:26:56.338007500  [PROTOCOL] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] C: EHLO zx11.quadmetrics.com state=1
+2026-07-28 21:26:56.338170500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] running ehlo hooks
+2026-07-28 21:26:56.338214500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] running ehlo hook in hello_block plugin
+2026-07-28 21:26:56.338293500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core]  hook=ehlo plugin=hello_block function=check_ymlf params=zx11.quadmetrics.com retval=CONT msg=""
+2026-07-28 21:26:56.338321500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] running ehlo hook in karma plugin
+2026-07-28 21:26:56.338405500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [karma] static tarpit
+2026-07-28 21:26:56.338444500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [karma] tarpitting ehlo for 1s
+2026-07-28 21:26:56.417714500  [INFO] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] client half closed connection ip=71.6.232.20
+2026-07-28 21:26:56.417850500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] client has disconnected
+2026-07-28 21:26:56.418308500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] running disconnect hooks
+2026-07-28 21:26:56.418314500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] client has disconnected
+2026-07-28 21:26:56.418315500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] running disconnect hook in stats plugin
+2026-07-28 21:26:56.418986500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] client has disconnected
+2026-07-28 21:26:56.419052500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core]  hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28 21:26:56.419078500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] client has disconnected
+2026-07-28 21:26:56.419106500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] running disconnect hook in block_bad_connections plugin
+2026-07-28 21:26:56.419476500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [block_bad_connections] Invalid connections: 1/100
+2026-07-28 21:26:56.419518500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] client has disconnected
+2026-07-28 21:26:56.419565500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core]  hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28 21:26:56.419591500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] client has disconnected
+2026-07-28 21:26:56.419618500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] running disconnect hook in karma plugin
+2026-07-28 21:26:56.419782500  [INFO] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [karma] score: -9, awards: 086, asn_score: -1, fail:early_talker
+2026-07-28 21:26:56.419813500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] client has disconnected
+2026-07-28 21:26:56.419847500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core]  hook=disconnect plugin=karma function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28 21:26:56.420568500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] client has disconnected
+2026-07-28 21:26:56.420573500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] running disconnect hook in log plugin
+2026-07-28 21:26:56.420574500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] client has disconnected
+2026-07-28 21:26:56.420575500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core]  hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28 21:26:56.420576500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] client has disconnected
+2026-07-28 21:26:56.420577500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] running disconnect hook in tls plugin
+2026-07-28 21:26:56.420578500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] client has disconnected
+2026-07-28 21:26:56.420578500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core]  hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28 21:26:56.420579500  [NOTICE] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [core] disconnect ip=71.6.232.20 rdns=NXDOMAIN helo=zx11.quadmetrics.com relay=N early=Y esmtp=N tls=N pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="" time=4.546
+2026-07-28 21:26:56.420723500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [karma] unsubscribed from result-CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41*
+2026-07-28 21:26:57.338622500  [DEBUG] [CE71FE91-5F13-4EA4-9E0E-F29B4F2E5F41] [karma] tarpit ehlo end
+2026-07-28 21:31:44.920337500  [DEBUG] [-] [core] addOCSP: 'ocsp' not available
+2026-07-28 21:31:44.922778500  [NOTICE] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] connect ip=46.151.182.137 port=58322 local_ip=192.255.226.25 local_port=25
+2026-07-28 21:31:44.923201500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] running connect_init hooks
+2026-07-28 21:31:44.923319500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] running connect_init hook in guard plugin
+2026-07-28 21:31:44.928953500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core]  hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-28 21:31:44.928964500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] running connect_init hook in karma plugin
+2026-07-28 21:31:44.930542500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core]  hook=connect_init plugin=karma function=results_init params="" retval=CONT msg=""
+2026-07-28 21:31:44.930599500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] running connect_init hook in karma plugin
+2026-07-28 21:31:44.931253500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core]  hook=connect_init plugin=karma function=ip_history_from_redis params="" retval=CONT msg=""
+2026-07-28 21:31:44.931314500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] running connect_init hook in early_talker plugin
+2026-07-28 21:31:45.429332500  [INFO] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] client half closed connection ip=46.151.182.137
+2026-07-28 21:31:45.429638500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] client has disconnected
+2026-07-28 21:31:45.429684500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] running disconnect hooks
+2026-07-28 21:31:45.429736500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] client has disconnected
+2026-07-28 21:31:45.429771500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] running disconnect hook in stats plugin
+2026-07-28 21:31:45.430727500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] client has disconnected
+2026-07-28 21:31:45.430821500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core]  hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28 21:31:45.430851500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] client has disconnected
+2026-07-28 21:31:45.430889500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] running disconnect hook in block_bad_connections plugin
+2026-07-28 21:31:45.431337500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [block_bad_connections] Invalid connections: 1/100
+2026-07-28 21:31:45.431378500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] client has disconnected
+2026-07-28 21:31:45.431424500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core]  hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28 21:31:45.431483500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] client has disconnected
+2026-07-28 21:31:45.431513500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] running disconnect hook in karma plugin
+2026-07-28 21:31:45.431687500  [INFO] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [karma] score: 0
+2026-07-28 21:31:45.431733500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] client has disconnected
+2026-07-28 21:31:45.431778500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core]  hook=disconnect plugin=karma function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28 21:31:45.431810500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] client has disconnected
+2026-07-28 21:31:45.431842500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] running disconnect hook in log plugin
+2026-07-28 21:31:45.432044500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] client has disconnected
+2026-07-28 21:31:45.432092500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core]  hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28 21:31:45.432123500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] client has disconnected
+2026-07-28 21:31:45.432158500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] running disconnect hook in tls plugin
+2026-07-28 21:31:45.432220500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] client has disconnected
+2026-07-28 21:31:45.432260500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core]  hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-28 21:31:45.432452500  [NOTICE] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [core] disconnect ip=46.151.182.137 rdns="" helo="" relay=N early=N esmtp=N tls=N pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="" time=0.509
+2026-07-28 21:31:45.432955500  [DEBUG] [F85F9271-B6BB-4E6E-8C95-FF506F83D638] [karma] unsubscribed from result-F85F9271-B6BB-4E6E-8C95-FF506F83D638*
+2026-07-28 21:37:14.084793500  [ERROR] [-] [dns-list] 2.0.0.127.zen.spamhaus.org. -> Error: queryA ENOTFOUND 2.0.0.127.zen.spamhaus.org.
+2026-07-28 22:07:14.108886500  [ERROR] [-] [dns-list] 2.0.0.127.zen.spamhaus.org. -> Error: queryA ENOTFOUND 2.0.0.127.zen.spamhaus.org.

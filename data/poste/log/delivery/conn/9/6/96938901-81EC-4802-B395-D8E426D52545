@@ -1,0 +1,87 @@
+2026-07-26T11:15:12.198Z [NOTICE] [core] connect ip=69.5.169.93 port=40397 local_ip=192.255.226.25 local_port=25
+2026-07-26T11:15:12.199Z [DEBUG] [core] running connect_init hooks
+2026-07-26T11:15:12.199Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-26T11:15:12.207Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-26T11:15:12.207Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-26T11:15:12.211Z [DEBUG] [core] hook=connect_init plugin=karma function=results_init params="" retval=CONT msg=""
+2026-07-26T11:15:12.211Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-26T11:15:12.211Z [DEBUG] [core] hook=connect_init plugin=karma function=ip_history_from_redis params="" retval=CONT msg=""
+2026-07-26T11:15:12.212Z [DEBUG] [core] running connect_init hook in early_talker plugin
+2026-07-26T11:15:15.213Z [DEBUG] [core] hook=connect_init plugin=early_talker function=early_talker params="" retval=CONT msg=""
+2026-07-26T11:15:15.213Z [DEBUG] [core] running connect_init hook in fcrdns plugin
+2026-07-26T11:15:15.213Z [DEBUG] [core] hook=connect_init plugin=fcrdns function=initialize_fcrdns params="" retval=CONT msg=""
+2026-07-26T11:15:15.213Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-26T11:15:15.213Z [DEBUG] [relay] checking 69.5.169.93 in relay_acl_allow
+2026-07-26T11:15:15.213Z [DEBUG] [relay] checking if 69.5.169.93 is in 192.255.226.25/32
+2026-07-26T11:15:15.213Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-26T11:15:15.213Z [DEBUG] [core] running connect_init_respond
+2026-07-26T11:15:15.213Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-26T11:15:15.213Z [DEBUG] [core] running lookup_rdns hook in p0f plugin
+2026-07-26T11:15:15.214Z [INFO] [p0f] distance=10 total_conn=1
+2026-07-26T11:15:15.214Z [DEBUG] [core] hook=lookup_rdns plugin=p0f function=query_p0f params="" retval=CONT msg=""
+2026-07-26T11:15:15.214Z [DEBUG] [core] running lookup_rdns hook in fcrdns plugin
+2026-07-26T11:15:15.227Z [DEBUG] [fcrdns] rdns.reverse(69.5.169.93)
+2026-07-26T11:15:15.227Z [DEBUG] [fcrdns] PTRdomain: 69-5-169-93.infrawat.ch
+2026-07-26T11:15:15.287Z [INFO] [fcrdns] ip=69.5.169.93  rdns="69-5-169-93.infrawat.ch" rdns_len=1 fcrdns="" fcrdns_len=0 other_ips_len=0 invalid_tlds=0 generic_rdns=true
+2026-07-26T11:15:15.288Z [DEBUG] [core] hook=lookup_rdns plugin=fcrdns function=do_dns_lookups params="" retval=CONT msg=""
+2026-07-26T11:15:15.288Z [DEBUG] [core] running lookup_rdns hook in uribl plugin
+2026-07-26T11:15:15.301Z [DEBUG] [uribl] (rdns) found 1 items for lookup
+2026-07-26T11:15:15.301Z [DEBUG] [uribl] (rdns) checking: 69-5-169-93.infrawat.ch
+2026-07-26T11:15:15.325Z [DEBUG] [uribl] 69-5-169-93.infrawat.ch.dbl.spamhaus.org. => (Error: queryA ENOTFOUND 69-5-169-93.infrawat.ch.dbl.spamhaus.org.)
+2026-07-26T11:15:15.325Z [DEBUG] [core] hook=lookup_rdns plugin=uribl function=lookup_remote_ip params="" retval=CONT msg=""
+2026-07-26T11:15:15.325Z [DEBUG] [core] running lookup_rdns hook in asn plugin
+2026-07-26T11:15:15.478Z [INFO] [asn] asn: 25369, net: 69.5.169.0/24
+2026-07-26T11:15:15.478Z [DEBUG] [core] hook=lookup_rdns plugin=asn function=lookup_via_dns params="" retval=CONT msg=""
+2026-07-26T11:15:15.499Z [DEBUG] [core] running connect hooks
+2026-07-26T11:15:15.500Z [DEBUG] [core] running connect hook in guard plugin
+2026-07-26T11:15:15.500Z [DEBUG] [core] hook=connect plugin=guard function=hook_connect params="" retval=CONT msg=""
+2026-07-26T11:15:15.500Z [DEBUG] [core] running connect hook in karma plugin
+2026-07-26T11:15:15.500Z [DEBUG] [karma] static tarpit
+2026-07-26T11:15:15.500Z [DEBUG] [karma] tarpitting connect for 1s
+2026-07-26T11:15:15.500Z [INFO] [karma] score: -5, awards: 084,088, asn_score: -2
+2026-07-26T11:15:16.502Z [DEBUG] [karma] tarpit connect end
+2026-07-26T11:15:16.502Z [DEBUG] [core] hook=connect plugin=karma function=hook_connect params="" retval=CONT msg=""
+2026-07-26T11:15:16.502Z [DEBUG] [core] running connect hook in dns-list plugin
+2026-07-26T11:15:16.575Z [INFO] [dns-list] msg:blacklist, pass:zen.spamhaus.org, b.barracudacentral.org, psbl.surriel.com, bl.spamcop.net, truncate.gbudb.net, fail:hostkarma.junkemailfilter.com, dnsbl.justspam.org, dnsbl-1.uceprotect.net
+2026-07-26T11:15:16.575Z [INFO] [core] hook=connect plugin=dns-list function=onConnect params="" retval=DENY msg="host [69.5.169.93] is listed on hostkarma.junkemailfilter.com, dnsbl.justspam.org, dnsbl-1.uceprotect.net"
+2026-07-26T11:15:16.575Z [DEBUG] [core] running deny hooks
+2026-07-26T11:15:16.575Z [DEBUG] [core] running deny hook in guard plugin
+2026-07-26T11:15:16.575Z [DEBUG] [core] hook=deny plugin=guard function=hook_deny params=902 retval=CONT msg=""
+2026-07-26T11:15:16.575Z [DEBUG] [core] running deny hook in karma plugin
+2026-07-26T11:15:16.575Z [INFO] [core] hook=deny plugin=karma function=hook_deny params=902 retval=OK msg=""
+2026-07-26T11:15:16.575Z [INFO] [core] deny(soft?) overridden by deny hook
+2026-07-26T11:15:16.575Z [DEBUG] [core] running connect hook in relay plugin
+2026-07-26T11:15:16.575Z [DEBUG] [core] hook=connect plugin=relay function=pass_relaying params="" retval=CONT msg=""
+2026-07-26T11:15:16.575Z [DEBUG] [core] running connect hook in geoip plugin
+2026-07-26T11:15:16.575Z [INFO] [geoip] GB
+2026-07-26T11:15:16.575Z [DEBUG] [core] hook=connect plugin=geoip function=lookup_maxmind params="" retval=CONT msg=""
+2026-07-26T11:15:16.576Z [PROTOCOL] [core] S: 220 mail.sebarray.tech ESMTP Haraka ready (969389)
+2026-07-26T11:20:16.576Z [PROTOCOL] [core] S: 421 timeout
+2026-07-26T11:20:16.577Z [WARN] [core] client connection timed out ip=69.5.169.93
+2026-07-26T11:20:16.577Z [DEBUG] [core] client has disconnected
+2026-07-26T11:20:16.577Z [DEBUG] [core] running disconnect hooks
+2026-07-26T11:20:16.577Z [DEBUG] [core] client has disconnected
+2026-07-26T11:20:16.577Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-26T11:20:16.579Z [DEBUG] [core] client has disconnected
+2026-07-26T11:20:16.579Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-26T11:20:16.580Z [DEBUG] [core] client has disconnected
+2026-07-26T11:20:16.580Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-26T11:20:16.580Z [DEBUG] [block_bad_connections] Invalid connections: 1/100
+2026-07-26T11:20:16.580Z [DEBUG] [core] client has disconnected
+2026-07-26T11:20:16.580Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-26T11:20:16.581Z [DEBUG] [core] client has disconnected
+2026-07-26T11:20:16.581Z [DEBUG] [core] running disconnect hook in karma plugin
+2026-07-26T11:20:16.581Z [INFO] [karma] score: -11, awards: 084,088,119,115, asn_score: -2, deny_rc: 902, msg:deny: dns-list
+2026-07-26T11:20:16.581Z [DEBUG] [core] client has disconnected
+2026-07-26T11:20:16.581Z [DEBUG] [core] hook=disconnect plugin=karma function=hook_disconnect params="" retval=CONT msg=""
+2026-07-26T11:20:16.581Z [DEBUG] [core] client has disconnected
+2026-07-26T11:20:16.581Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-26T11:20:16.581Z [DEBUG] [core] client has disconnected
+2026-07-26T11:20:16.581Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-26T11:20:16.581Z [DEBUG] [core] client has disconnected
+2026-07-26T11:20:16.581Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-26T11:20:16.581Z [DEBUG] [core] client has disconnected
+2026-07-26T11:20:16.581Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-26T11:20:16.581Z [NOTICE] [core] disconnect ip=69.5.169.93 rdns=69-5-169-93.infrawat.ch helo="" relay=N early=N esmtp=N tls=N pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="421 timeout" time=304.382
+2026-07-26T11:20:16.584Z [DEBUG] [karma] unsubscribed from result-96938901-81EC-4802-B395-D8E426D52545*
+2026-07-26T11:25:16.577Z [INFO] [core] timeout, destroy socket (state:100)

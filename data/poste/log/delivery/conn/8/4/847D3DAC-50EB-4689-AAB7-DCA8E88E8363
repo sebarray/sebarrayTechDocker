@@ -1,0 +1,96 @@
+2026-07-28T16:32:20.645Z [NOTICE] [core] connect ip=141.98.9.67 port=64330 local_ip=192.255.226.25 local_port=25
+2026-07-28T16:32:20.646Z [DEBUG] [core] running connect_init hooks
+2026-07-28T16:32:20.646Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-28T16:32:20.648Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-28T16:32:20.648Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-28T16:32:20.652Z [DEBUG] [core] hook=connect_init plugin=karma function=results_init params="" retval=CONT msg=""
+2026-07-28T16:32:20.652Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-28T16:32:20.653Z [DEBUG] [core] hook=connect_init plugin=karma function=ip_history_from_redis params="" retval=CONT msg=""
+2026-07-28T16:32:20.653Z [DEBUG] [core] running connect_init hook in early_talker plugin
+2026-07-28T16:32:23.654Z [DEBUG] [core] hook=connect_init plugin=early_talker function=early_talker params="" retval=CONT msg=""
+2026-07-28T16:32:23.655Z [DEBUG] [core] running connect_init hook in fcrdns plugin
+2026-07-28T16:32:23.655Z [DEBUG] [core] hook=connect_init plugin=fcrdns function=initialize_fcrdns params="" retval=CONT msg=""
+2026-07-28T16:32:23.655Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-28T16:32:23.655Z [DEBUG] [relay] checking 141.98.9.67 in relay_acl_allow
+2026-07-28T16:32:23.655Z [DEBUG] [relay] checking if 141.98.9.67 is in 192.255.226.25/32
+2026-07-28T16:32:23.656Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-28T16:32:23.656Z [DEBUG] [core] running connect_init_respond
+2026-07-28T16:32:23.656Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-28T16:32:23.656Z [DEBUG] [core] running lookup_rdns hook in p0f plugin
+2026-07-28T16:32:23.656Z [INFO] [p0f] os="Windows 7 or 8" link_type="Ethernet or modem" distance=8 total_conn=2
+2026-07-28T16:32:23.657Z [DEBUG] [core] hook=lookup_rdns plugin=p0f function=query_p0f params="" retval=CONT msg=""
+2026-07-28T16:32:23.657Z [DEBUG] [core] running lookup_rdns hook in fcrdns plugin
+2026-07-28T16:32:24.052Z [INFO] [fcrdns] ptr_multidomain: false, has_rdns: false, ptr_name_has_ips: false, generic_rdns: false, fail:has_rdns
+2026-07-28T16:32:24.052Z [DEBUG] [core] hook=lookup_rdns plugin=fcrdns function=do_dns_lookups params="" retval=CONT msg=""
+2026-07-28T16:32:24.052Z [DEBUG] [core] running lookup_rdns hook in uribl plugin
+2026-07-28T16:32:24.591Z [DEBUG] [core] hook=lookup_rdns plugin=uribl function=lookup_remote_ip params="" retval=CONT msg=""
+2026-07-28T16:32:24.591Z [DEBUG] [core] running lookup_rdns hook in asn plugin
+2026-07-28T16:32:24.752Z [INFO] [asn] asn: 209605, net: 141.98.9.0/24
+2026-07-28T16:32:24.752Z [DEBUG] [core] hook=lookup_rdns plugin=asn function=lookup_via_dns params="" retval=CONT msg=""
+2026-07-28T16:32:25.231Z [DEBUG] [core] running connect hooks
+2026-07-28T16:32:25.231Z [DEBUG] [core] running connect hook in guard plugin
+2026-07-28T16:32:25.231Z [DEBUG] [core] hook=connect plugin=guard function=hook_connect params="" retval=CONT msg=""
+2026-07-28T16:32:25.231Z [DEBUG] [core] running connect hook in karma plugin
+2026-07-28T16:32:25.231Z [DEBUG] [karma] static tarpit
+2026-07-28T16:32:25.231Z [DEBUG] [karma] tarpitting connect for 1s
+2026-07-28T16:32:25.232Z [INFO] [karma] score: -7, awards: 031,086, asn_score: -5
+2026-07-28T16:32:26.231Z [DEBUG] [karma] tarpit connect end
+2026-07-28T16:32:26.232Z [DEBUG] [core] hook=connect plugin=karma function=hook_connect params="" retval=CONT msg=""
+2026-07-28T16:32:26.232Z [DEBUG] [core] running connect hook in dns-list plugin
+2026-07-28T16:32:26.392Z [INFO] [dns-list] msg:SBL, PBL, CSS, pass:b.barracudacentral.org, psbl.surriel.com, bl.spamcop.net, truncate.gbudb.net, dnsbl.justspam.org, dnsbl-1.uceprotect.net, fail:zen.spamhaus.org
+2026-07-28T16:32:26.392Z [INFO] [core] hook=connect plugin=dns-list function=onConnect params="" retval=DENY msg="host [141.98.9.67] is listed on zen.spamhaus.org"
+2026-07-28T16:32:26.392Z [DEBUG] [core] running deny hooks
+2026-07-28T16:32:26.392Z [DEBUG] [core] running deny hook in guard plugin
+2026-07-28T16:32:26.392Z [DEBUG] [core] hook=deny plugin=guard function=hook_deny params=902 retval=CONT msg=""
+2026-07-28T16:32:26.392Z [DEBUG] [core] running deny hook in karma plugin
+2026-07-28T16:32:26.392Z [INFO] [core] hook=deny plugin=karma function=hook_deny params=902 retval=OK msg=""
+2026-07-28T16:32:26.392Z [INFO] [core] deny(soft?) overridden by deny hook
+2026-07-28T16:32:26.392Z [DEBUG] [core] running connect hook in relay plugin
+2026-07-28T16:32:26.392Z [DEBUG] [core] hook=connect plugin=relay function=pass_relaying params="" retval=CONT msg=""
+2026-07-28T16:32:26.392Z [DEBUG] [core] running connect hook in geoip plugin
+2026-07-28T16:32:26.393Z [INFO] [geoip] LT
+2026-07-28T16:32:26.393Z [DEBUG] [core] hook=connect plugin=geoip function=lookup_maxmind params="" retval=CONT msg=""
+2026-07-28T16:32:26.393Z [PROTOCOL] [core] S: 220 mail.sebarray.tech ESMTP Haraka ready (847D3D)
+2026-07-28T16:32:26.507Z [PROTOCOL] [core] C: HELO win-clj1b0gq6jp.domain state=1
+2026-07-28T16:32:26.508Z [DEBUG] [core] running helo hooks
+2026-07-28T16:32:26.508Z [DEBUG] [core] running helo hook in hello_block plugin
+2026-07-28T16:32:26.508Z [DEBUG] [core] hook=helo plugin=hello_block function=check_ymlf params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:26.508Z [DEBUG] [core] running helo hook in karma plugin
+2026-07-28T16:32:26.508Z [DEBUG] [karma] static tarpit
+2026-07-28T16:32:26.508Z [DEBUG] [karma] tarpitting helo for 1s
+2026-07-28T16:32:27.509Z [DEBUG] [karma] tarpit helo end
+2026-07-28T16:32:27.509Z [DEBUG] [core] hook=helo plugin=karma function=hook_helo params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:27.509Z [DEBUG] [core] running helo hook in helo.checks plugin
+2026-07-28T16:32:27.509Z [DEBUG] [core] hook=helo plugin=helo.checks function=proto_mismatch_smtp params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:27.509Z [DEBUG] [core] running helo hook in helo.checks plugin
+2026-07-28T16:32:27.509Z [DEBUG] [core] hook=helo plugin=helo.checks function=init params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:27.509Z [DEBUG] [core] running helo hook in helo.checks plugin
+2026-07-28T16:32:27.509Z [DEBUG] [core] hook=helo plugin=helo.checks function=match_re params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:27.509Z [DEBUG] [core] running helo hook in helo.checks plugin
+2026-07-28T16:32:27.509Z [DEBUG] [core] hook=helo plugin=helo.checks function=bare_ip params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:27.509Z [DEBUG] [core] running helo hook in helo.checks plugin
+2026-07-28T16:32:27.510Z [DEBUG] [core] hook=helo plugin=helo.checks function=dynamic params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:27.510Z [DEBUG] [core] running helo hook in helo.checks plugin
+2026-07-28T16:32:27.510Z [DEBUG] [core] hook=helo plugin=helo.checks function=big_company params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:27.510Z [DEBUG] [core] running helo hook in helo.checks plugin
+2026-07-28T16:32:27.510Z [DEBUG] [core] hook=helo plugin=helo.checks function=valid_hostname params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:27.510Z [DEBUG] [core] running helo hook in helo.checks plugin
+2026-07-28T16:32:27.510Z [DEBUG] [core] hook=helo plugin=helo.checks function=rdns_match params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:27.510Z [DEBUG] [core] running helo hook in helo.checks plugin
+2026-07-28T16:32:27.510Z [DEBUG] [core] hook=helo plugin=helo.checks function=forward_dns params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:27.510Z [DEBUG] [core] running helo hook in helo.checks plugin
+2026-07-28T16:32:27.510Z [DEBUG] [core] hook=helo plugin=helo.checks function=host_mismatch params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:27.510Z [DEBUG] [core] running helo hook in helo.checks plugin
+2026-07-28T16:32:27.511Z [DEBUG] [core] hook=helo plugin=helo.checks function=literal_mismatch params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:27.511Z [DEBUG] [core] running helo hook in helo.checks plugin
+2026-07-28T16:32:27.511Z [INFO] [helo.checks] helo_host: win-clj1b0gq6jp.domain, pass:match_re, bare_ip, dynamic, big_co(not), host_mismatch, literal_mismatch, fail:valid_hostname, rdns_match, forward_dns(invalid_hostname)
+2026-07-28T16:32:27.511Z [DEBUG] [core] hook=helo plugin=helo.checks function=emit_log params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:27.511Z [DEBUG] [core] running helo hook in mailauth/verify plugin
+2026-07-28T16:32:27.511Z [DEBUG] [core] hook=helo plugin=mailauth/verify function=mailauth_helo params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:27.511Z [DEBUG] [core] running helo hook in uribl plugin
+2026-07-28T16:32:27.511Z [DEBUG] [uribl] (helo) found 1 items for lookup
+2026-07-28T16:32:27.511Z [DEBUG] [uribl] (helo) checking: win-clj1b0gq6jp.domain
+2026-07-28T16:32:27.511Z [DEBUG] [core] hook=helo plugin=uribl function=lookup_ehlo params=win-clj1b0gq6jp.domain retval=CONT msg=""
+2026-07-28T16:32:27.511Z [PROTOCOL] [core] S: 250 mail.sebarray.tech Hello [141.98.9.67], Haraka is at your service.
+2026-07-28T16:32:27.626Z [PROTOCOL] [core] C: MAIL FROM:<test@sebarray.tech> state=1
+2026-07-28T16:32:29.320Z [TX] [core] #847D3DAC-50EB-4689-AAB7-DCA8E88E8363.1

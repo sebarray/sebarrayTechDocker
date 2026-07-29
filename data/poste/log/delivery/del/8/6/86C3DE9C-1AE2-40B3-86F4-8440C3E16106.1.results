@@ -1,0 +1,1 @@
+{"type":"delivered","date":"2026-07-24T10:23:04.348Z","data":{"host":"gmail-smtp-in.l.google.com","ip":"142.251.163.26","response":"OK  1784888584 d75a77b69052e-5284126f346si39612091cf.215 - gsmtp","delay":0.831,"port":25,"mode":"SMTP","ok_recips":[{"original":"<sebarray98@gmail.com>","original_host":"gmail.com","host":"gmail.com","user":"sebarray98"}],"secured":true}}

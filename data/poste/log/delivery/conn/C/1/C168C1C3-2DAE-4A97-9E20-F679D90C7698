@@ -1,0 +1,84 @@
+2026-07-27T17:08:00.017Z [NOTICE] [core] connect ip=85.217.149.3 port=37562 local_ip=192.255.226.25 local_port=25
+2026-07-27T17:08:00.017Z [DEBUG] [core] running connect_init hooks
+2026-07-27T17:08:00.017Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-27T17:08:00.022Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-27T17:08:00.022Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-27T17:08:00.025Z [DEBUG] [core] hook=connect_init plugin=karma function=results_init params="" retval=CONT msg=""
+2026-07-27T17:08:00.025Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-27T17:08:00.026Z [DEBUG] [core] hook=connect_init plugin=karma function=ip_history_from_redis params="" retval=CONT msg=""
+2026-07-27T17:08:00.026Z [DEBUG] [core] running connect_init hook in early_talker plugin
+2026-07-27T17:08:03.028Z [DEBUG] [core] hook=connect_init plugin=early_talker function=early_talker params="" retval=CONT msg=""
+2026-07-27T17:08:03.029Z [DEBUG] [core] running connect_init hook in fcrdns plugin
+2026-07-27T17:08:03.029Z [DEBUG] [core] hook=connect_init plugin=fcrdns function=initialize_fcrdns params="" retval=CONT msg=""
+2026-07-27T17:08:03.029Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-27T17:08:03.029Z [DEBUG] [relay] checking 85.217.149.3 in relay_acl_allow
+2026-07-27T17:08:03.029Z [DEBUG] [relay] checking if 85.217.149.3 is in 192.255.226.25/32
+2026-07-27T17:08:03.029Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-27T17:08:03.029Z [DEBUG] [core] running connect_init_respond
+2026-07-27T17:08:03.029Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-27T17:08:03.029Z [DEBUG] [core] running lookup_rdns hook in p0f plugin
+2026-07-27T17:08:03.030Z [INFO] [p0f] os="Linux 2.2.x-3.x" link_type="Ethernet or modem" distance=18 total_conn=1
+2026-07-27T17:08:03.030Z [DEBUG] [core] hook=lookup_rdns plugin=p0f function=query_p0f params="" retval=CONT msg=""
+2026-07-27T17:08:03.030Z [DEBUG] [core] running lookup_rdns hook in fcrdns plugin
+2026-07-27T17:08:03.054Z [DEBUG] [fcrdns] rdns.reverse(85.217.149.3)
+2026-07-27T17:08:03.055Z [DEBUG] [fcrdns] PTRdomain: o004.scanner.modat.io
+2026-07-27T17:08:03.102Z [INFO] [fcrdns] ip=85.217.149.3  rdns="o004.scanner.modat.io" rdns_len=1 fcrdns="o004.scanner.modat.io" fcrdns_len=1 other_ips_len=0 invalid_tlds=0 generic_rdns=false
+2026-07-27T17:08:03.102Z [DEBUG] [core] hook=lookup_rdns plugin=fcrdns function=do_dns_lookups params="" retval=CONT msg=""
+2026-07-27T17:08:03.102Z [DEBUG] [core] running lookup_rdns hook in uribl plugin
+2026-07-27T17:08:03.127Z [DEBUG] [uribl] (rdns) found 1 items for lookup
+2026-07-27T17:08:03.127Z [DEBUG] [uribl] (rdns) checking: o004.scanner.modat.io
+2026-07-27T17:08:03.179Z [DEBUG] [uribl] o004.scanner.modat.io.dbl.spamhaus.org. => (Error: queryA ENOTFOUND o004.scanner.modat.io.dbl.spamhaus.org.)
+2026-07-27T17:08:03.179Z [DEBUG] [core] hook=lookup_rdns plugin=uribl function=lookup_remote_ip params="" retval=CONT msg=""
+2026-07-27T17:08:03.179Z [DEBUG] [core] running lookup_rdns hook in asn plugin
+2026-07-27T17:08:03.314Z [INFO] [asn] asn: 209334, net: 85.217.149.0/24
+2026-07-27T17:08:03.314Z [DEBUG] [core] hook=lookup_rdns plugin=asn function=lookup_via_dns params="" retval=CONT msg=""
+2026-07-27T17:08:03.348Z [DEBUG] [core] running connect hooks
+2026-07-27T17:08:03.348Z [DEBUG] [core] running connect hook in guard plugin
+2026-07-27T17:08:03.348Z [DEBUG] [core] hook=connect plugin=guard function=hook_connect params="" retval=CONT msg=""
+2026-07-27T17:08:03.348Z [DEBUG] [core] running connect hook in karma plugin
+2026-07-27T17:08:03.348Z [DEBUG] [core] hook=connect plugin=karma function=hook_connect params="" retval=CONT msg=""
+2026-07-27T17:08:03.348Z [DEBUG] [core] running connect hook in dns-list plugin
+2026-07-27T17:08:03.349Z [INFO] [karma] score: 0, asn_score: -5
+2026-07-27T17:08:03.430Z [INFO] [dns-list] pass:zen.spamhaus.org, b.barracudacentral.org, bl.spamcop.net, truncate.gbudb.net, psbl.surriel.com, fail:dnsbl.justspam.org, dnsbl-1.uceprotect.net
+2026-07-27T17:08:03.431Z [INFO] [core] hook=connect plugin=dns-list function=onConnect params="" retval=DENY msg="host [85.217.149.3] is listed on dnsbl.justspam.org, dnsbl-1.uceprotect.net"
+2026-07-27T17:08:03.431Z [DEBUG] [core] running deny hooks
+2026-07-27T17:08:03.431Z [DEBUG] [core] running deny hook in guard plugin
+2026-07-27T17:08:03.431Z [DEBUG] [core] hook=deny plugin=guard function=hook_deny params=902 retval=CONT msg=""
+2026-07-27T17:08:03.431Z [DEBUG] [core] running deny hook in karma plugin
+2026-07-27T17:08:03.431Z [INFO] [core] hook=deny plugin=karma function=hook_deny params=902 retval=OK msg=""
+2026-07-27T17:08:03.431Z [INFO] [core] deny(soft?) overridden by deny hook
+2026-07-27T17:08:03.431Z [DEBUG] [core] running connect hook in relay plugin
+2026-07-27T17:08:03.431Z [DEBUG] [core] hook=connect plugin=relay function=pass_relaying params="" retval=CONT msg=""
+2026-07-27T17:08:03.431Z [DEBUG] [core] running connect hook in geoip plugin
+2026-07-27T17:08:03.432Z [INFO] [geoip] NL
+2026-07-27T17:08:03.432Z [DEBUG] [core] hook=connect plugin=geoip function=lookup_maxmind params="" retval=CONT msg=""
+2026-07-27T17:08:03.432Z [PROTOCOL] [core] S: 220 mail.sebarray.tech ESMTP Haraka ready (C168C1)
+2026-07-27T17:08:03.443Z [PROTOCOL] [core] C: EHLO state=1
+2026-07-27T17:08:03.443Z [PROTOCOL] [core] S: 501 EHLO requires domain/address - see RFC-2821 4.1.1.1
+2026-07-27T17:08:03.454Z [INFO] [core] client half closed connection ip=85.217.149.3
+2026-07-27T17:08:03.454Z [DEBUG] [core] client has disconnected
+2026-07-27T17:08:03.454Z [DEBUG] [core] running disconnect hooks
+2026-07-27T17:08:03.454Z [DEBUG] [core] client has disconnected
+2026-07-27T17:08:03.454Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-27T17:08:03.455Z [DEBUG] [core] client has disconnected
+2026-07-27T17:08:03.455Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-27T17:08:03.455Z [DEBUG] [core] client has disconnected
+2026-07-27T17:08:03.455Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-27T17:08:03.456Z [DEBUG] [block_bad_connections] Invalid connections: 1/100
+2026-07-27T17:08:03.456Z [DEBUG] [core] client has disconnected
+2026-07-27T17:08:03.456Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-27T17:08:03.456Z [DEBUG] [core] client has disconnected
+2026-07-27T17:08:03.456Z [DEBUG] [core] running disconnect hook in karma plugin
+2026-07-27T17:08:03.457Z [INFO] [karma] score: -6, asn_score: -5, awards: 119,115, deny_rc: 902, msg:deny: dns-list
+2026-07-27T17:08:03.457Z [DEBUG] [core] client has disconnected
+2026-07-27T17:08:03.457Z [DEBUG] [core] hook=disconnect plugin=karma function=hook_disconnect params="" retval=CONT msg=""
+2026-07-27T17:08:03.457Z [DEBUG] [core] client has disconnected
+2026-07-27T17:08:03.457Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-27T17:08:03.457Z [DEBUG] [core] client has disconnected
+2026-07-27T17:08:03.457Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-27T17:08:03.457Z [DEBUG] [core] client has disconnected
+2026-07-27T17:08:03.457Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-27T17:08:03.457Z [DEBUG] [core] client has disconnected
+2026-07-27T17:08:03.457Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-27T17:08:03.457Z [NOTICE] [core] disconnect ip=85.217.149.3 rdns=o004.scanner.modat.io helo="" relay=N early=N esmtp=N tls=N pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="501 EHLO requires domain/address - see RFC-2821 4.1.1.1" time=3.439
+2026-07-27T17:08:03.458Z [DEBUG] [karma] unsubscribed from result-C168C1C3-2DAE-4A97-9E20-F679D90C7698*
