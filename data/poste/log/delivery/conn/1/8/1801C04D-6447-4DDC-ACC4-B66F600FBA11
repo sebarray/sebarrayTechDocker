@@ -1,0 +1,37 @@
+2026-07-29T04:31:06.099Z [NOTICE] [core] connect ip=64.62.156.52 port=21014 local_ip=192.255.226.25 local_port=25
+2026-07-29T04:31:06.101Z [DEBUG] [core] running connect_init hooks
+2026-07-29T04:31:06.101Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-29T04:31:06.106Z [DEBUG] [core] [early_talker] state=4 esmtp=false line="GET / HTTP/1.1"
+2026-07-29T04:31:06.109Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-29T04:31:06.109Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-29T04:31:06.114Z [DEBUG] [core] hook=connect_init plugin=karma function=results_init params="" retval=CONT msg=""
+2026-07-29T04:31:06.114Z [DEBUG] [core] running connect_init hook in karma plugin
+2026-07-29T04:31:06.115Z [DEBUG] [core] hook=connect_init plugin=karma function=ip_history_from_redis params="" retval=CONT msg=""
+2026-07-29T04:31:06.115Z [DEBUG] [core] running connect_init hook in early_talker plugin
+2026-07-29T04:31:09.011Z [INFO] [core] client half closed connection ip=64.62.156.52
+2026-07-29T04:31:09.011Z [DEBUG] [core] client has disconnected
+2026-07-29T04:31:09.011Z [DEBUG] [core] running disconnect hooks
+2026-07-29T04:31:09.011Z [DEBUG] [core] client has disconnected
+2026-07-29T04:31:09.011Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-29T04:31:09.013Z [DEBUG] [core] client has disconnected
+2026-07-29T04:31:09.013Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T04:31:09.013Z [DEBUG] [core] client has disconnected
+2026-07-29T04:31:09.013Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-29T04:31:09.014Z [DEBUG] [block_bad_connections] Invalid connections: 1/100
+2026-07-29T04:31:09.014Z [DEBUG] [core] client has disconnected
+2026-07-29T04:31:09.014Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T04:31:09.014Z [DEBUG] [core] client has disconnected
+2026-07-29T04:31:09.014Z [DEBUG] [core] running disconnect hook in karma plugin
+2026-07-29T04:31:09.014Z [INFO] [karma] score: 0
+2026-07-29T04:31:09.014Z [DEBUG] [core] client has disconnected
+2026-07-29T04:31:09.014Z [DEBUG] [core] hook=disconnect plugin=karma function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T04:31:09.014Z [DEBUG] [core] client has disconnected
+2026-07-29T04:31:09.014Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-29T04:31:09.015Z [DEBUG] [core] client has disconnected
+2026-07-29T04:31:09.015Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T04:31:09.015Z [DEBUG] [core] client has disconnected
+2026-07-29T04:31:09.015Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-29T04:31:09.015Z [DEBUG] [core] client has disconnected
+2026-07-29T04:31:09.015Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T04:31:09.015Z [NOTICE] [core] disconnect ip=64.62.156.52 rdns="" helo="" relay=N early=Y esmtp=N tls=N pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="" time=2.914
+2026-07-29T04:31:09.015Z [DEBUG] [karma] unsubscribed from result-1801C04D-6447-4DDC-ACC4-B66F600FBA11*

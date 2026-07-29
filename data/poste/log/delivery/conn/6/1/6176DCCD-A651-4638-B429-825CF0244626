@@ -1,0 +1,42 @@
+2026-07-29T05:34:01.462Z [NOTICE] [core] connect ip=85.217.149.34 port=47730 local_ip=192.255.226.25 local_port=587
+2026-07-29T05:34:01.462Z [DEBUG] [core] running connect_init hooks
+2026-07-29T05:34:01.463Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-29T05:34:01.468Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-29T05:34:01.468Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-29T05:34:01.469Z [DEBUG] [relay] checking 85.217.149.34 in relay_acl_allow
+2026-07-29T05:34:01.469Z [DEBUG] [relay] checking if 85.217.149.34 is in 192.255.226.25/32
+2026-07-29T05:34:01.469Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-29T05:34:01.469Z [DEBUG] [core] running connect_init_respond
+2026-07-29T05:34:01.469Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-29T05:34:01.504Z [DEBUG] [core] running connect hooks
+2026-07-29T05:34:01.504Z [DEBUG] [core] running connect hook in guard plugin
+2026-07-29T05:34:01.504Z [DEBUG] [core] hook=connect plugin=guard function=hook_connect params="" retval=CONT msg=""
+2026-07-29T05:34:01.504Z [DEBUG] [core] running connect hook in relay plugin
+2026-07-29T05:34:01.504Z [DEBUG] [core] hook=connect plugin=relay function=pass_relaying params="" retval=CONT msg=""
+2026-07-29T05:34:01.504Z [DEBUG] [core] running connect hook in geoip plugin
+2026-07-29T05:34:01.505Z [INFO] [geoip] NL
+2026-07-29T05:34:01.505Z [DEBUG] [core] hook=connect plugin=geoip function=lookup_maxmind params="" retval=CONT msg=""
+2026-07-29T05:34:01.505Z [PROTOCOL] [core] S: 220 mail.sebarray.tech ESMTP Haraka ready (6176DC)
+2026-07-29T05:34:01.519Z [PROTOCOL] [core] C: EHLO state=1
+2026-07-29T05:34:01.519Z [PROTOCOL] [core] S: 501 EHLO requires domain/address - see RFC-2821 4.1.1.1
+2026-07-29T05:34:01.533Z [INFO] [core] client half closed connection ip=85.217.149.34
+2026-07-29T05:34:01.534Z [DEBUG] [core] client has disconnected
+2026-07-29T05:34:01.534Z [DEBUG] [core] running disconnect hooks
+2026-07-29T05:34:01.534Z [DEBUG] [core] client has disconnected
+2026-07-29T05:34:01.534Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-29T05:34:01.535Z [DEBUG] [core] client has disconnected
+2026-07-29T05:34:01.535Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T05:34:01.535Z [DEBUG] [core] client has disconnected
+2026-07-29T05:34:01.535Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-29T05:34:01.536Z [DEBUG] [block_bad_connections] Invalid connections: 1/100
+2026-07-29T05:34:01.536Z [DEBUG] [core] client has disconnected
+2026-07-29T05:34:01.536Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T05:34:01.536Z [DEBUG] [core] client has disconnected
+2026-07-29T05:34:01.536Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-29T05:34:01.536Z [DEBUG] [core] client has disconnected
+2026-07-29T05:34:01.536Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T05:34:01.536Z [DEBUG] [core] client has disconnected
+2026-07-29T05:34:01.536Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-29T05:34:01.536Z [DEBUG] [core] client has disconnected
+2026-07-29T05:34:01.536Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T05:34:01.536Z [NOTICE] [core] disconnect ip=85.217.149.34 rdns=o035.scanner.modat.io helo="" relay=N early=N esmtp=N tls=N pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="501 EHLO requires domain/address - see RFC-2821 4.1.1.1" time=0.073

@@ -1,0 +1,99 @@
+2026-07-29T01:51:59.861Z [DEBUG] [core] running mail hooks
+2026-07-29T01:51:59.861Z [DEBUG] [core] running mail hook in bounce plugin
+2026-07-29T01:51:59.861Z [INFO] [bounce] isa: no
+2026-07-29T01:51:59.861Z [DEBUG] [core] hook=mail plugin=bounce function=check_null_sender params=<spameri@tiscali.it> retval=CONT msg=""
+2026-07-29T01:51:59.861Z [DEBUG] [core] running mail hook in guard plugin
+2026-07-29T01:51:59.861Z [DEBUG] [core] hook=mail plugin=guard function=hook_mail params=<spameri@tiscali.it> retval=CONT msg=""
+2026-07-29T01:51:59.861Z [DEBUG] [core] running mail hook in karma plugin
+2026-07-29T01:51:59.862Z [DEBUG] [karma] static tarpit
+2026-07-29T01:51:59.862Z [DEBUG] [karma] tarpitting mail for 1s
+2026-07-29T01:52:00.862Z [DEBUG] [karma] tarpit mail end
+2026-07-29T01:52:00.863Z [DEBUG] [core] hook=mail plugin=karma function=hook_mail params=<spameri@tiscali.it> retval=CONT msg=""
+2026-07-29T01:52:00.863Z [DEBUG] [core] running mail hook in mail_from.is_resolvable plugin
+2026-07-29T01:52:00.863Z [DEBUG] [mail_from.is_resolvable] resolving MX for domain tiscali.it
+2026-07-29T01:52:00.884Z [DEBUG] [mail_from.is_resolvable] tiscali.it: MX => [{"exchange":"etb-2.mail.tiscali.it","priority":10,"from_dns":"tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"etb-3.mail.tiscali.it","priority":10,"from_dns":"tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"etb-4.mail.tiscali.it","priority":10,"from_dns":"tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"imp-5.mail.tiscali.it","priority":50,"from_dns":"tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"etb-1.mail.tiscali.it","priority":10,"from_dns":"tiscali.it","bind_helo":"mail.sebarray.tech"}]
+2026-07-29T01:52:01.044Z [DEBUG] [mail_from.is_resolvable] resolved MX => [{"exchange":"213.205.33.63","priority":10,"from_dns":"etb-2.mail.tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"213.205.33.64","priority":10,"from_dns":"etb-2.mail.tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"213.205.33.61","priority":10,"from_dns":"etb-2.mail.tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"213.205.33.61","priority":10,"from_dns":"etb-3.mail.tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"213.205.33.64","priority":10,"from_dns":"etb-3.mail.tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"213.205.33.63","priority":10,"from_dns":"etb-3.mail.tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"213.205.33.61","priority":10,"from_dns":"etb-4.mail.tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"213.205.33.64","priority":10,"from_dns":"etb-4.mail.tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"213.205.33.63","priority":10,"from_dns":"etb-4.mail.tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"213.205.33.244","priority":50,"from_dns":"imp-5.mail.tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"213.205.33.61","priority":10,"from_dns":"etb-1.mail.tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"213.205.33.64","priority":10,"from_dns":"etb-1.mail.tiscali.it","bind_helo":"mail.sebarray.tech"},{"exchange":"213.205.33.63","priority":10,"from_dns":"etb-1.mail.tiscali.it","bind_helo":"mail.sebarray.tech"}]
+2026-07-29T01:52:01.044Z [INFO] [mail_from.is_resolvable] pass:has_fwd_dns
+2026-07-29T01:52:01.044Z [DEBUG] [core] hook=mail plugin=mail_from.is_resolvable function=hook_mail params=<spameri@tiscali.it> retval=CONT msg=""
+2026-07-29T01:52:01.044Z [DEBUG] [core] running mail hook in mailauth/verify plugin
+2026-07-29T01:52:01.211Z [DEBUG] [core] hook=mail plugin=mailauth/verify function=hook_mail params=<spameri@tiscali.it> retval=CONT msg=""
+2026-07-29T01:52:01.212Z [DEBUG] [core] running mail hook in uribl plugin
+2026-07-29T01:52:01.212Z [DEBUG] [uribl] (envfrom) found 1 items for lookup
+2026-07-29T01:52:01.212Z [DEBUG] [uribl] (envfrom) checking: tiscali.it
+2026-07-29T01:52:01.267Z [DEBUG] [uribl] tiscali.it.dbl.spamhaus.org. => (Error: queryA ENOTFOUND tiscali.it.dbl.spamhaus.org.)
+2026-07-29T01:52:01.268Z [DEBUG] [core] hook=mail plugin=uribl function=lookup_mailfrom params=<spameri@tiscali.it> retval=CONT msg=""
+2026-07-29T01:52:01.268Z [DEBUG] [core] running mail hook in known-senders plugin
+2026-07-29T01:52:01.268Z [DEBUG] [known-senders] [ '37.red-2-136-20.staticip.rima-tde.net' ]
+2026-07-29T01:52:01.268Z [DEBUG] [core] hook=mail plugin=known-senders function=is_authenticated params=<spameri@tiscali.it> retval=CONT msg=""
+2026-07-29T01:52:01.268Z [DEBUG] [core] running mail hook in bounce plugin
+2026-07-29T01:52:01.268Z [DEBUG] [core] hook=mail plugin=bounce function=reject_all params=<spameri@tiscali.it> retval=CONT msg=""
+2026-07-29T01:52:01.268Z [DEBUG] [core] running mail hook in log plugin
+2026-07-29T01:52:01.268Z [PROTOCOL] [core] C: Mail from:<spameri@tiscali.it> state=1
+2026-07-29T01:52:01.268Z [DEBUG] [core] hook=mail plugin=log function=hook_mail params=<spameri@tiscali.it> retval=CONT msg=""
+2026-07-29T01:52:01.268Z [DEBUG] [core] running mail hook in rcpt_database plugin
+2026-07-29T01:52:01.270Z [DEBUG] [core] hook=mail plugin=rcpt_database function=is_remote_sender params=<spameri@tiscali.it> retval=CONT msg=""
+2026-07-29T01:52:01.270Z [DEBUG] [core] running mail hook in dovecot_quota plugin
+2026-07-29T01:52:01.270Z [DEBUG] [core] hook=mail plugin=dovecot_quota function=hook_mail params=<spameri@tiscali.it> retval=CONT msg=""
+2026-07-29T01:52:01.270Z [NOTICE] [core] sender <spameri@tiscali.it> code=CONT msg=""
+2026-07-29T01:52:01.270Z [PROTOCOL] [core] S: 250 sender <spameri@tiscali.it> OK
+2026-07-29T01:52:01.394Z [PROTOCOL] [core] C: RCPT to:<spameri@tiscali.it> state=1
+2026-07-29T01:52:01.394Z [DEBUG] [core] running rcpt hooks
+2026-07-29T01:52:01.394Z [DEBUG] [core] running rcpt hook in block_bad_connections plugin
+2026-07-29T01:52:01.394Z [DEBUG] [core] hook=rcpt plugin=block_bad_connections function=hook_rcpt params=<spameri@tiscali.it> retval=CONT msg=""
+2026-07-29T01:52:01.394Z [DEBUG] [core] running rcpt hook in karma plugin
+2026-07-29T01:52:01.394Z [DEBUG] [karma] static tarpit
+2026-07-29T01:52:01.394Z [DEBUG] [karma] tarpitting rcpt for 1s
+2026-07-29T01:52:02.394Z [DEBUG] [karma] tarpit rcpt end
+2026-07-29T01:52:02.394Z [DEBUG] [core] hook=rcpt plugin=karma function=hook_rcpt params=<spameri@tiscali.it> retval=CONT msg=""
+2026-07-29T01:52:02.395Z [DEBUG] [core] running rcpt hook in srs plugin
+2026-07-29T01:52:02.395Z [DEBUG] [srs] not an our SRS address
+2026-07-29T01:52:02.395Z [DEBUG] [core] hook=rcpt plugin=srs function=hook_rcpt params=<spameri@tiscali.it> retval=CONT msg=""
+2026-07-29T01:52:02.395Z [DEBUG] [core] running rcpt hook in rcpt_database plugin
+2026-07-29T01:52:02.396Z [DEBUG] [rcpt_database] remote delivery domain <tiscali.it>
+2026-07-29T01:52:02.396Z [DEBUG] [core] hook=rcpt plugin=rcpt_database function=database_rcpt params=<spameri@tiscali.it> retval=CONT msg=""
+2026-07-29T01:52:02.396Z [NOTICE] [core] recipient <spameri@tiscali.it> code=OK msg="" sender=spameri@tiscali.it
+2026-07-29T01:52:02.396Z [PROTOCOL] [core] S: 550 I cannot deliver mail for <spameri@tiscali.it>
+2026-07-29T01:52:02.520Z [PROTOCOL] [core] C: Quit state=1
+2026-07-29T01:52:02.520Z [DEBUG] [core] running quit hooks
+2026-07-29T01:52:02.520Z [PROTOCOL] [core] S: 221 mail.sebarray.tech closing connection. Have a jolly good day.
+2026-07-29T01:52:02.520Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.520Z [DEBUG] [core] running reset_transaction hooks
+2026-07-29T01:52:02.520Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.521Z [DEBUG] [core] running reset_transaction hook in stats plugin
+2026-07-29T01:52:02.521Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.522Z [DEBUG] [core] hook=reset_transaction plugin=stats function=hook_reset_transaction params="" retval=CONT msg=""
+2026-07-29T01:52:02.522Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.522Z [DEBUG] [core] running reset_transaction hook in karma plugin
+2026-07-29T01:52:02.522Z [INFO] [karma] score: -23, awards: 031,115,111,112,119,130,133,003, deny_rc: 902, msg:deny: dns-list, fail:env_user_match, rcpt_to
+2026-07-29T01:52:02.522Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.522Z [DEBUG] [core] hook=reset_transaction plugin=karma function=hook_reset_transaction params="" retval=CONT msg=""
+2026-07-29T01:52:02.522Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.522Z [DEBUG] [core] running reset_transaction hook in log plugin
+2026-07-29T01:52:02.522Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.522Z [DEBUG] [core] hook=reset_transaction plugin=log function=hook_reset_transaction params="" retval=CONT msg=""
+2026-07-29T01:52:02.522Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.522Z [DEBUG] [core] running disconnect hooks
+2026-07-29T01:52:02.522Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.522Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-29T01:52:02.523Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.523Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T01:52:02.523Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.523Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-29T01:52:02.523Z [DEBUG] [block_bad_connections] Invalid connections: 1/100
+2026-07-29T01:52:02.523Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.523Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T01:52:02.523Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.523Z [DEBUG] [core] running disconnect hook in karma plugin
+2026-07-29T01:52:02.523Z [INFO] [karma] score: -23, awards: 031,115,111,112,119,130,133,003, deny_rc: 902, msg:deny: dns-list, fail:env_user_match, rcpt_to
+2026-07-29T01:52:02.523Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.523Z [DEBUG] [core] hook=disconnect plugin=karma function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T01:52:02.523Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.524Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-29T01:52:02.524Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.524Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T01:52:02.524Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.524Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-29T01:52:02.524Z [DEBUG] [core] client has disconnected
+2026-07-29T01:52:02.524Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T01:52:02.524Z [NOTICE] [core] disconnect ip=2.136.20.37 rdns=37.red-2-136-20.staticip.rima-tde.net helo=SRVSUSANNE relay=N early=N esmtp=Y tls=N pipe=N errors=0 txns=1 rcpts=0/0/1 msgs=0/0/0 bytes=0 lr="550 I cannot deliver mail for <spameri@tiscali.it>" time=8.758
+2026-07-29T01:52:02.524Z [DEBUG] [karma] unsubscribed from result-F3D66A46-C6DA-4FDE-B126-B1577F89D5C3*

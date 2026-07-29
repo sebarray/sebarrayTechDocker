@@ -1,0 +1,43 @@
+2026-07-29T10:39:58.647Z [NOTICE] [core] connect ip=66.228.36.223 port=56508 local_ip=192.255.226.25 local_port=465
+2026-07-29T10:39:58.647Z [DEBUG] [core] running connect_init hooks
+2026-07-29T10:39:58.648Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-29T10:39:58.649Z [DEBUG] [core] hook=connect_init plugin=guard function=hook_connect_init params="" retval=CONT msg=""
+2026-07-29T10:39:58.649Z [DEBUG] [core] running connect_init hook in relay plugin
+2026-07-29T10:39:58.650Z [DEBUG] [relay] checking 66.228.36.223 in relay_acl_allow
+2026-07-29T10:39:58.650Z [DEBUG] [relay] checking if 66.228.36.223 is in 192.255.226.25/32
+2026-07-29T10:39:58.650Z [DEBUG] [core] hook=connect_init plugin=relay function=acl params="" retval=CONT msg=""
+2026-07-29T10:39:58.650Z [DEBUG] [core] running connect_init_respond
+2026-07-29T10:39:58.650Z [DEBUG] [core] running lookup_rdns hooks
+2026-07-29T10:39:58.661Z [DEBUG] [core] [early_talker] state=4 esmtp=false line=HELP
+2026-07-29T10:39:58.672Z [DEBUG] [core] running connect hooks
+2026-07-29T10:39:58.672Z [DEBUG] [core] running connect hook in guard plugin
+2026-07-29T10:39:58.672Z [DEBUG] [core] hook=connect plugin=guard function=hook_connect params="" retval=CONT msg=""
+2026-07-29T10:39:58.672Z [DEBUG] [core] running connect hook in relay plugin
+2026-07-29T10:39:58.672Z [DEBUG] [core] hook=connect plugin=relay function=pass_relaying params="" retval=CONT msg=""
+2026-07-29T10:39:58.672Z [DEBUG] [core] running connect hook in geoip plugin
+2026-07-29T10:39:58.672Z [INFO] [geoip] US
+2026-07-29T10:39:58.672Z [DEBUG] [core] hook=connect plugin=geoip function=lookup_maxmind params="" retval=CONT msg=""
+2026-07-29T10:39:58.673Z [PROTOCOL] [core] S: 220 mail.sebarray.tech ESMTP Haraka ready (D35E75)
+2026-07-29T10:39:58.673Z [PROTOCOL] [core] C: HELP state=1
+2026-07-29T10:39:58.673Z [PROTOCOL] [core] S: 250 Not implemented
+2026-07-29T10:40:06.146Z [INFO] [core] client half closed connection ip=66.228.36.223
+2026-07-29T10:40:06.146Z [DEBUG] [core] client has disconnected
+2026-07-29T10:40:06.146Z [DEBUG] [core] running disconnect hooks
+2026-07-29T10:40:06.146Z [DEBUG] [core] client has disconnected
+2026-07-29T10:40:06.146Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-29T10:40:06.147Z [DEBUG] [core] client has disconnected
+2026-07-29T10:40:06.147Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T10:40:06.147Z [DEBUG] [core] client has disconnected
+2026-07-29T10:40:06.147Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-29T10:40:06.147Z [DEBUG] [block_bad_connections] Invalid connections: 2/100
+2026-07-29T10:40:06.147Z [DEBUG] [core] client has disconnected
+2026-07-29T10:40:06.147Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T10:40:06.148Z [DEBUG] [core] client has disconnected
+2026-07-29T10:40:06.148Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-29T10:40:06.148Z [DEBUG] [core] client has disconnected
+2026-07-29T10:40:06.148Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T10:40:06.148Z [DEBUG] [core] client has disconnected
+2026-07-29T10:40:06.148Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-29T10:40:06.148Z [DEBUG] [core] client has disconnected
+2026-07-29T10:40:06.148Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T10:40:06.148Z [NOTICE] [core] disconnect ip=66.228.36.223 rdns=66-228-36-223.ip.linodeusercontent.com helo="" relay=N early=Y esmtp=N tls=Y pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="" time=7.5

@@ -1,0 +1,24 @@
+2026-07-29T08:20:15.000Z [NOTICE] [core] connect ip=98.89.204.118 port=53900 local_ip=192.255.226.25 local_port=465
+2026-07-29T08:20:15.000Z [DEBUG] [core] running connect_init hooks
+2026-07-29T08:20:15.001Z [DEBUG] [core] running connect_init hook in guard plugin
+2026-07-29T08:20:15.004Z [INFO] [core] client half closed connection ip=98.89.204.118
+2026-07-29T08:20:15.004Z [DEBUG] [core] client has disconnected
+2026-07-29T08:20:15.004Z [DEBUG] [core] running disconnect hooks
+2026-07-29T08:20:15.005Z [DEBUG] [core] client has disconnected
+2026-07-29T08:20:15.005Z [DEBUG] [core] running disconnect hook in stats plugin
+2026-07-29T08:20:15.014Z [DEBUG] [core] client has disconnected
+2026-07-29T08:20:15.015Z [DEBUG] [core] hook=disconnect plugin=stats function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T08:20:15.015Z [DEBUG] [core] client has disconnected
+2026-07-29T08:20:15.015Z [DEBUG] [core] running disconnect hook in block_bad_connections plugin
+2026-07-29T08:20:15.015Z [DEBUG] [block_bad_connections] Invalid connections: 1/100
+2026-07-29T08:20:15.015Z [DEBUG] [core] client has disconnected
+2026-07-29T08:20:15.016Z [DEBUG] [core] hook=disconnect plugin=block_bad_connections function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T08:20:15.016Z [DEBUG] [core] client has disconnected
+2026-07-29T08:20:15.016Z [DEBUG] [core] running disconnect hook in log plugin
+2026-07-29T08:20:15.016Z [DEBUG] [core] client has disconnected
+2026-07-29T08:20:15.016Z [DEBUG] [core] hook=disconnect plugin=log function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T08:20:15.016Z [DEBUG] [core] client has disconnected
+2026-07-29T08:20:15.016Z [DEBUG] [core] running disconnect hook in tls plugin
+2026-07-29T08:20:15.016Z [DEBUG] [core] client has disconnected
+2026-07-29T08:20:15.016Z [DEBUG] [core] hook=disconnect plugin=tls function=hook_disconnect params="" retval=CONT msg=""
+2026-07-29T08:20:15.016Z [NOTICE] [core] disconnect ip=98.89.204.118 rdns="" helo="" relay=N early=N esmtp=N tls=Y pipe=N errors=0 txns=0 rcpts=0/0/0 msgs=0/0/0 bytes=0 lr="" time=0.015
